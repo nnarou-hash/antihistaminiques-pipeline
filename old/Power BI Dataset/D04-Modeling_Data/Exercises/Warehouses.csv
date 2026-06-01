@@ -1,9 +1,0 @@
-WarehouseKey,WarehouseName,City,Region,ManagerName,ManagerEmail,CapacityUnits,SquareMeters
-1,Entrepôt Lyon-Est,Lyon,Auvergne-Rhône-Alpes,Sophie Martin,s.martin@danone.com,12000,4500
-2,Entrepôt Paris-Nord,Paris,Île-de-France,Thomas Bernard,t.bernard@danone.com,18000,7200
-3,Entrepôt Marseille-Port,Marseille,Provence-Alpes-Côte d'Azur,Claire Dubois,c.dubois@danone.com,15000,5800
-4,Entrepôt Bordeaux-Sud,Bordeaux,Nouvelle-Aquitaine,Marc Leroy,m.leroy@danone.com,10000,3900
-5,Entrepôt Lille-Centre,Lille,Hauts-de-France,Émilie Roux,e.roux@danone.com,9000,3400
-6,Entrepôt Strasbourg-Est,Strasbourg,Grand Est,Pierre Moreau,p.moreau@danone.com,8000,3100
-7,Entrepôt Nantes-Ouest,Nantes,Pays de la Loire,Julie Laurent,j.laurent@danone.com,11000,4200
-8,Entrepôt Toulouse-Sud,Toulouse,Occitanie,Nicolas Petit,n.petit@danone.com,9500,3600
