@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupplierInvoices>
+  <Invoice>
+    <InvoiceNumber>FACT-2024-00847</InvoiceNumber>
+    <InvoiceDate>2024-10-15</InvoiceDate>
+    <DueDate>2024-11-14</DueDate>
+    <Supplier>
+      <SupplierID>FOUR-001</SupplierID>
+      <Name>Ferrero France SAS</Name>
+      <Address>18 Rue Jacques Monod, 76130 Mont-Saint-Aignan</Address>
+      <SIRET>30212768500063</SIRET>
+    </Supplier>
+    <BuyerStore>
+      <StoreID>ST001</StoreID>
+      <StoreName>Carrefour Hypermarché Montreuil</StoreName>
+    </BuyerStore>
+    <LineItems>
+      <Item>
+        <ProductEAN>3017620422003</ProductEAN>
+        <Description>Nutella 400g</Description>
+        <Quantity>240</Quantity>
+        <UnitPrice>2.15</UnitPrice>
+        <TotalHT>516.00</TotalHT>
+        <TVA>5.5</TVA>
+      </Item>
+      <Item>
+        <ProductEAN>8000500310427</ProductEAN>
+        <Description>Kinder Bueno x6</Description>
+        <Quantity>180</Quantity>
+        <UnitPrice>1.95</UnitPrice>
+        <TotalHT>351.00</TotalHT>
+        <TVA>5.5</TVA>
+      </Item>
+    </LineItems>
+    <TotalHT>867.00</TotalHT>
+    <TotalTVA>47.69</TotalTVA>
+    <TotalTTC>914.69</TotalTTC>
+  </Invoice>
+  <Invoice>
+    <InvoiceNumber>FACT-2024-00848</InvoiceNumber>
+    <InvoiceDate>2024-10-15</InvoiceDate>
+    <DueDate>2024-11-14</DueDate>
+    <Supplier>
+      <SupplierID>FOUR-002</SupplierID>
+      <Name>Lactalis International</Name>
+      <Address>10 Rue Adolphe Beck, 53000 Laval</Address>
+      <SIRET>85580053200015</SIRET>
+    </Supplier>
+    <BuyerStore>
+      <StoreID>ST002</StoreID>
+      <StoreName>Carrefour Market Lyon Part-Dieu</StoreName>
+    </BuyerStore>
+    <LineItems>
+      <Item>
+        <ProductEAN>3256220122245</ProductEAN>
+        <Description>Lait Demi-Écrémé Lactel 1L</Description>
+        <Quantity>500</Quantity>
+        <UnitPrice>0.68</UnitPrice>
+        <TotalHT>340.00</TotalHT>
+        <TVA>5.5</TVA>
+      </Item>
+      <Item>
+        <ProductEAN>3033710074532</ProductEAN>
+        <Description>Camembert Président</Description>
+        <Quantity>120</Quantity>
+        <UnitPrice>1.25</UnitPrice>
+        <TotalHT>150.00</TotalHT>
+        <TVA>5.5</TVA>
+      </Item>
+    </LineItems>
+    <TotalHT>490.00</TotalHT>
+    <TotalTVA>26.95</TotalTVA>
+    <TotalTTC>516.95</TotalTTC>
+  </Invoice>
+  <Invoice>
+    <InvoiceNumber>FACT-2024-00849</InvoiceNumber>
+    <InvoiceDate>2024-10-16</InvoiceDate>
+    <DueDate>2024-11-15</DueDate>
+    <Supplier>
+      <SupplierID>FOUR-003</SupplierID>
+      <Name>Procter &amp; Gamble France</Name>
+      <Address>163 Quai Aulagnier, 92600 Asnières-sur-Seine</Address>
+      <SIRET>55201632200048</SIRET>
+    </Supplier>
+    <BuyerStore>
+      <StoreID>ST005</StoreID>
+      <StoreName>Carrefour Hypermarché Toulouse Purpan</StoreName>
+    </BuyerStore>
+    <LineItems>
+      <Item>
+        <ProductEAN>5410036301159</ProductEAN>
+        <Description>Lessive Dash Pods x30</Description>
+        <Quantity>96</Quantity>
+        <UnitPrice>5.80</UnitPrice>
+        <TotalHT>556.80</TotalHT>
+        <TVA>20.0</TVA>
+      </Item>
+      <Item>
+        <ProductEAN>4015400507581</ProductEAN>
+        <Description>Couches Pampers Baby-Dry T4 x46</Description>
+        <Quantity>72</Quantity>
+        <UnitPrice>8.50</UnitPrice>
+        <TotalHT>612.00</TotalHT>
+        <TVA>20.0</TVA>
+      </Item>
+    </LineItems>
+    <TotalHT>1168.80</TotalHT>
+    <TotalTVA>233.76</TotalTVA>
+    <TotalTTC>1402.56</TotalTTC>
+  </Invoice>
+</SupplierInvoices>

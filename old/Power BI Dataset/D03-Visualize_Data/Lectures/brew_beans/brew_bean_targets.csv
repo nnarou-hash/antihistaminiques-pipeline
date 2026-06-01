@@ -1,0 +1,145 @@
+StoreID,StoreName,City,TargetYear,TargetMonth,TargetDate,MonthlyRevenueTarget
+S01,Capitol Hill,Seattle,2024,1,2024-01-01,490
+S02,Pike Place,Seattle,2024,1,2024-01-01,439
+S03,Fremont,Seattle,2024,1,2024-01-01,347
+S04,Ballard,Seattle,2024,1,2024-01-01,326
+S05,Pearl District,Portland,2024,1,2024-01-01,428
+S06,Hawthorne,Portland,2024,1,2024-01-01,377
+S07,Alberta Arts,Portland,2024,1,2024-01-01,286
+S08,Division Street,Portland,2024,1,2024-01-01,245
+S09,Downtown Flagship,San Francisco,2024,1,2024-01-01,969
+S10,Marina,San Francisco,2024,1,2024-01-01,571
+S11,Hayes Valley,San Francisco,2024,1,2024-01-01,449
+S12,SoMa,San Francisco,2024,1,2024-01-01,428
+S01,Capitol Hill,Seattle,2024,2,2024-02-01,413
+S02,Pike Place,Seattle,2024,2,2024-02-01,370
+S03,Fremont,Seattle,2024,2,2024-02-01,292
+S04,Ballard,Seattle,2024,2,2024-02-01,275
+S05,Pearl District,Portland,2024,2,2024-02-01,361
+S06,Hawthorne,Portland,2024,2,2024-02-01,318
+S07,Alberta Arts,Portland,2024,2,2024-02-01,241
+S08,Division Street,Portland,2024,2,2024-02-01,206
+S09,Downtown Flagship,San Francisco,2024,2,2024-02-01,817
+S10,Marina,San Francisco,2024,2,2024-02-01,482
+S11,Hayes Valley,San Francisco,2024,2,2024-02-01,378
+S12,SoMa,San Francisco,2024,2,2024-02-01,361
+S01,Capitol Hill,Seattle,2024,3,2024-03-01,437
+S02,Pike Place,Seattle,2024,3,2024-03-01,391
+S03,Fremont,Seattle,2024,3,2024-03-01,309
+S04,Ballard,Seattle,2024,3,2024-03-01,291
+S05,Pearl District,Portland,2024,3,2024-03-01,382
+S06,Hawthorne,Portland,2024,3,2024-03-01,337
+S07,Alberta Arts,Portland,2024,3,2024-03-01,255
+S08,Division Street,Portland,2024,3,2024-03-01,218
+S09,Downtown Flagship,San Francisco,2024,3,2024-03-01,864
+S10,Marina,San Francisco,2024,3,2024-03-01,510
+S11,Hayes Valley,San Francisco,2024,3,2024-03-01,400
+S12,SoMa,San Francisco,2024,3,2024-03-01,382
+S01,Capitol Hill,Seattle,2024,4,2024-04-01,456
+S02,Pike Place,Seattle,2024,4,2024-04-01,408
+S03,Fremont,Seattle,2024,4,2024-04-01,323
+S04,Ballard,Seattle,2024,4,2024-04-01,304
+S05,Pearl District,Portland,2024,4,2024-04-01,399
+S06,Hawthorne,Portland,2024,4,2024-04-01,352
+S07,Alberta Arts,Portland,2024,4,2024-04-01,266
+S08,Division Street,Portland,2024,4,2024-04-01,228
+S09,Downtown Flagship,San Francisco,2024,4,2024-04-01,902
+S10,Marina,San Francisco,2024,4,2024-04-01,532
+S11,Hayes Valley,San Francisco,2024,4,2024-04-01,418
+S12,SoMa,San Francisco,2024,4,2024-04-01,399
+S01,Capitol Hill,Seattle,2024,5,2024-05-01,480
+S02,Pike Place,Seattle,2024,5,2024-05-01,430
+S03,Fremont,Seattle,2024,5,2024-05-01,340
+S04,Ballard,Seattle,2024,5,2024-05-01,320
+S05,Pearl District,Portland,2024,5,2024-05-01,420
+S06,Hawthorne,Portland,2024,5,2024-05-01,370
+S07,Alberta Arts,Portland,2024,5,2024-05-01,280
+S08,Division Street,Portland,2024,5,2024-05-01,240
+S09,Downtown Flagship,San Francisco,2024,5,2024-05-01,950
+S10,Marina,San Francisco,2024,5,2024-05-01,560
+S11,Hayes Valley,San Francisco,2024,5,2024-05-01,440
+S12,SoMa,San Francisco,2024,5,2024-05-01,420
+S01,Capitol Hill,Seattle,2024,6,2024-06-01,509
+S02,Pike Place,Seattle,2024,6,2024-06-01,456
+S03,Fremont,Seattle,2024,6,2024-06-01,360
+S04,Ballard,Seattle,2024,6,2024-06-01,339
+S05,Pearl District,Portland,2024,6,2024-06-01,445
+S06,Hawthorne,Portland,2024,6,2024-06-01,392
+S07,Alberta Arts,Portland,2024,6,2024-06-01,297
+S08,Division Street,Portland,2024,6,2024-06-01,254
+S09,Downtown Flagship,San Francisco,2024,6,2024-06-01,1007
+S10,Marina,San Francisco,2024,6,2024-06-01,594
+S11,Hayes Valley,San Francisco,2024,6,2024-06-01,466
+S12,SoMa,San Francisco,2024,6,2024-06-01,445
+S01,Capitol Hill,Seattle,2024,7,2024-07-01,528
+S02,Pike Place,Seattle,2024,7,2024-07-01,473
+S03,Fremont,Seattle,2024,7,2024-07-01,374
+S04,Ballard,Seattle,2024,7,2024-07-01,352
+S05,Pearl District,Portland,2024,7,2024-07-01,462
+S06,Hawthorne,Portland,2024,7,2024-07-01,407
+S07,Alberta Arts,Portland,2024,7,2024-07-01,308
+S08,Division Street,Portland,2024,7,2024-07-01,264
+S09,Downtown Flagship,San Francisco,2024,7,2024-07-01,1045
+S10,Marina,San Francisco,2024,7,2024-07-01,616
+S11,Hayes Valley,San Francisco,2024,7,2024-07-01,484
+S12,SoMa,San Francisco,2024,7,2024-07-01,462
+S01,Capitol Hill,Seattle,2024,8,2024-08-01,509
+S02,Pike Place,Seattle,2024,8,2024-08-01,456
+S03,Fremont,Seattle,2024,8,2024-08-01,360
+S04,Ballard,Seattle,2024,8,2024-08-01,339
+S05,Pearl District,Portland,2024,8,2024-08-01,445
+S06,Hawthorne,Portland,2024,8,2024-08-01,392
+S07,Alberta Arts,Portland,2024,8,2024-08-01,297
+S08,Division Street,Portland,2024,8,2024-08-01,254
+S09,Downtown Flagship,San Francisco,2024,8,2024-08-01,1007
+S10,Marina,San Francisco,2024,8,2024-08-01,594
+S11,Hayes Valley,San Francisco,2024,8,2024-08-01,466
+S12,SoMa,San Francisco,2024,8,2024-08-01,445
+S01,Capitol Hill,Seattle,2024,9,2024-09-01,470
+S02,Pike Place,Seattle,2024,9,2024-09-01,421
+S03,Fremont,Seattle,2024,9,2024-09-01,333
+S04,Ballard,Seattle,2024,9,2024-09-01,314
+S05,Pearl District,Portland,2024,9,2024-09-01,412
+S06,Hawthorne,Portland,2024,9,2024-09-01,363
+S07,Alberta Arts,Portland,2024,9,2024-09-01,274
+S08,Division Street,Portland,2024,9,2024-09-01,235
+S09,Downtown Flagship,San Francisco,2024,9,2024-09-01,931
+S10,Marina,San Francisco,2024,9,2024-09-01,549
+S11,Hayes Valley,San Francisco,2024,9,2024-09-01,431
+S12,SoMa,San Francisco,2024,9,2024-09-01,412
+S01,Capitol Hill,Seattle,2024,10,2024-10-01,480
+S02,Pike Place,Seattle,2024,10,2024-10-01,430
+S03,Fremont,Seattle,2024,10,2024-10-01,340
+S04,Ballard,Seattle,2024,10,2024-10-01,320
+S05,Pearl District,Portland,2024,10,2024-10-01,420
+S06,Hawthorne,Portland,2024,10,2024-10-01,370
+S07,Alberta Arts,Portland,2024,10,2024-10-01,280
+S08,Division Street,Portland,2024,10,2024-10-01,240
+S09,Downtown Flagship,San Francisco,2024,10,2024-10-01,950
+S10,Marina,San Francisco,2024,10,2024-10-01,560
+S11,Hayes Valley,San Francisco,2024,10,2024-10-01,440
+S12,SoMa,San Francisco,2024,10,2024-10-01,420
+S01,Capitol Hill,Seattle,2024,11,2024-11-01,480
+S02,Pike Place,Seattle,2024,11,2024-11-01,430
+S03,Fremont,Seattle,2024,11,2024-11-01,340
+S04,Ballard,Seattle,2024,11,2024-11-01,320
+S05,Pearl District,Portland,2024,11,2024-11-01,420
+S06,Hawthorne,Portland,2024,11,2024-11-01,370
+S07,Alberta Arts,Portland,2024,11,2024-11-01,280
+S08,Division Street,Portland,2024,11,2024-11-01,240
+S09,Downtown Flagship,San Francisco,2024,11,2024-11-01,950
+S10,Marina,San Francisco,2024,11,2024-11-01,560
+S11,Hayes Valley,San Francisco,2024,11,2024-11-01,440
+S12,SoMa,San Francisco,2024,11,2024-11-01,420
+S01,Capitol Hill,Seattle,2024,12,2024-12-01,653
+S02,Pike Place,Seattle,2024,12,2024-12-01,585
+S03,Fremont,Seattle,2024,12,2024-12-01,462
+S04,Ballard,Seattle,2024,12,2024-12-01,435
+S05,Pearl District,Portland,2024,12,2024-12-01,571
+S06,Hawthorne,Portland,2024,12,2024-12-01,503
+S07,Alberta Arts,Portland,2024,12,2024-12-01,381
+S08,Division Street,Portland,2024,12,2024-12-01,326
+S09,Downtown Flagship,San Francisco,2024,12,2024-12-01,1292
+S10,Marina,San Francisco,2024,12,2024-12-01,762
+S11,Hayes Valley,San Francisco,2024,12,2024-12-01,598
+S12,SoMa,San Francisco,2024,12,2024-12-01,571

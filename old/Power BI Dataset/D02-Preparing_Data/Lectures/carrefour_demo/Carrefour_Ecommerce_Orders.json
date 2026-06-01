@@ -1,0 +1,1163 @@
+{
+  "orders": [
+    {
+      "orderID": "WEB-2024-00001",
+      "orderDate": "2024-10-02T12:25:00",
+      "customer": {
+        "customerID": "CF000133",
+        "name": "Alain Lefebvre",
+        "loyaltyTier": "Silver"
+      },
+      "shippingAddress": {
+        "street": "147 Rue des Lilas",
+        "city": "Strasbourg",
+        "postalCode": "37389",
+        "region": "Grand Est"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3560070404360",
+          "productName": "Pizza Surgelée 4 Fromages Carrefour",
+          "quantity": 1,
+          "unitPrice": 2.29,
+          "totalPrice": 2.29
+        },
+        {
+          "productEAN": "3014260115692",
+          "productName": "Dentifrice Colgate Total",
+          "quantity": 2,
+          "unitPrice": 2.39,
+          "totalPrice": 4.78
+        }
+      ],
+      "orderTotal": 15.14,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00002",
+      "orderDate": "2024-10-04T20:34:00",
+      "customer": {
+        "customerID": "CF000297",
+        "name": "Théo Laurent",
+        "loyaltyTier": "Silver"
+      },
+      "shippingAddress": {
+        "street": "138 Rue Jean Jaurès",
+        "city": "Mulhouse",
+        "postalCode": "19688",
+        "region": "Grand Est"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3045386371655",
+          "productName": "Bouilloire Moulinex Subito",
+          "quantity": 3,
+          "unitPrice": 29.99,
+          "totalPrice": 89.97
+        },
+        {
+          "productEAN": "3033490004606",
+          "productName": "Yaourt Nature Danone x12",
+          "quantity": 2,
+          "unitPrice": 2.99,
+          "totalPrice": 5.98
+        },
+        {
+          "productEAN": "3560070404360",
+          "productName": "Pizza Surgelée 4 Fromages Carrefour",
+          "quantity": 1,
+          "unitPrice": 2.29,
+          "totalPrice": 2.29
+        },
+        {
+          "productEAN": "8000500310427",
+          "productName": "Kinder Bueno x6",
+          "quantity": 2,
+          "unitPrice": 3.29,
+          "totalPrice": 6.58
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 2,
+          "unitPrice": 2.49,
+          "totalPrice": 4.98
+        }
+      ],
+      "orderTotal": 109.8,
+      "deliveryFee": 0.0,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00003",
+      "orderDate": "2024-10-07T20:17:00",
+      "customer": {
+        "customerID": "CF000055",
+        "name": "Chloé Martin",
+        "loyaltyTier": "Platinum"
+      },
+      "shippingAddress": {
+        "street": "38 Rue des Lilas",
+        "city": "Quimper",
+        "postalCode": "90795",
+        "region": "Bretagne"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 1,
+          "unitPrice": 2.49,
+          "totalPrice": 2.49
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 2,
+          "unitPrice": 2.49,
+          "totalPrice": 4.98
+        }
+      ],
+      "orderTotal": 7.47,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00004",
+      "orderDate": "2024-10-02T11:51:00",
+      "customer": {
+        "customerID": "CF000397",
+        "name": "Pierre Dubois",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "65 Rue Jean Jaurès",
+        "city": "Toulouse",
+        "postalCode": "65488",
+        "region": "Occitanie"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070824267",
+          "productName": "Beurre Doux Carrefour 250g",
+          "quantity": 3,
+          "unitPrice": 1.89,
+          "totalPrice": 5.67
+        }
+      ],
+      "orderTotal": 5.67,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00005",
+      "orderDate": "2024-10-01T11:54:00",
+      "customer": {
+        "customerID": "CF000267",
+        "name": "Lucas Roux",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "26 Rue des Lilas",
+        "city": "Pau",
+        "postalCode": "23868",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 1,
+          "unitPrice": 2.49,
+          "totalPrice": 2.49
+        }
+      ],
+      "orderTotal": 2.49,
+      "deliveryFee": 4.99,
+      "paymentMethod": "PayPal",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00006",
+      "orderDate": "2024-10-07T11:51:00",
+      "customer": {
+        "customerID": "CF000272",
+        "name": "Christophe Laurent",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "20 Rue Victor Hugo",
+        "city": "Grenoble",
+        "postalCode": "44699",
+        "region": "Auvergne-Rhône-Alpes"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070140084",
+          "productName": "Riz Basmati Carrefour 1kg",
+          "quantity": 2,
+          "unitPrice": 1.59,
+          "totalPrice": 3.18
+        }
+      ],
+      "orderTotal": 3.18,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00007",
+      "orderDate": "2024-10-01T15:54:00",
+      "customer": {
+        "customerID": "CF000055",
+        "name": "Chloé Martin",
+        "loyaltyTier": "Platinum"
+      },
+      "shippingAddress": {
+        "street": "21 Rue Pasteur",
+        "city": "Quimper",
+        "postalCode": "50982",
+        "region": "Bretagne"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3175681851849",
+          "productName": "Biscuits Prince Chocolat",
+          "quantity": 1,
+          "unitPrice": 1.89,
+          "totalPrice": 1.89
+        },
+        {
+          "productEAN": "3014260115692",
+          "productName": "Dentifrice Colgate Total",
+          "quantity": 1,
+          "unitPrice": 2.39,
+          "totalPrice": 2.39
+        },
+        {
+          "productEAN": "5410036301159",
+          "productName": "Lessive Dash Pods x30",
+          "quantity": 3,
+          "unitPrice": 9.99,
+          "totalPrice": 29.97
+        },
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 2,
+          "unitPrice": 2.69,
+          "totalPrice": 5.38
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 3,
+          "unitPrice": 1.49,
+          "totalPrice": 4.47
+        }
+      ],
+      "orderTotal": 44.1,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "En cours de livraison"
+    },
+    {
+      "orderID": "WEB-2024-00008",
+      "orderDate": "2024-10-06T11:11:00",
+      "customer": {
+        "customerID": "CF000480",
+        "name": "Julie Girard",
+        "loyaltyTier": "Gold"
+      },
+      "shippingAddress": {
+        "street": "9 Rue Jean Jaurès",
+        "city": "Toulon",
+        "postalCode": "23365",
+        "region": "Provence-Alpes-Côte d'Azur"
+      },
+      "deliverySlot": "Matin (8h-12h)",
+      "lineItems": [
+        {
+          "productEAN": "3033710074532",
+          "productName": "Camembert Président",
+          "quantity": 1,
+          "unitPrice": 2.19,
+          "totalPrice": 2.19
+        },
+        {
+          "productEAN": "3560070468850",
+          "productName": "Huile d'Olive Vierge Extra Carrefour",
+          "quantity": 3,
+          "unitPrice": 5.49,
+          "totalPrice": 16.47
+        },
+        {
+          "productEAN": "4015400507581",
+          "productName": "Couches Pampers Baby-Dry T4 x46",
+          "quantity": 3,
+          "unitPrice": 14.99,
+          "totalPrice": 44.97
+        },
+        {
+          "productEAN": "4015400507581",
+          "productName": "Couches Pampers Baby-Dry T4 x46",
+          "quantity": 3,
+          "unitPrice": 14.99,
+          "totalPrice": 44.97
+        },
+        {
+          "productEAN": "5410036301159",
+          "productName": "Lessive Dash Pods x30",
+          "quantity": 3,
+          "unitPrice": 9.99,
+          "totalPrice": 29.97
+        },
+        {
+          "productEAN": "7622300489434",
+          "productName": "Granola Cookies Chocolat",
+          "quantity": 2,
+          "unitPrice": 2.15,
+          "totalPrice": 4.3
+        }
+      ],
+      "orderTotal": 142.87,
+      "deliveryFee": 0.0,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "En cours de livraison"
+    },
+    {
+      "orderID": "WEB-2024-00009",
+      "orderDate": "2024-10-05T11:55:00",
+      "customer": {
+        "customerID": "CF000348",
+        "name": "Louise Lambert",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "20 Rue de la Paix",
+        "city": "Grenoble",
+        "postalCode": "67202",
+        "region": "Auvergne-Rhône-Alpes"
+      },
+      "deliverySlot": "Matin (8h-12h)",
+      "lineItems": [
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 3,
+          "unitPrice": 1.49,
+          "totalPrice": 4.47
+        },
+        {
+          "productEAN": "3256220122245",
+          "productName": "Lait Demi-Écrémé Lactel 1L",
+          "quantity": 2,
+          "unitPrice": 1.09,
+          "totalPrice": 2.18
+        }
+      ],
+      "orderTotal": 6.65,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00010",
+      "orderDate": "2024-10-04T11:47:00",
+      "customer": {
+        "customerID": "CF000263",
+        "name": "Nathalie Rousseau",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "106 Rue du Commerce",
+        "city": "Metz",
+        "postalCode": "13036",
+        "region": "Grand Est"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3560070976508",
+          "productName": "Confiture Fraises Bonne Maman",
+          "quantity": 2,
+          "unitPrice": 2.79,
+          "totalPrice": 5.58
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 3,
+          "unitPrice": 1.49,
+          "totalPrice": 4.47
+        },
+        {
+          "productEAN": "8076809513753",
+          "productName": "Sauce Tomate Barilla Basilico",
+          "quantity": 1,
+          "unitPrice": 1.69,
+          "totalPrice": 1.69
+        },
+        {
+          "productEAN": "3560070468850",
+          "productName": "Huile d'Olive Vierge Extra Carrefour",
+          "quantity": 3,
+          "unitPrice": 5.49,
+          "totalPrice": 16.47
+        }
+      ],
+      "orderTotal": 36.28,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Préparation"
+    },
+    {
+      "orderID": "WEB-2024-00011",
+      "orderDate": "2024-10-01T16:26:00",
+      "customer": {
+        "customerID": "CF000422",
+        "name": "Hugo Thomas",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "3 Rue Pasteur",
+        "city": "Marseille",
+        "postalCode": "18116",
+        "region": "Provence-Alpes-Côte d'Azur"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 1,
+          "unitPrice": 2.69,
+          "totalPrice": 2.69
+        },
+        {
+          "productEAN": "3038350011503",
+          "productName": "Pâtes Panzani Spaghetti 500g",
+          "quantity": 1,
+          "unitPrice": 0.99,
+          "totalPrice": 0.99
+        }
+      ],
+      "orderTotal": 3.68,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00012",
+      "orderDate": "2024-10-07T16:23:00",
+      "customer": {
+        "customerID": "CF000207",
+        "name": "Marie Martin",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "104 Rue Victor Hugo",
+        "city": "Toulon",
+        "postalCode": "43037",
+        "region": "Provence-Alpes-Côte d'Azur"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "7613035799790",
+          "productName": "Croquettes Friskies Chat 4kg",
+          "quantity": 2,
+          "unitPrice": 7.49,
+          "totalPrice": 14.98
+        },
+        {
+          "productEAN": "3073781069556",
+          "productName": "Jambon Le Bon Paris x4",
+          "quantity": 2,
+          "unitPrice": 2.69,
+          "totalPrice": 5.38
+        },
+        {
+          "productEAN": "3045386371655",
+          "productName": "Bouilloire Moulinex Subito",
+          "quantity": 3,
+          "unitPrice": 29.99,
+          "totalPrice": 89.97
+        },
+        {
+          "productEAN": "3600523497157",
+          "productName": "Shampooing Elseve L'Oréal",
+          "quantity": 1,
+          "unitPrice": 3.89,
+          "totalPrice": 3.89
+        }
+      ],
+      "orderTotal": 114.22,
+      "deliveryFee": 0.0,
+      "paymentMethod": "PayPal",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00013",
+      "orderDate": "2024-10-03T14:20:00",
+      "customer": {
+        "customerID": "CF000101",
+        "name": "François Girard",
+        "loyaltyTier": "Gold"
+      },
+      "shippingAddress": {
+        "street": "141 Rue du Commerce",
+        "city": "Rennes",
+        "postalCode": "22381",
+        "region": "Bretagne"
+      },
+      "deliverySlot": "Matin (8h-12h)",
+      "lineItems": [
+        {
+          "productEAN": "3045386371655",
+          "productName": "Bouilloire Moulinex Subito",
+          "quantity": 1,
+          "unitPrice": 29.99,
+          "totalPrice": 29.99
+        },
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 1,
+          "unitPrice": 2.69,
+          "totalPrice": 2.69
+        },
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 1,
+          "unitPrice": 2.69,
+          "totalPrice": 2.69
+        },
+        {
+          "productEAN": "3560070468850",
+          "productName": "Huile d'Olive Vierge Extra Carrefour",
+          "quantity": 1,
+          "unitPrice": 5.49,
+          "totalPrice": 5.49
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 3,
+          "unitPrice": 2.49,
+          "totalPrice": 7.47
+        }
+      ],
+      "orderTotal": 48.33,
+      "deliveryFee": 4.99,
+      "paymentMethod": "PayPal",
+      "status": "Préparation"
+    },
+    {
+      "orderID": "WEB-2024-00014",
+      "orderDate": "2024-10-07T13:33:00",
+      "customer": {
+        "customerID": "CF000249",
+        "name": "Raphaël Vincent",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "21 Rue du Commerce",
+        "city": "La Rochelle",
+        "postalCode": "40127",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "deliverySlot": "Matin (8h-12h)",
+      "lineItems": [
+        {
+          "productEAN": "3033710074532",
+          "productName": "Camembert Président",
+          "quantity": 2,
+          "unitPrice": 2.19,
+          "totalPrice": 4.38
+        },
+        {
+          "productEAN": "3576280147583",
+          "productName": "Poêlée de Légumes Bonduelle",
+          "quantity": 2,
+          "unitPrice": 2.89,
+          "totalPrice": 5.78
+        }
+      ],
+      "orderTotal": 10.16,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00015",
+      "orderDate": "2024-10-06T21:47:00",
+      "customer": {
+        "customerID": "CF000393",
+        "name": "Chloé Robert",
+        "loyaltyTier": "Gold"
+      },
+      "shippingAddress": {
+        "street": "109 Rue Victor Hugo",
+        "city": "Toulouse",
+        "postalCode": "23662",
+        "region": "Occitanie"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "4015400507581",
+          "productName": "Couches Pampers Baby-Dry T4 x46",
+          "quantity": 2,
+          "unitPrice": 14.99,
+          "totalPrice": 29.98
+        },
+        {
+          "productEAN": "3256220122245",
+          "productName": "Lait Demi-Écrémé Lactel 1L",
+          "quantity": 3,
+          "unitPrice": 1.09,
+          "totalPrice": 3.27
+        },
+        {
+          "productEAN": "3576280147583",
+          "productName": "Poêlée de Légumes Bonduelle",
+          "quantity": 3,
+          "unitPrice": 2.89,
+          "totalPrice": 8.67
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 1,
+          "unitPrice": 2.49,
+          "totalPrice": 2.49
+        },
+        {
+          "productEAN": "3033710074532",
+          "productName": "Camembert Président",
+          "quantity": 2,
+          "unitPrice": 2.19,
+          "totalPrice": 4.38
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 2,
+          "unitPrice": 1.49,
+          "totalPrice": 2.98
+        }
+      ],
+      "orderTotal": 51.77,
+      "deliveryFee": 0.0,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "En cours de livraison"
+    },
+    {
+      "orderID": "WEB-2024-00016",
+      "orderDate": "2024-10-01T13:32:00",
+      "customer": {
+        "customerID": "CF000274",
+        "name": "Céline Faure",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "122 Rue Pasteur",
+        "city": "Nantes",
+        "postalCode": "90580",
+        "region": "Pays de la Loire"
+      },
+      "deliverySlot": "Matin (8h-12h)",
+      "lineItems": [
+        {
+          "productEAN": "3256220122245",
+          "productName": "Lait Demi-Écrémé Lactel 1L",
+          "quantity": 2,
+          "unitPrice": 1.09,
+          "totalPrice": 2.18
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 2,
+          "unitPrice": 1.49,
+          "totalPrice": 2.98
+        },
+        {
+          "productEAN": "3576280147583",
+          "productName": "Poêlée de Légumes Bonduelle",
+          "quantity": 2,
+          "unitPrice": 2.89,
+          "totalPrice": 5.78
+        }
+      ],
+      "orderTotal": 10.94,
+      "deliveryFee": 4.99,
+      "paymentMethod": "PayPal",
+      "status": "En cours de livraison"
+    },
+    {
+      "orderID": "WEB-2024-00017",
+      "orderDate": "2024-10-05T12:36:00",
+      "customer": {
+        "customerID": "CF000110",
+        "name": "Raphaël Fournier",
+        "loyaltyTier": "Platinum"
+      },
+      "shippingAddress": {
+        "street": "95 Rue Jean Jaurès",
+        "city": "Tourcoing",
+        "postalCode": "80065",
+        "region": "Hauts-de-France"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3017620422003",
+          "productName": "Nutella 400g",
+          "quantity": 1,
+          "unitPrice": 3.49,
+          "totalPrice": 3.49
+        },
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 2,
+          "unitPrice": 2.69,
+          "totalPrice": 5.38
+        },
+        {
+          "productEAN": "3560070468850",
+          "productName": "Huile d'Olive Vierge Extra Carrefour",
+          "quantity": 1,
+          "unitPrice": 5.49,
+          "totalPrice": 5.49
+        },
+        {
+          "productEAN": "7613035799790",
+          "productName": "Croquettes Friskies Chat 4kg",
+          "quantity": 3,
+          "unitPrice": 7.49,
+          "totalPrice": 22.47
+        },
+        {
+          "productEAN": "3228857000166",
+          "productName": "Miel de Fleurs Lune de Miel",
+          "quantity": 1,
+          "unitPrice": 4.49,
+          "totalPrice": 4.49
+        }
+      ],
+      "orderTotal": 41.32,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "En cours de livraison"
+    },
+    {
+      "orderID": "WEB-2024-00018",
+      "orderDate": "2024-10-05T15:40:00",
+      "customer": {
+        "customerID": "CF000139",
+        "name": "Inès David",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "30 Rue Jean Jaurès",
+        "city": "Bordeaux",
+        "postalCode": "79582",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3073781069556",
+          "productName": "Jambon Le Bon Paris x4",
+          "quantity": 1,
+          "unitPrice": 2.69,
+          "totalPrice": 2.69
+        },
+        {
+          "productEAN": "7622300489434",
+          "productName": "Granola Cookies Chocolat",
+          "quantity": 3,
+          "unitPrice": 2.15,
+          "totalPrice": 6.45
+        }
+      ],
+      "orderTotal": 17.21,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Préparation"
+    },
+    {
+      "orderID": "WEB-2024-00019",
+      "orderDate": "2024-10-04T22:03:00",
+      "customer": {
+        "customerID": "CF000262",
+        "name": "Emma Michel",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "86 Rue Jean Jaurès",
+        "city": "Boulogne-Billancourt",
+        "postalCode": "12181",
+        "region": "Île-de-France"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "8000500310427",
+          "productName": "Kinder Bueno x6",
+          "quantity": 1,
+          "unitPrice": 3.29,
+          "totalPrice": 3.29
+        },
+        {
+          "productEAN": "3045386371655",
+          "productName": "Bouilloire Moulinex Subito",
+          "quantity": 2,
+          "unitPrice": 29.99,
+          "totalPrice": 59.98
+        },
+        {
+          "productEAN": "3560070976508",
+          "productName": "Confiture Fraises Bonne Maman",
+          "quantity": 3,
+          "unitPrice": 2.79,
+          "totalPrice": 8.37
+        },
+        {
+          "productEAN": "3073781069556",
+          "productName": "Jambon Le Bon Paris x4",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3017620422003",
+          "productName": "Nutella 400g",
+          "quantity": 3,
+          "unitPrice": 3.49,
+          "totalPrice": 10.47
+        },
+        {
+          "productEAN": "3256220122245",
+          "productName": "Lait Demi-Écrémé Lactel 1L",
+          "quantity": 3,
+          "unitPrice": 1.09,
+          "totalPrice": 3.27
+        }
+      ],
+      "orderTotal": 93.45,
+      "deliveryFee": 0.0,
+      "paymentMethod": "PayPal",
+      "status": "Préparation"
+    },
+    {
+      "orderID": "WEB-2024-00020",
+      "orderDate": "2024-10-02T10:23:00",
+      "customer": {
+        "customerID": "CF000049",
+        "name": "Sarah Thomas",
+        "loyaltyTier": "Silver"
+      },
+      "shippingAddress": {
+        "street": "30 Rue du Commerce",
+        "city": "Lomme",
+        "postalCode": "72537",
+        "region": "Hauts-de-France"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 2,
+          "unitPrice": 2.69,
+          "totalPrice": 5.38
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 3,
+          "unitPrice": 2.49,
+          "totalPrice": 7.47
+        },
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 1,
+          "unitPrice": 2.69,
+          "totalPrice": 2.69
+        }
+      ],
+      "orderTotal": 15.54,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Préparation"
+    },
+    {
+      "orderID": "WEB-2024-00021",
+      "orderDate": "2024-10-05T17:58:00",
+      "customer": {
+        "customerID": "CF000022",
+        "name": "Nathalie Petit",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "25 Rue Jean Jaurès",
+        "city": "Pau",
+        "postalCode": "17968",
+        "region": "Nouvelle-Aquitaine"
+      },
+      "deliverySlot": "Après-midi (14h-18h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070976508",
+          "productName": "Confiture Fraises Bonne Maman",
+          "quantity": 2,
+          "unitPrice": 2.79,
+          "totalPrice": 5.58
+        },
+        {
+          "productEAN": "3124480186805",
+          "productName": "Eau Evian 1.5L",
+          "quantity": 3,
+          "unitPrice": 0.69,
+          "totalPrice": 2.07
+        },
+        {
+          "productEAN": "5449000000996",
+          "productName": "Coca-Cola 1.5L",
+          "quantity": 2,
+          "unitPrice": 1.59,
+          "totalPrice": 3.18
+        },
+        {
+          "productEAN": "3179730009762",
+          "productName": "Jus d'Orange Tropicana 1L",
+          "quantity": 1,
+          "unitPrice": 2.49,
+          "totalPrice": 2.49
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 1,
+          "unitPrice": 1.49,
+          "totalPrice": 1.49
+        }
+      ],
+      "orderTotal": 14.81,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Bancaire",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00022",
+      "orderDate": "2024-10-05T18:50:00",
+      "customer": {
+        "customerID": "CF000495",
+        "name": "Maxime Vincent",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "44 Rue Pasteur",
+        "city": "Versailles",
+        "postalCode": "35897",
+        "region": "Île-de-France"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3560070541225",
+          "productName": "Café Moulu Carrefour 250g",
+          "quantity": 2,
+          "unitPrice": 2.69,
+          "totalPrice": 5.38
+        }
+      ],
+      "orderTotal": 5.38,
+      "deliveryFee": 4.99,
+      "paymentMethod": "PayPal",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00023",
+      "orderDate": "2024-10-07T15:13:00",
+      "customer": {
+        "customerID": "CF000164",
+        "name": "Antoine Lambert",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "45 Rue des Lilas",
+        "city": "Béziers",
+        "postalCode": "14399",
+        "region": "Occitanie"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "8076809513753",
+          "productName": "Sauce Tomate Barilla Basilico",
+          "quantity": 1,
+          "unitPrice": 1.69,
+          "totalPrice": 1.69
+        },
+        {
+          "productEAN": "3014260115692",
+          "productName": "Dentifrice Colgate Total",
+          "quantity": 2,
+          "unitPrice": 2.39,
+          "totalPrice": 4.78
+        },
+        {
+          "productEAN": "3017620422003",
+          "productName": "Nutella 400g",
+          "quantity": 3,
+          "unitPrice": 3.49,
+          "totalPrice": 10.47
+        },
+        {
+          "productEAN": "3059940003074",
+          "productName": "Liquide Vaisselle Paic Citron",
+          "quantity": 3,
+          "unitPrice": 1.49,
+          "totalPrice": 4.47
+        },
+        {
+          "productEAN": "3038350011503",
+          "productName": "Pâtes Panzani Spaghetti 500g",
+          "quantity": 1,
+          "unitPrice": 0.99,
+          "totalPrice": 0.99
+        }
+      ],
+      "orderTotal": 22.4,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00024",
+      "orderDate": "2024-10-07T11:34:00",
+      "customer": {
+        "customerID": "CF000261",
+        "name": "Nathalie Muller",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "143 Rue du Commerce",
+        "city": "Avignon",
+        "postalCode": "62739",
+        "region": "Provence-Alpes-Côte d'Azur"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3124480186805",
+          "productName": "Eau Evian 1.5L",
+          "quantity": 2,
+          "unitPrice": 0.69,
+          "totalPrice": 1.38
+        },
+        {
+          "productEAN": "7613035799790",
+          "productName": "Croquettes Friskies Chat 4kg",
+          "quantity": 1,
+          "unitPrice": 7.49,
+          "totalPrice": 7.49
+        }
+      ],
+      "orderTotal": 8.87,
+      "deliveryFee": 4.99,
+      "paymentMethod": "Carte Fidélité Points",
+      "status": "Livré"
+    },
+    {
+      "orderID": "WEB-2024-00025",
+      "orderDate": "2024-10-02T19:42:00",
+      "customer": {
+        "customerID": "CF000207",
+        "name": "Marie Martin",
+        "loyaltyTier": "Bronze"
+      },
+      "shippingAddress": {
+        "street": "98 Rue Victor Hugo",
+        "city": "Toulon",
+        "postalCode": "59791",
+        "region": "Provence-Alpes-Côte d'Azur"
+      },
+      "deliverySlot": "Soir (18h-21h)",
+      "lineItems": [
+        {
+          "productEAN": "3256220122245",
+          "productName": "Lait Demi-Écrémé Lactel 1L",
+          "quantity": 2,
+          "unitPrice": 1.09,
+          "totalPrice": 2.18
+        },
+        {
+          "productEAN": "5410076959839",
+          "productName": "Gel Douche Dove Original",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3073781069556",
+          "productName": "Jambon Le Bon Paris x4",
+          "quantity": 3,
+          "unitPrice": 2.69,
+          "totalPrice": 8.07
+        },
+        {
+          "productEAN": "3228857000166",
+          "productName": "Miel de Fleurs Lune de Miel",
+          "quantity": 1,
+          "unitPrice": 4.49,
+          "totalPrice": 4.49
+        }
+      ],
+      "orderTotal": 22.81,
+      "deliveryFee": 4.99,
+      "paymentMethod": "PayPal",
+      "status": "Préparation"
+    }
+  ]
+}

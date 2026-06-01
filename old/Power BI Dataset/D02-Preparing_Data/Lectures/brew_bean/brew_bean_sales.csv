@@ -1,0 +1,51 @@
+TransactionID,StoreID,StoreName,ProductName,Quantity,UnitPrice,TotalAmount,TransactionDate,PaymentMethod,CustomerID
+1001,1,Capitol Hill,Latte - Medium,2,4.50,9.00,2024-01-15,Card,1122
+1002,1,Capitol Hill,Cappuccino - Medium,1,4.75,4.75,2024-01-15,Cash,
+1003,2,Union Square,Espresso - Double,2,3.50,7.00,2024-01-15,Card,2201
+1004,3,SoMa,Latte - Medium,1,4.50,4.50,2024-01-16,Mobile,3301
+1005,1,capitol hill,Lattee - Med,1,4.50,N/A,2024-01-16,Card,
+1006,2,Union Sq,Cap - Med,2,4.75,9.50,15-01-2024,Cash,1122
+1007,3,SOMA,Espresso - Double,1,3.50,3.50,2024-01-17,Card,4521
+1008,4,Downtown,Americano - Large,2,4.25,8.50,2024-01-17,Mobile,
+1009,5,Pike Place,Mocha - Medium,1,5.25,5.25,2024/01/17,Card,5501
+1010,6,Fremont,Latte - Large,1,5.00,5.00,2024-01-18,Cash,
+1011,1,Capitol Hill,Capu - M,1,4.75,TBD,2024-01-18,Card,6601
+1012,2,union square,Expresso - Dbl,2,3.50,7.00,Jan 15 2024,Mobile,
+1013,3,Soma,Cold Brew - Medium,1,4.00,4.00,2024-01-19,Card,2201
+1014,4,Downtown,Latte - Medium,2,4.50,9.00,2024-01-19,Cash,7701
+1015,5,Pike Place,Flat White,1,4.75,4.75,2024-01-20,Card,
+1016,6,Fremont,Cappuccino - Large,1,5.25,5.25,2024/01/20,Mobile,8801
+1017,7,Ballard,Latte - Small,2,4.00,8.00,2024-01-20,Cash,
+1018,8,Green Lake,Americano - Medium,1,3.75,3.75,2024-01-21,Card,9901
+1019,9,University District,Mocha - Large,1,5.75,5.75,2024-01-21,Mobile,
+1020,10,Beacon Hill,Espresso - Single,2,2.75,5.50,21-01-2024,Cash,1122
+1021,11,West Seattle,Latte - Medium,1,4.50,4.50,2024-01-22,Card,
+1022,12,Columbia City,Cappuccino - Medium,2,4.75,9.50,2024-01-22,Mobile,2201
+1023,1,capitol Hill,Hot Chocolate - Medium,1,4.25,N/A,Jan 22 2024,Cash,
+1024,2,Union Square,Chai Latte - Medium,1,4.50,4.50,2024-01-23,Card,3301
+1025,3,SoMa,Matcha Latte - Medium,2,5.00,10.00,2024-01-23,Mobile,
+1026,4,Downtown,Latte - Medium,1,4.50,4.50,2024/01/24,Cash,4521
+1027,5,Pike Place,Cap - Med,1,4.75,4.75,2024-01-24,Card,
+1028,6,Fremont,Espresso - Double,2,3.50,7.00,2024-01-25,Mobile,5501
+1029,7,Ballard,Lattee - Med,1,4.50,TBD,2024-01-25,Cash,
+1030,8,Green Lake,Cappuccino - Small,1,4.25,4.25,25-01-2024,Card,6601
+1031,9,University District,Americano - Small,2,3.25,6.50,2024-01-26,Mobile,
+1032,10,Beacon Hill,Latte - Large,1,5.00,5.00,2024-01-26,Cash,7701
+1033,11,West Seattle,Mocha - Medium,1,5.25,5.25,Jan 26 2024,Card,
+1034,12,Columbia City,Cold Brew - Large,2,4.50,9.00,2024-01-27,Mobile,8801
+1035,1,Capitol Hill,Expresso - Dbl,1,3.50,3.50,2024-01-27,Cash,
+1036,2,union Square,Flat White,1,4.75,N/A,2024/01/28,Card,9901
+1037,3,SOMA,Capu - M,2,4.75,9.50,2024-01-28,Mobile,
+1038,4,Downtown,Latte - Medium,1,4.50,4.50,2024-01-29,Cash,1122
+1039,5,Pike Place,Drip Coffee - Medium,2,2.75,5.50,2024-01-29,Card,
+1040,6,Fremont,Cappuccino - Medium,1,4.75,4.75,29-01-2024,Mobile,2201
+1041,7,Ballard,Espresso - Double,2,3.50,7.00,2024-01-30,Cash,
+1042,8,Green Lake,Latte - Medium,1,4.50,4.50,2024-01-30,Card,3301
+1043,9,University District,Hot Tea - Medium,1,3.00,3.00,Jan 30 2024,Mobile,
+1044,10,Beacon Hill,Americano - Large,2,4.25,8.50,2024-01-31,Cash,
+1045,11,West Seattle,Lattee - Med,1,4.50,TBD,2024-01-31,Card,4521
+1046,12,Columbia City,Cappuccino - Large,1,5.25,5.25,2024/01/31,Mobile,5501
+1047,1,Capitol Hill,Mocha - Small,2,4.75,9.50,2024-02-01,Cash,
+1048,2,Union Sq,Latte - Medium,1,4.50,4.50,2024-02-01,Card,6601
+1049,3,Soma,Cold Brew - Medium,1,4.00,4.00,2024-02-02,Mobile,
+1050,4,Downtown,Cap - Med,2,4.75,N/A,01-02-2024,Cash,7701

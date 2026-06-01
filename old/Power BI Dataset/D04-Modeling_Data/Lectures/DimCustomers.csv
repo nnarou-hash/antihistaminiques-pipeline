@@ -1,0 +1,501 @@
+CustomerKey,FirstName,LastName,Email,Phone,City,LoyaltyTier,SignupDate
+1,Dominic,Anderson,,415-555-9935,Seattle,Bronze,2020-05-31
+2,Emily,Ramos,emily.ramos@email.com,415-555-4257,Portland,Bronze,2020-05-21
+3,Wesley,Wood,wesley.wood@email.com,206-555-3615,San Francisco,Bronze,2021-09-05
+4,Clara,Diaz,clara.diaz@email.com,,Seattle,Bronze,2023-06-11
+5,Elizabeth,Rivera,,206-555-7201,San Francisco,Silver,2023-09-08
+6,Abigail,Peterson,abigail.peterson@email.com,415-555-2139,Seattle,Silver,2024-02-16
+7,Oliver,James,oliver.james@email.com,503-555-5554,Seattle,Bronze,2019-08-11
+8,Adeline,Brooks,adeline.brooks@email.com,415-555-2169,San Francisco,Bronze,2021-02-25
+9,Carson,Brooks,carson.brooks@email.com,415-555-4598,Seattle,Silver,2020-01-29
+10,Jose,Adams,jose.adams@email.com,503-555-5386,San Francisco,Gold,2020-06-12
+11,Harper,Ramirez,harper.ramirez@email.com,503-555-8517,San Francisco,Silver,2023-03-10
+12,Chloe,King,chloe.king@email.com,415-555-7543,Seattle,Silver,2022-03-08
+13,Skylar,Lewis,,,San Francisco,Bronze,2021-12-05
+14,Avery,Martin,avery.martin@email.com,415-555-8668,Portland,Gold,2021-07-12
+15,Cooper,Allen,cooper.allen@email.com,415-555-5371,San Francisco,Gold,2019-03-24
+16,Katherine,Chavez,katherine.chavez@email.com,415-555-5315,Seattle,Bronze,2020-01-18
+17,Alice,Ross,alice.ross@email.com,415-555-4258,Seattle,Gold,2024-01-16
+18,Joseph,Mitchell,joseph.mitchell@email.com,415-555-6310,San Francisco,Silver,2023-07-12
+19,Hunter,Williams,hunter.williams@email.com,206-555-2290,Seattle,Bronze,2023-10-29
+20,Alexander,Sanders,alexander.sanders@email.com,415-555-8787,Portland,Bronze,2023-06-05
+21,Nevaeh,Perez,nevaeh.perez@email.com,415-555-4295,Seattle,Gold,2021-07-14
+22,Reagan,Flores,reagan.flores@email.com,206-555-5061,Portland,Silver,2021-04-03
+23,Grayson,Rodriguez,grayson.rodriguez@email.com,,Seattle,Silver,2020-06-14
+24,Jace,Watson,jace.watson@email.com,,Seattle,Bronze,2019-05-04
+25,Lillian,Scott,lillian.scott@email.com,415-555-8744,San Francisco,Bronze,2019-11-26
+26,Addison,Powell,,503-555-7735,Portland,Bronze,2019-09-10
+27,Colton,Sanders,,503-555-2790,Seattle,Silver,2022-10-14
+28,Gabriel,Harris,gabriel.harris@email.com,206-555-8260,Seattle,Bronze,2021-07-12
+29,Nevaeh,Gonzalez,,,Seattle,Platinum,2023-11-07
+30,Isla,Walker,isla.walker@email.com,206-555-7209,Seattle,Silver,2020-05-11
+31,Emma,Roberts,emma.roberts@email.com,415-555-8973,Seattle,Gold,2021-09-17
+32,Joseph,Harris,joseph.harris@email.com,,Seattle,Platinum,2022-05-30
+33,Aurora,Davis,aurora.davis@email.com,415-555-2312,Seattle,Silver,2024-04-25
+34,Matthew,Rodriguez,matthew.rodriguez@email.com,415-555-5033,Portland,Silver,2020-06-24
+35,Willow,Kim,willow.kim@email.com,503-555-4346,Seattle,Bronze,2022-11-06
+36,Xavier,Alvarez,xavier.alvarez@email.com,503-555-2188,Seattle,Bronze,2019-11-24
+37,Olivia,Collins,,503-555-3170,Portland,Silver,2019-09-21
+38,Isaiah,Rodriguez,isaiah.rodriguez@email.com,503-555-9666,San Francisco,Bronze,2020-01-18
+39,Olivia,Bennett,,503-555-2891,San Francisco,Bronze,2022-11-18
+40,Daniel,Myers,daniel.myers@email.com,415-555-5325,Portland,Bronze,2022-07-21
+41,Santiago,Morales,,503-555-1722,Seattle,Gold,2019-06-13
+42,Emma,Nelson,emma.nelson@email.com,415-555-8007,San Francisco,Silver,2020-08-18
+43,Connor,Johnson,connor.johnson@email.com,503-555-3426,Seattle,Platinum,2023-01-14
+44,Maya,Taylor,maya.taylor@email.com,503-555-4441,Seattle,Bronze,2024-05-23
+45,Valentina,Young,valentina.young@email.com,415-555-3532,San Francisco,Bronze,2022-04-20
+46,Lillian,Lee,lillian.lee@email.com,503-555-7745,San Francisco,Gold,2024-02-08
+47,Xavier,Patel,xavier.patel@email.com,206-555-8711,San Francisco,Bronze,2023-07-30
+48,Camila,Sanchez,camila.sanchez@email.com,206-555-1387,San Francisco,Silver,2020-11-15
+49,Gianna,Harris,gianna.harris@email.com,415-555-9346,Portland,Bronze,2019-07-21
+50,Genesis,Gray,,503-555-3925,San Francisco,Silver,2024-06-05
+51,Willow,King,willow.king@email.com,415-555-9379,Seattle,Silver,2021-02-05
+52,Michael,Roberts,michael.roberts@email.com,,San Francisco,Bronze,2019-05-30
+53,Jeremiah,Mendoza,jeremiah.mendoza@email.com,415-555-6409,San Francisco,Silver,2022-12-03
+54,Leonardo,Green,leonardo.green@email.com,503-555-6344,San Francisco,Bronze,2024-03-17
+55,Adrian,Hughes,adrian.hughes@email.com,415-555-3851,Seattle,Bronze,2021-07-09
+56,Jaxson,Reed,jaxson.reed@email.com,415-555-6279,Seattle,Silver,2019-03-01
+57,Colton,Cruz,colton.cruz@email.com,415-555-3780,Portland,Bronze,2021-10-25
+58,Gianna,Hernandez,gianna.hernandez@email.com,206-555-6085,Seattle,Silver,2022-08-20
+59,Grayson,Sanchez,grayson.sanchez@email.com,503-555-7790,Seattle,Bronze,2021-10-29
+60,Nicholas,Kelly,nicholas.kelly@email.com,415-555-1090,Seattle,Silver,2021-12-07
+61,Isla,Foster,isla.foster@email.com,415-555-8611,San Francisco,Gold,2020-05-22
+62,Charlotte,Bailey,,415-555-6198,Seattle,Gold,2021-09-20
+63,Waylon,Cruz,waylon.cruz@email.com,503-555-3607,Portland,Silver,2021-12-28
+64,Delilah,Stewart,delilah.stewart@email.com,415-555-8939,Portland,Gold,2023-11-15
+65,Arianna,Walker,arianna.walker@email.com,415-555-2320,Seattle,Bronze,2020-10-06
+66,Aiden,Martin,aiden.martin@email.com,503-555-9890,Seattle,Silver,2023-02-14
+67,Colton,Turner,colton.turner@email.com,415-555-1320,Seattle,Gold,2021-05-06
+68,Weston,Kelly,weston.kelly@email.com,503-555-9818,Portland,Bronze,2021-02-18
+69,Declan,Patel,declan.patel@email.com,503-555-1475,Portland,Silver,2020-05-25
+70,Caleb,Baker,caleb.baker@email.com,206-555-9751,San Francisco,Gold,2023-03-23
+71,Sophia,Gomez,sophia.gomez@email.com,503-555-3977,Portland,Silver,2019-08-19
+72,Charlotte,King,charlotte.king@email.com,503-555-7906,Portland,Bronze,2020-12-29
+73,Aubrey,Hernandez,aubrey.hernandez@email.com,415-555-2124,Portland,Silver,2019-06-15
+74,Melanie,Garcia,melanie.garcia@email.com,206-555-3068,San Francisco,Platinum,2020-04-12
+75,Luca,Bennett,luca.bennett@email.com,206-555-2876,Seattle,Platinum,2021-10-08
+76,John,Flores,john.flores@email.com,503-555-7498,Seattle,Bronze,2020-11-28
+77,Wesley,Sanchez,wesley.sanchez@email.com,503-555-2983,Seattle,Silver,2022-09-05
+78,Ruby,Powell,ruby.powell@email.com,503-555-1207,Seattle,Silver,2022-11-14
+79,Eli,Morales,eli.morales@email.com,206-555-8135,Seattle,Platinum,2022-09-22
+80,Wyatt,Sanders,wyatt.sanders@email.com,503-555-8616,Portland,Silver,2022-08-13
+81,Christian,Sanders,christian.sanders@email.com,,Portland,Bronze,2020-07-15
+82,Cameron,Young,cameron.young@email.com,,San Francisco,Silver,2022-11-28
+83,Jaxon,White,jaxon.white@email.com,415-555-5526,Portland,Bronze,2020-08-11
+84,Piper,Johnson,piper.johnson@email.com,206-555-8800,Portland,Bronze,2020-07-07
+85,Austin,Alvarez,austin.alvarez@email.com,206-555-6016,Portland,Gold,2019-09-07
+86,Brooks,Howard,brooks.howard@email.com,503-555-6764,Portland,Silver,2021-02-02
+87,Adam,Collins,adam.collins@email.com,415-555-9779,Seattle,Bronze,2019-11-03
+88,Weston,Ruiz,weston.ruiz@email.com,415-555-5636,Seattle,Bronze,2021-11-16
+89,Jack,Harris,,503-555-1745,Seattle,Bronze,2020-11-09
+90,Elijah,Peterson,elijah.peterson@email.com,206-555-5658,Seattle,Platinum,2022-09-27
+91,Ariana,Morris,ariana.morris@email.com,206-555-2070,Portland,Bronze,2019-06-14
+92,Genesis,Morales,genesis.morales@email.com,503-555-2395,Seattle,Silver,2019-06-18
+93,Gabriel,Thomas,gabriel.thomas@email.com,415-555-7232,Portland,Bronze,2022-07-03
+94,Cameron,Cruz,cameron.cruz@email.com,415-555-2625,Seattle,Silver,2021-07-26
+95,Weston,Clark,weston.clark@email.com,206-555-3564,Portland,Bronze,2019-08-14
+96,Emma,Evans,,503-555-8438,Portland,Silver,2020-10-17
+97,Evelyn,Mendoza,evelyn.mendoza@email.com,206-555-7965,Seattle,Bronze,2023-08-07
+98,Michael,Cooper,michael.cooper@email.com,,Seattle,Bronze,2020-08-26
+99,Aria,Flores,aria.flores@email.com,415-555-5982,Portland,Gold,2024-04-29
+100,Adam,Phillips,adam.phillips@email.com,503-555-6280,San Francisco,Silver,2021-12-06
+101,Kaylee,Allen,kaylee.allen@email.com,206-555-5415,Seattle,Bronze,2022-12-10
+102,Robert,Garcia,robert.garcia@email.com,206-555-8141,San Francisco,Bronze,2022-01-26
+103,Eliana,Morales,eliana.morales@email.com,206-555-6403,San Francisco,Silver,2021-06-14
+104,Miles,Ruiz,miles.ruiz@email.com,503-555-2442,Portland,Silver,2021-05-29
+105,Aurora,Allen,aurora.allen@email.com,206-555-9889,Seattle,Platinum,2021-06-05
+106,Alexa,Evans,alexa.evans@email.com,206-555-4335,Seattle,Silver,2022-08-27
+107,Stella,Peterson,stella.peterson@email.com,415-555-4920,Seattle,Bronze,2024-02-06
+108,Jace,Lee,,206-555-8560,Seattle,Bronze,2021-06-13
+109,Ella,Chavez,ella.chavez@email.com,503-555-8905,San Francisco,Silver,2023-03-07
+110,Ariana,Young,ariana.young@email.com,206-555-2143,Portland,Bronze,2020-03-25
+111,Natalie,Foster,natalie.foster@email.com,206-555-5634,San Francisco,Bronze,2024-05-26
+112,Kayden,Hill,kayden.hill@email.com,415-555-8935,San Francisco,Silver,2022-11-11
+113,Bella,Nelson,bella.nelson@email.com,415-555-4912,Portland,Silver,2021-09-18
+114,Serenity,Roberts,serenity.roberts@email.com,503-555-7325,Seattle,Gold,2019-05-29
+115,Brooks,Wood,,503-555-2644,San Francisco,Silver,2019-05-15
+116,Sarah,Gonzalez,,206-555-2225,Portland,Silver,2023-03-19
+117,Ariana,Powell,ariana.powell@email.com,,San Francisco,Bronze,2023-01-17
+118,Audrey,Gray,audrey.gray@email.com,503-555-9864,San Francisco,Bronze,2020-12-08
+119,Lucas,Richardson,lucas.richardson@email.com,206-555-8110,Seattle,Silver,2024-04-29
+120,Jack,Ross,jack.ross@email.com,206-555-1753,Portland,Gold,2021-08-25
+121,Jaxon,Davis,jaxon.davis@email.com,415-555-3950,Seattle,Bronze,2019-12-24
+122,David,Thompson,david.thompson@email.com,415-555-3344,Seattle,Gold,2022-08-21
+123,Leo,Reyes,,503-555-9955,Portland,Silver,2022-11-25
+124,Riley,Martinez,riley.martinez@email.com,415-555-5097,Portland,Bronze,2022-06-16
+125,Adeline,Hill,,503-555-5847,Seattle,Bronze,2021-11-14
+126,Adam,Nguyen,adam.nguyen@email.com,415-555-1803,Seattle,Gold,2021-05-19
+127,Carson,Myers,carson.myers@email.com,503-555-4588,Portland,Gold,2020-10-07
+128,Eliana,Harris,eliana.harris@email.com,206-555-2591,Portland,Silver,2023-03-16
+129,Arianna,Chavez,arianna.chavez@email.com,206-555-5835,Seattle,Gold,2019-05-08
+130,Jaxon,Myers,jaxon.myers@email.com,415-555-9221,Portland,Bronze,2023-07-28
+131,Anthony,Perez,anthony.perez@email.com,503-555-2886,Seattle,Gold,2021-11-11
+132,Colton,Martinez,colton.martinez@email.com,503-555-6992,Seattle,Platinum,2023-12-26
+133,Sebastian,Gomez,sebastian.gomez@email.com,503-555-7242,Seattle,Silver,2021-09-17
+134,Dominic,Mitchell,dominic.mitchell@email.com,503-555-4626,Seattle,Bronze,2019-04-21
+135,Austin,Rodriguez,austin.rodriguez@email.com,206-555-1742,Portland,Silver,2023-02-03
+136,Lucas,Hill,lucas.hill@email.com,503-555-7078,San Francisco,Bronze,2020-06-23
+137,Xavier,Myers,xavier.myers@email.com,503-555-2622,San Francisco,Silver,2022-06-15
+138,Hunter,Ward,hunter.ward@email.com,503-555-4868,Portland,Platinum,2019-05-07
+139,Skylar,Gonzalez,skylar.gonzalez@email.com,503-555-5520,San Francisco,Bronze,2024-03-20
+140,Zoey,Thomas,zoey.thomas@email.com,415-555-1349,San Francisco,Gold,2019-09-04
+141,Charlotte,Powell,charlotte.powell@email.com,,Seattle,Platinum,2023-07-29
+142,Weston,Peterson,weston.peterson@email.com,415-555-1046,Seattle,Bronze,2024-01-15
+143,Natalie,Jackson,natalie.jackson@email.com,206-555-3159,San Francisco,Silver,2023-08-22
+144,Noah,Rivera,,206-555-7897,San Francisco,Bronze,2020-12-23
+145,Emilia,Anderson,emilia.anderson@email.com,503-555-9254,San Francisco,Silver,2023-07-11
+146,Camila,Ward,camila.ward@email.com,415-555-1510,Seattle,Gold,2024-01-09
+147,James,Morris,james.morris@email.com,206-555-2323,San Francisco,Bronze,2019-10-08
+148,Savannah,Cox,savannah.cox@email.com,503-555-7240,Seattle,Bronze,2022-08-30
+149,Cora,Ortiz,,415-555-4522,Seattle,Silver,2021-07-29
+150,Maya,Edwards,maya.edwards@email.com,206-555-6120,San Francisco,Bronze,2023-10-20
+151,Nolan,Green,nolan.green@email.com,206-555-2398,San Francisco,Bronze,2020-01-07
+152,Sebastian,Parker,,,Seattle,Silver,2023-09-18
+153,Connor,Bailey,connor.bailey@email.com,503-555-1842,Seattle,Bronze,2021-02-22
+154,Dylan,Kim,dylan.kim@email.com,206-555-2773,Seattle,Bronze,2022-01-03
+155,Isaiah,Bailey,isaiah.bailey@email.com,415-555-1430,Portland,Gold,2022-05-19
+156,Carson,James,carson.james@email.com,503-555-6751,San Francisco,Bronze,2020-03-04
+157,Liam,White,,206-555-2503,San Francisco,Silver,2021-05-29
+158,Declan,Ortiz,declan.ortiz@email.com,503-555-2391,Seattle,Bronze,2021-01-27
+159,Elijah,Martin,,503-555-8957,Seattle,Silver,2022-12-10
+160,Carson,Cruz,,503-555-8972,Portland,Bronze,2022-01-13
+161,Emilia,Bennett,,206-555-3248,Seattle,Bronze,2022-07-10
+162,Weston,Allen,weston.allen@email.com,503-555-9725,Seattle,Bronze,2021-12-13
+163,Vivian,Robinson,vivian.robinson@email.com,415-555-1693,Portland,Gold,2023-09-07
+164,Christian,Williams,christian.williams@email.com,415-555-7843,Portland,Bronze,2020-12-01
+165,Leah,Anderson,leah.anderson@email.com,415-555-6928,Portland,Platinum,2020-02-15
+166,Emily,Parker,emily.parker@email.com,,San Francisco,Bronze,2022-06-19
+167,Charles,Myers,,415-555-9355,Seattle,Bronze,2020-02-08
+168,Luke,Jimenez,luke.jimenez@email.com,206-555-3399,Seattle,Silver,2023-10-03
+169,Isaac,Sanchez,isaac.sanchez@email.com,415-555-9095,Seattle,Bronze,2023-06-02
+170,Alexa,Long,alexa.long@email.com,415-555-6295,Portland,Silver,2022-12-24
+171,Arianna,Green,arianna.green@email.com,415-555-1920,Seattle,Bronze,2021-08-22
+172,Claire,Cook,,206-555-2479,Seattle,Silver,2019-05-17
+173,Jaxson,Kim,jaxson.kim@email.com,206-555-8368,Portland,Silver,2022-04-09
+174,Serenity,Wood,serenity.wood@email.com,,Seattle,Silver,2021-12-21
+175,Sofia,Baker,sofia.baker@email.com,503-555-8199,San Francisco,Bronze,2022-10-14
+176,Emilia,Gutierrez,emilia.gutierrez@email.com,503-555-1857,Portland,Bronze,2024-04-22
+177,Nicholas,Chavez,nicholas.chavez@email.com,415-555-3463,Seattle,Bronze,2022-04-16
+178,Maverick,Hernandez,maverick.hernandez@email.com,415-555-7421,Portland,Bronze,2021-02-14
+179,Jackson,Kim,jackson.kim@email.com,206-555-9624,San Francisco,Bronze,2022-04-18
+180,Sebastian,Chavez,sebastian.chavez@email.com,206-555-6598,San Francisco,Silver,2019-04-07
+181,Katherine,Morales,,206-555-9317,Seattle,Platinum,2020-01-12
+182,Quinn,Patel,quinn.patel@email.com,415-555-7172,San Francisco,Bronze,2021-01-18
+183,Joseph,Lee,joseph.lee@email.com,503-555-1715,Seattle,Silver,2022-08-31
+184,Miles,Campbell,miles.campbell@email.com,503-555-4833,San Francisco,Bronze,2021-08-26
+185,Autumn,Walker,autumn.walker@email.com,415-555-8218,Seattle,Gold,2021-10-16
+186,Alexa,Foster,alexa.foster@email.com,206-555-3267,Seattle,Bronze,2022-02-13
+187,Aubrey,Miller,aubrey.miller@email.com,415-555-3042,Portland,Gold,2022-04-09
+188,Zoe,Hernandez,zoe.hernandez@email.com,206-555-4637,San Francisco,Bronze,2024-03-28
+189,Cameron,Hall,cameron.hall@email.com,206-555-7142,San Francisco,Bronze,2021-05-20
+190,Grayson,Brown,grayson.brown@email.com,206-555-1627,Seattle,Bronze,2023-03-03
+191,Dylan,Stewart,dylan.stewart@email.com,206-555-1311,San Francisco,Bronze,2023-02-12
+192,Isaac,Ramirez,isaac.ramirez@email.com,503-555-4893,San Francisco,Silver,2023-03-29
+193,Thomas,Thomas,thomas.thomas@email.com,,Seattle,Bronze,2023-08-12
+194,Jonathan,Kim,jonathan.kim@email.com,503-555-1025,Portland,Silver,2022-05-21
+195,Jaxson,Rivera,jaxson.rivera@email.com,503-555-2108,Seattle,Bronze,2022-11-20
+196,Emilia,Cooper,,206-555-7338,Portland,Platinum,2022-04-08
+197,Joshua,Allen,joshua.allen@email.com,415-555-2698,San Francisco,Bronze,2019-07-17
+198,Willow,Patel,willow.patel@email.com,206-555-8612,San Francisco,Bronze,2021-02-19
+199,Clara,Morris,clara.morris@email.com,206-555-5807,Portland,Gold,2019-07-08
+200,Asher,Garcia,asher.garcia@email.com,415-555-8756,San Francisco,Gold,2020-12-06
+201,Aubrey,Jones,aubrey.jones@email.com,,San Francisco,Bronze,2021-03-01
+202,Everett,Nelson,everett.nelson@email.com,503-555-6554,Seattle,Gold,2021-08-11
+203,Matthew,Murphy,matthew.murphy@email.com,415-555-7955,San Francisco,Bronze,2023-08-19
+204,Abigail,Parker,abigail.parker@email.com,503-555-5843,Portland,Gold,2022-03-22
+205,Violet,Edwards,violet.edwards@email.com,415-555-6776,Portland,Bronze,2023-01-11
+206,Jaxson,Parker,,503-555-6952,Seattle,Platinum,2024-06-23
+207,Axel,Myers,axel.myers@email.com,503-555-1570,San Francisco,Platinum,2019-12-18
+208,Scarlett,Rodriguez,scarlett.rodriguez@email.com,415-555-3513,Seattle,Silver,2021-03-11
+209,Kai,Edwards,,503-555-7521,San Francisco,Bronze,2023-06-10
+210,Aurora,Wood,aurora.wood@email.com,503-555-2929,Seattle,Platinum,2019-04-23
+211,Lincoln,Jimenez,lincoln.jimenez@email.com,503-555-4279,Seattle,Bronze,2022-08-05
+212,Owen,Moore,owen.moore@email.com,415-555-6236,San Francisco,Silver,2024-03-14
+213,Isabelle,Hall,isabelle.hall@email.com,415-555-3852,San Francisco,Silver,2020-10-15
+214,Skylar,Rogers,,206-555-6912,Seattle,Platinum,2023-08-09
+215,Roman,Kelly,,206-555-6067,Portland,Gold,2022-04-03
+216,Ryan,Alvarez,ryan.alvarez@email.com,206-555-6194,San Francisco,Silver,2023-06-23
+217,Peyton,Martinez,,415-555-3981,Portland,Silver,2021-02-03
+218,Katherine,Taylor,katherine.taylor@email.com,503-555-3697,Portland,Gold,2019-06-22
+219,John,Adams,john.adams@email.com,206-555-5105,San Francisco,Bronze,2024-06-22
+220,Penelope,Brooks,penelope.brooks@email.com,415-555-3762,San Francisco,Bronze,2022-09-01
+221,Jordan,Howard,jordan.howard@email.com,415-555-1674,Seattle,Silver,2023-03-15
+222,Mason,Hernandez,mason.hernandez@email.com,415-555-7825,Seattle,Silver,2022-05-25
+223,Aubree,Brooks,aubree.brooks@email.com,503-555-5012,Seattle,Gold,2022-03-22
+224,Jose,Phillips,jose.phillips@email.com,503-555-4342,Seattle,Bronze,2019-07-01
+225,Josiah,Cox,josiah.cox@email.com,503-555-3142,Seattle,Gold,2020-12-13
+226,Rylee,Mitchell,rylee.mitchell@email.com,206-555-3308,Portland,Bronze,2020-07-08
+227,Elizabeth,Miller,elizabeth.miller@email.com,206-555-6364,Seattle,Bronze,2022-08-12
+228,Robert,Castillo,robert.castillo@email.com,503-555-9148,Seattle,Gold,2021-12-15
+229,Ethan,Lopez,ethan.lopez@email.com,206-555-5609,San Francisco,Silver,2020-07-06
+230,Naomi,Kim,naomi.kim@email.com,,San Francisco,Silver,2021-10-19
+231,Daniel,Parker,daniel.parker@email.com,503-555-1838,Seattle,Bronze,2021-03-19
+232,Jameson,Bailey,jameson.bailey@email.com,415-555-5582,Seattle,Silver,2019-07-29
+233,Leonardo,Mendoza,leonardo.mendoza@email.com,503-555-6990,Portland,Bronze,2019-09-15
+234,Waylon,Jackson,,,Seattle,Silver,2021-12-19
+235,Reagan,Nelson,reagan.nelson@email.com,503-555-6218,San Francisco,Silver,2019-12-31
+236,John,Gomez,john.gomez@email.com,415-555-9721,San Francisco,Silver,2020-11-02
+237,Hunter,Price,hunter.price@email.com,503-555-6040,Portland,Silver,2019-04-04
+238,Kayden,Ruiz,kayden.ruiz@email.com,415-555-4728,Portland,Silver,2020-08-25
+239,Mackenzie,Miller,mackenzie.miller@email.com,503-555-3421,Portland,Bronze,2022-09-09
+240,Isabella,Kelly,isabella.kelly@email.com,503-555-4340,San Francisco,Bronze,2019-04-08
+241,Miles,Cook,miles.cook@email.com,415-555-3262,San Francisco,Gold,2024-01-21
+242,Eva,Clark,eva.clark@email.com,206-555-8531,Portland,Platinum,2021-11-04
+243,Autumn,Baker,autumn.baker@email.com,415-555-5331,Portland,Silver,2024-01-10
+244,Lydia,Morris,lydia.morris@email.com,503-555-5735,Seattle,Bronze,2022-04-16
+245,Vivian,Clark,vivian.clark@email.com,415-555-5480,San Francisco,Silver,2021-11-07
+246,Dylan,Thomas,dylan.thomas@email.com,206-555-5758,Portland,Silver,2024-03-08
+247,Mia,Torres,mia.torres@email.com,503-555-4505,San Francisco,Bronze,2024-05-05
+248,Asher,Morgan,,415-555-4920,Seattle,Silver,2020-09-07
+249,Addison,Miller,addison.miller@email.com,503-555-8739,San Francisco,Silver,2022-09-27
+250,Jack,Mendoza,jack.mendoza@email.com,415-555-8793,San Francisco,Bronze,2022-04-01
+251,Elena,Wood,elena.wood@email.com,,Seattle,Platinum,2020-12-17
+252,Katherine,Lopez,katherine.lopez@email.com,206-555-7846,San Francisco,Bronze,2023-04-21
+253,Wyatt,Jones,wyatt.jones@email.com,503-555-1613,San Francisco,Bronze,2021-12-09
+254,Olivia,Hill,olivia.hill@email.com,415-555-9590,Portland,Bronze,2021-01-15
+255,Naomi,Moore,naomi.moore@email.com,415-555-8518,San Francisco,Silver,2020-03-29
+256,Austin,Allen,austin.allen@email.com,206-555-3875,San Francisco,Bronze,2021-01-19
+257,Lydia,Brooks,lydia.brooks@email.com,206-555-4027,San Francisco,Gold,2022-01-19
+258,Aiden,Morris,aiden.morris@email.com,503-555-6400,Seattle,Bronze,2020-08-16
+259,Thomas,Howard,thomas.howard@email.com,415-555-2936,San Francisco,Bronze,2022-10-29
+260,Colton,Flores,colton.flores@email.com,503-555-2923,Seattle,Silver,2024-05-03
+261,Dominic,Nguyen,dominic.nguyen@email.com,415-555-7121,Portland,Bronze,2019-11-29
+262,Sadie,Hughes,sadie.hughes@email.com,206-555-2341,Portland,Silver,2022-03-05
+263,Emilia,Edwards,emilia.edwards@email.com,,Portland,Bronze,2024-04-21
+264,Nevaeh,Cook,nevaeh.cook@email.com,206-555-4365,Seattle,Silver,2020-01-31
+265,Wesley,Howard,wesley.howard@email.com,415-555-7806,Portland,Gold,2021-08-29
+266,Adeline,Reed,adeline.reed@email.com,,Seattle,Silver,2023-09-08
+267,Isaac,Smith,isaac.smith@email.com,415-555-1987,San Francisco,Silver,2019-06-01
+268,Benjamin,Stewart,,415-555-7887,Seattle,Bronze,2023-06-22
+269,Joshua,Carter,joshua.carter@email.com,415-555-9835,Portland,Gold,2021-04-12
+270,Grace,Wood,grace.wood@email.com,206-555-1056,San Francisco,Bronze,2022-03-05
+271,Waylon,Williams,waylon.williams@email.com,206-555-5055,San Francisco,Silver,2023-03-12
+272,Ezekiel,Hall,ezekiel.hall@email.com,415-555-7868,Seattle,Bronze,2024-01-26
+273,Jaxson,Foster,jaxson.foster@email.com,206-555-8314,San Francisco,Gold,2020-07-05
+274,Ian,Gray,,415-555-4559,San Francisco,Bronze,2023-04-25
+275,Waylon,Jimenez,waylon.jimenez@email.com,415-555-6224,Seattle,Silver,2020-10-13
+276,Robert,Kim,robert.kim@email.com,415-555-9540,San Francisco,Gold,2020-06-28
+277,Camila,Evans,camila.evans@email.com,206-555-7999,Seattle,Bronze,2024-06-24
+278,Piper,Murphy,piper.murphy@email.com,503-555-7821,Seattle,Bronze,2022-10-08
+279,Kennedy,Martin,kennedy.martin@email.com,503-555-3365,Seattle,Bronze,2022-03-06
+280,Alexa,Davis,alexa.davis@email.com,503-555-4331,Portland,Platinum,2022-04-15
+281,Audrey,Chavez,,206-555-1844,Seattle,Bronze,2021-03-29
+282,Stella,Carter,,415-555-4555,San Francisco,Silver,2024-01-23
+283,Elena,Clark,,415-555-2922,San Francisco,Bronze,2024-04-04
+284,Declan,Long,declan.long@email.com,206-555-6269,Portland,Bronze,2022-07-20
+285,Zoe,Carter,zoe.carter@email.com,503-555-8635,Portland,Silver,2020-11-21
+286,Jack,Castillo,jack.castillo@email.com,206-555-4625,Portland,Gold,2024-04-15
+287,Bennett,Jackson,bennett.jackson@email.com,206-555-4214,Seattle,Silver,2022-06-09
+288,Audrey,Robinson,audrey.robinson@email.com,503-555-5216,Portland,Gold,2021-12-17
+289,Weston,Morales,weston.morales@email.com,503-555-3773,San Francisco,Silver,2021-11-29
+290,Aiden,Castillo,aiden.castillo@email.com,206-555-9584,Portland,Bronze,2024-02-24
+291,Isabella,Martinez,,415-555-4791,San Francisco,Silver,2023-06-13
+292,Benjamin,Price,benjamin.price@email.com,415-555-8916,Seattle,Bronze,2021-09-19
+293,Gianna,Morales,,503-555-9777,Seattle,Silver,2021-06-20
+294,Dylan,Williams,dylan.williams@email.com,206-555-2578,Portland,Silver,2021-07-29
+295,Emilia,Martin,emilia.martin@email.com,503-555-2294,Seattle,Silver,2020-07-29
+296,Joshua,Phillips,joshua.phillips@email.com,206-555-1519,Portland,Bronze,2023-01-26
+297,Sebastian,Phillips,sebastian.phillips@email.com,206-555-9189,Portland,Silver,2019-06-23
+298,Christian,Chavez,christian.chavez@email.com,206-555-4764,San Francisco,Silver,2023-12-22
+299,Nora,Ruiz,nora.ruiz@email.com,503-555-9897,San Francisco,Silver,2019-06-04
+300,Ruby,James,,206-555-7525,Seattle,Gold,2020-12-04
+301,Henry,Hill,henry.hill@email.com,415-555-6435,Seattle,Bronze,2023-11-04
+302,Anna,Long,anna.long@email.com,503-555-1879,San Francisco,Gold,2023-01-10
+303,Jack,Parker,jack.parker@email.com,503-555-6347,Seattle,Bronze,2022-07-22
+304,Mason,Brooks,mason.brooks@email.com,503-555-8075,Seattle,Platinum,2021-11-29
+305,Matthew,Mendoza,matthew.mendoza@email.com,415-555-2204,Portland,Bronze,2023-06-29
+306,Alexander,Wright,alexander.wright@email.com,503-555-2745,Seattle,Silver,2022-09-19
+307,Sebastian,Smith,sebastian.smith@email.com,206-555-8061,San Francisco,Bronze,2023-06-07
+308,Madelyn,Bailey,,415-555-6315,Portland,Bronze,2019-04-23
+309,Anna,Johnson,anna.johnson@email.com,206-555-9537,Seattle,Bronze,2019-08-21
+310,David,Mendoza,david.mendoza@email.com,206-555-8121,Portland,Bronze,2020-11-06
+311,Natalie,Turner,natalie.turner@email.com,415-555-9123,Seattle,Gold,2021-03-09
+312,Cora,Ward,,415-555-7224,Seattle,Bronze,2020-11-13
+313,Audrey,Cruz,audrey.cruz@email.com,503-555-6253,Seattle,Gold,2023-12-25
+314,Kaylee,Ruiz,kaylee.ruiz@email.com,415-555-9044,Seattle,Bronze,2021-05-24
+315,Robert,Powell,robert.powell@email.com,415-555-4273,Seattle,Bronze,2023-09-28
+316,Jordan,Cooper,jordan.cooper@email.com,415-555-4434,Seattle,Gold,2019-04-25
+317,Sarah,Nguyen,sarah.nguyen@email.com,503-555-3280,San Francisco,Bronze,2023-12-01
+318,Eliana,Hill,eliana.hill@email.com,503-555-8851,Seattle,Silver,2023-03-04
+319,Greyson,Phillips,greyson.phillips@email.com,503-555-9796,Portland,Gold,2024-01-15
+320,Cora,Brooks,cora.brooks@email.com,415-555-1725,San Francisco,Bronze,2020-07-21
+321,Ruby,Chavez,ruby.chavez@email.com,206-555-1172,San Francisco,Bronze,2023-05-20
+322,Jack,King,jack.king@email.com,503-555-7129,Seattle,Silver,2022-04-16
+323,Caroline,Reyes,caroline.reyes@email.com,503-555-2712,San Francisco,Silver,2021-12-19
+324,Ezra,Turner,ezra.turner@email.com,503-555-6620,San Francisco,Bronze,2023-10-28
+325,Adeline,Powell,,503-555-6225,Seattle,Silver,2021-10-31
+326,Benjamin,Hill,benjamin.hill@email.com,415-555-3692,Seattle,Silver,2019-04-16
+327,Bennett,Young,bennett.young@email.com,206-555-7636,Portland,Silver,2021-01-06
+328,Nicholas,White,,206-555-8365,Seattle,Silver,2021-05-19
+329,Jordan,Diaz,jordan.diaz@email.com,206-555-2667,Portland,Silver,2020-04-25
+330,Jeremiah,White,jeremiah.white@email.com,415-555-6134,Portland,Bronze,2019-10-20
+331,Cora,Roberts,cora.roberts@email.com,206-555-5873,Portland,Silver,2021-02-10
+332,Jaxson,Ramos,jaxson.ramos@email.com,503-555-3316,Seattle,Bronze,2019-10-28
+333,Hailey,Roberts,hailey.roberts@email.com,415-555-3838,Portland,Bronze,2021-04-24
+334,Piper,Perez,piper.perez@email.com,503-555-1157,Portland,Bronze,2020-12-04
+335,Gabriella,Moore,gabriella.moore@email.com,415-555-9056,Seattle,Bronze,2022-04-24
+336,Sadie,Price,sadie.price@email.com,206-555-5785,San Francisco,Silver,2019-08-17
+337,Isabella,Scott,isabella.scott@email.com,503-555-9369,Seattle,Bronze,2023-07-16
+338,Avery,Kelly,avery.kelly@email.com,206-555-8231,Seattle,Gold,2023-10-12
+339,Angel,Ramirez,angel.ramirez@email.com,206-555-8368,San Francisco,Bronze,2023-10-25
+340,Lincoln,Hall,lincoln.hall@email.com,206-555-4438,San Francisco,Bronze,2024-01-06
+341,Brielle,Ramos,brielle.ramos@email.com,206-555-4385,San Francisco,Gold,2022-08-01
+342,Layla,Davis,layla.davis@email.com,415-555-5794,Portland,Silver,2022-07-05
+343,Leah,Kelly,leah.kelly@email.com,,Seattle,Gold,2024-03-17
+344,Isla,Powell,isla.powell@email.com,206-555-5090,Portland,Bronze,2020-09-18
+345,Samuel,Alvarez,samuel.alvarez@email.com,415-555-5402,Seattle,Bronze,2023-11-22
+346,Arianna,Turner,arianna.turner@email.com,,Portland,Bronze,2023-08-14
+347,Hudson,Ruiz,hudson.ruiz@email.com,415-555-2526,San Francisco,Bronze,2024-06-28
+348,Silas,Collins,,206-555-8039,Portland,Silver,2023-12-06
+349,Nora,Murphy,nora.murphy@email.com,503-555-6631,Seattle,Gold,2021-01-20
+350,Valentina,Ross,valentina.ross@email.com,,Seattle,Bronze,2023-07-23
+351,Riley,Cruz,riley.cruz@email.com,206-555-5945,Portland,Platinum,2021-07-24
+352,Riley,Scott,riley.scott@email.com,206-555-1848,Seattle,Bronze,2019-08-16
+353,Ryan,Watson,ryan.watson@email.com,,Seattle,Silver,2020-06-22
+354,Elizabeth,Smith,elizabeth.smith@email.com,206-555-1132,Seattle,Bronze,2022-06-28
+355,Clara,Baker,clara.baker@email.com,206-555-7276,San Francisco,Platinum,2021-07-12
+356,Emily,Sanders,emily.sanders@email.com,206-555-3340,San Francisco,Bronze,2021-03-22
+357,Benjamin,Ortiz,benjamin.ortiz@email.com,415-555-3480,Portland,Silver,2020-01-31
+358,Miles,Ward,miles.ward@email.com,206-555-7291,San Francisco,Gold,2019-08-25
+359,Isaiah,Diaz,isaiah.diaz@email.com,415-555-5668,Seattle,Bronze,2020-09-18
+360,Nova,Brown,nova.brown@email.com,206-555-7418,San Francisco,Silver,2020-11-07
+361,Ezra,Chavez,ezra.chavez@email.com,503-555-2163,Seattle,Gold,2020-07-03
+362,Cooper,Johnson,cooper.johnson@email.com,503-555-6986,San Francisco,Platinum,2019-11-26
+363,Angel,Mendoza,,206-555-5295,Seattle,Silver,2023-06-25
+364,Julian,Garcia,julian.garcia@email.com,415-555-7806,San Francisco,Platinum,2021-05-24
+365,Allison,Hughes,allison.hughes@email.com,503-555-2294,Portland,Silver,2022-03-06
+366,Hailey,Clark,hailey.clark@email.com,415-555-2083,San Francisco,Bronze,2020-12-29
+367,Charles,Hughes,,,Portland,Platinum,2020-07-01
+368,Christian,Anderson,christian.anderson@email.com,206-555-2956,Portland,Silver,2020-11-23
+369,Noah,Price,noah.price@email.com,415-555-5247,Seattle,Bronze,2021-12-11
+370,Aria,Mitchell,aria.mitchell@email.com,206-555-6488,Seattle,Gold,2020-09-01
+371,Nolan,Wright,nolan.wright@email.com,415-555-6900,Portland,Bronze,2022-05-24
+372,Amelia,Murphy,amelia.murphy@email.com,415-555-2889,San Francisco,Bronze,2020-01-17
+373,Hannah,Patel,,,Portland,Bronze,2024-01-01
+374,Elias,Roberts,,415-555-7870,San Francisco,Bronze,2023-12-21
+375,Grayson,Adams,grayson.adams@email.com,,Seattle,Gold,2020-12-15
+376,Joshua,Thomas,joshua.thomas@email.com,206-555-7568,Portland,Gold,2020-03-02
+377,Benjamin,Reyes,benjamin.reyes@email.com,206-555-7044,San Francisco,Gold,2020-11-26
+378,Asher,Nguyen,asher.nguyen@email.com,503-555-4201,Portland,Bronze,2022-08-27
+379,Silas,Cooper,silas.cooper@email.com,,San Francisco,Bronze,2019-03-14
+380,Quinn,Hall,quinn.hall@email.com,,Portland,Silver,2019-03-20
+381,Gianna,Carter,gianna.carter@email.com,503-555-9061,San Francisco,Silver,2019-09-29
+382,James,Jackson,james.jackson@email.com,503-555-7102,San Francisco,Bronze,2024-04-29
+383,Ezekiel,Myers,ezekiel.myers@email.com,415-555-2020,Seattle,Bronze,2019-11-29
+384,Christian,James,christian.james@email.com,503-555-6345,San Francisco,Bronze,2020-08-16
+385,Christopher,Edwards,,206-555-3546,Seattle,Bronze,2020-04-19
+386,Daniel,Perez,daniel.perez@email.com,206-555-8404,Portland,Bronze,2019-11-03
+387,Violet,Reyes,violet.reyes@email.com,415-555-1660,Seattle,Bronze,2020-01-17
+388,Julian,Adams,julian.adams@email.com,,Seattle,Silver,2021-02-26
+389,Hazel,King,hazel.king@email.com,415-555-5093,San Francisco,Bronze,2021-06-06
+390,Elizabeth,Reyes,,206-555-3141,Seattle,Gold,2019-11-04
+391,Penelope,Phillips,,206-555-1357,Portland,Silver,2022-10-11
+392,Harper,Sanchez,,503-555-3007,San Francisco,Bronze,2019-11-19
+393,Mia,Reyes,mia.reyes@email.com,206-555-7270,Seattle,Gold,2021-08-04
+394,Valentina,Diaz,valentina.diaz@email.com,206-555-1567,Seattle,Bronze,2020-03-18
+395,Jaxson,Richardson,jaxson.richardson@email.com,206-555-2437,Portland,Silver,2021-12-16
+396,Hudson,Roberts,hudson.roberts@email.com,415-555-1319,Seattle,Bronze,2024-02-14
+397,Nathan,Powell,nathan.powell@email.com,415-555-6269,San Francisco,Silver,2023-07-18
+398,Caleb,Wright,,503-555-1959,Seattle,Bronze,2020-05-22
+399,Ariana,Ortiz,ariana.ortiz@email.com,415-555-4951,Portland,Silver,2020-06-19
+400,Stella,Morgan,stella.morgan@email.com,415-555-7363,San Francisco,Gold,2019-06-23
+401,Claire,Thompson,claire.thompson@email.com,415-555-1462,Seattle,Silver,2023-09-07
+402,Vivian,Hughes,vivian.hughes@email.com,503-555-9882,Portland,Silver,2019-12-17
+403,Charles,Thompson,charles.thompson@email.com,,Portland,Bronze,2020-06-19
+404,Elena,Smith,,503-555-1975,Seattle,Silver,2023-09-07
+405,Ethan,Jackson,,503-555-2188,Portland,Gold,2023-07-03
+406,Joshua,Price,joshua.price@email.com,206-555-8157,San Francisco,Bronze,2019-09-23
+407,Dominic,Morales,dominic.morales@email.com,503-555-4657,Portland,Bronze,2022-04-24
+408,Isabelle,Ramos,isabelle.ramos@email.com,415-555-1029,San Francisco,Bronze,2023-04-12
+409,Adam,Kelly,,415-555-4619,Portland,Platinum,2022-05-06
+410,Dominic,Reed,dominic.reed@email.com,503-555-3750,Seattle,Silver,2021-01-07
+411,Eliana,Lopez,eliana.lopez@email.com,503-555-4435,San Francisco,Silver,2023-04-02
+412,Gabriel,Ruiz,gabriel.ruiz@email.com,,Seattle,Bronze,2019-10-08
+413,Sarah,Sanders,sarah.sanders@email.com,415-555-7149,Portland,Bronze,2021-06-25
+414,Jack,Morris,jack.morris@email.com,206-555-1547,San Francisco,Silver,2023-05-31
+415,Ezra,Williams,ezra.williams@email.com,206-555-2228,Seattle,Platinum,2019-07-30
+416,Nevaeh,Lopez,nevaeh.lopez@email.com,,Seattle,Platinum,2024-03-03
+417,Everett,Perez,,206-555-7705,Portland,Bronze,2019-06-18
+418,Clara,Peterson,clara.peterson@email.com,206-555-1813,San Francisco,Silver,2020-08-25
+419,Caroline,Kelly,caroline.kelly@email.com,503-555-8869,Portland,Silver,2019-06-20
+420,Asher,Gonzalez,asher.gonzalez@email.com,206-555-6052,Seattle,Bronze,2020-10-18
+421,Ryan,Stewart,ryan.stewart@email.com,503-555-7249,Portland,Silver,2019-09-03
+422,Lucy,White,lucy.white@email.com,415-555-2009,Portland,Bronze,2021-10-08
+423,Victoria,Long,victoria.long@email.com,415-555-4727,San Francisco,Bronze,2022-11-28
+424,Roman,Davis,roman.davis@email.com,503-555-4860,San Francisco,Gold,2021-07-05
+425,Luca,Hill,,415-555-3415,Seattle,Gold,2023-03-02
+426,Ella,Long,ella.long@email.com,206-555-1699,Portland,Platinum,2020-02-06
+427,Allison,Hernandez,allison.hernandez@email.com,503-555-6238,San Francisco,Bronze,2023-10-10
+428,Madeline,Rodriguez,madeline.rodriguez@email.com,503-555-1202,Seattle,Silver,2022-04-04
+429,Adam,Richardson,adam.richardson@email.com,415-555-2641,Portland,Gold,2019-10-17
+430,Daniel,Reed,daniel.reed@email.com,503-555-5327,San Francisco,Gold,2024-01-10
+431,Anna,Wood,anna.wood@email.com,415-555-7581,Portland,Silver,2019-05-16
+432,Lucas,Gomez,,503-555-7102,San Francisco,Bronze,2020-06-29
+433,Ethan,Baker,ethan.baker@email.com,415-555-2609,San Francisco,Bronze,2020-09-25
+434,Hannah,Moore,hannah.moore@email.com,503-555-2462,Seattle,Silver,2023-07-03
+435,Zoey,Cruz,zoey.cruz@email.com,503-555-1920,Seattle,Gold,2023-04-26
+436,Axel,Lee,,415-555-1474,Seattle,Silver,2021-06-04
+437,Lily,Harris,lily.harris@email.com,503-555-4262,San Francisco,Bronze,2019-06-27
+438,Natalie,Mitchell,natalie.mitchell@email.com,206-555-7102,San Francisco,Silver,2022-09-22
+439,Hunter,Kim,hunter.kim@email.com,206-555-5237,Portland,Platinum,2021-10-27
+440,Declan,Ruiz,declan.ruiz@email.com,206-555-4626,Seattle,Bronze,2019-06-10
+441,Austin,Lewis,austin.lewis@email.com,415-555-1145,San Francisco,Bronze,2021-06-16
+442,Luca,Taylor,luca.taylor@email.com,503-555-5511,Portland,Silver,2019-03-18
+443,Allison,Carter,allison.carter@email.com,415-555-7506,San Francisco,Silver,2020-05-20
+444,Greyson,Wilson,greyson.wilson@email.com,415-555-5631,Seattle,Platinum,2023-11-22
+445,Hazel,Mendoza,hazel.mendoza@email.com,503-555-5895,Seattle,Bronze,2020-09-17
+446,Zoey,Martin,zoey.martin@email.com,415-555-7620,Portland,Bronze,2019-06-25
+447,Brooks,Green,brooks.green@email.com,503-555-7628,San Francisco,Silver,2022-11-02
+448,Caleb,Patel,caleb.patel@email.com,415-555-4643,Seattle,Silver,2022-05-15
+449,Jose,Morgan,jose.morgan@email.com,206-555-3967,Portland,Silver,2024-06-08
+450,Ezra,Gonzalez,ezra.gonzalez@email.com,206-555-6499,Portland,Silver,2023-03-25
+451,Everett,Lopez,everett.lopez@email.com,503-555-7089,Seattle,Bronze,2024-01-18
+452,Ellie,Howard,,415-555-2166,Seattle,Gold,2021-10-19
+453,Ariana,Harris,ariana.harris@email.com,206-555-3250,Portland,Gold,2021-04-20
+454,Asher,Baker,asher.baker@email.com,415-555-3954,Portland,Silver,2024-03-30
+455,Abigail,Morales,abigail.morales@email.com,,Seattle,Platinum,2020-12-01
+456,Natalie,Clark,natalie.clark@email.com,206-555-3120,San Francisco,Bronze,2023-06-13
+457,Eliana,Diaz,,415-555-7112,Portland,Platinum,2021-04-24
+458,Noah,Adams,noah.adams@email.com,206-555-4707,San Francisco,Silver,2019-04-06
+459,Parker,Hall,parker.hall@email.com,206-555-5885,Seattle,Bronze,2021-12-25
+460,Leah,Collins,leah.collins@email.com,206-555-6615,San Francisco,Silver,2021-01-20
+461,Hunter,Rivera,hunter.rivera@email.com,206-555-4675,San Francisco,Bronze,2024-03-31
+462,Madeline,Taylor,madeline.taylor@email.com,415-555-1612,Seattle,Bronze,2021-12-28
+463,Paisley,Brooks,paisley.brooks@email.com,,Seattle,Silver,2019-06-08
+464,Daniel,Wood,daniel.wood@email.com,415-555-5140,San Francisco,Bronze,2019-10-24
+465,Luca,Hughes,,206-555-9524,Seattle,Silver,2022-09-11
+466,Anthony,Richardson,anthony.richardson@email.com,415-555-2928,Portland,Bronze,2023-10-27
+467,Zoe,Anderson,zoe.anderson@email.com,415-555-4304,San Francisco,Silver,2022-07-30
+468,Andrew,Price,andrew.price@email.com,503-555-6416,Portland,Bronze,2022-03-27
+469,Lillian,Smith,lillian.smith@email.com,206-555-2475,Seattle,Bronze,2019-10-13
+470,Hailey,Martinez,hailey.martinez@email.com,503-555-5327,San Francisco,Bronze,2020-08-06
+471,Alexa,Miller,alexa.miller@email.com,415-555-6123,Seattle,Bronze,2019-05-20
+472,Nolan,Patel,,415-555-3793,Seattle,Gold,2024-02-26
+473,Audrey,Rivera,audrey.rivera@email.com,,San Francisco,Platinum,2020-08-31
+474,Josiah,White,josiah.white@email.com,503-555-7909,Seattle,Bronze,2021-09-20
+475,Melanie,Perez,melanie.perez@email.com,206-555-7816,Seattle,Silver,2019-06-29
+476,Jordan,Morris,jordan.morris@email.com,415-555-1472,San Francisco,Silver,2020-03-06
+477,Jose,Sanders,jose.sanders@email.com,503-555-1753,San Francisco,Bronze,2024-04-27
+478,Harper,King,harper.king@email.com,415-555-4669,San Francisco,Bronze,2024-01-12
+479,Xavier,Baker,,206-555-8895,Portland,Silver,2022-08-18
+480,Bella,James,bella.james@email.com,415-555-1894,San Francisco,Bronze,2023-11-13
+481,Olivia,Chavez,olivia.chavez@email.com,206-555-9055,San Francisco,Silver,2021-10-17
+482,Savannah,Walker,savannah.walker@email.com,503-555-4850,Seattle,Bronze,2022-01-02
+483,Abigail,Collins,abigail.collins@email.com,206-555-9148,Portland,Silver,2019-08-28
+484,Delilah,Wood,delilah.wood@email.com,,Seattle,Bronze,2019-05-13
+485,Sebastian,Cox,sebastian.cox@email.com,415-555-8474,San Francisco,Silver,2024-02-25
+486,Josiah,Campbell,josiah.campbell@email.com,415-555-8751,San Francisco,Gold,2023-11-24
+487,Wesley,James,wesley.james@email.com,503-555-6818,Portland,Silver,2019-09-16
+488,Eliana,Nguyen,,206-555-7704,Portland,Bronze,2019-10-04
+489,Daniel,Allen,daniel.allen@email.com,206-555-6536,Portland,Bronze,2024-05-18
+490,Daniel,Long,daniel.long@email.com,503-555-8493,Portland,Gold,2023-11-10
+491,Gianna,Ramos,,415-555-8091,San Francisco,Bronze,2021-12-16
+492,Greyson,Morris,greyson.morris@email.com,415-555-3103,San Francisco,Gold,2024-04-07
+493,Sofia,Roberts,sofia.roberts@email.com,415-555-5067,San Francisco,Silver,2020-12-19
+494,Natalie,Gomez,natalie.gomez@email.com,415-555-9393,San Francisco,Platinum,2021-09-13
+495,Hazel,Hughes,hazel.hughes@email.com,206-555-4435,Portland,Bronze,2023-04-18
+496,Leonardo,Alvarez,,206-555-9255,Seattle,Bronze,2022-12-07
+497,Quinn,Ruiz,quinn.ruiz@email.com,415-555-7839,Portland,Silver,2023-06-06
+498,Julia,Myers,julia.myers@email.com,415-555-2744,San Francisco,Silver,2024-01-31
+499,Sophia,Carter,sophia.carter@email.com,503-555-5105,Seattle,Silver,2020-04-13
+500,Samuel,Davis,samuel.davis@email.com,503-555-2679,San Francisco,Bronze,2023-05-22

@@ -1,0 +1,27 @@
+services:
+  no_codb:
+    image: nocodb/nocodb:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    restart: always
+    volumes:
+      - nc_data:/usr/app/data
+    environment:
+      NC_DB: "pg://postgres:5432?u=postgres&p=postgres&d=root_db"
+
+  postgres:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: root_db
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  nc_data:
+  postgres_data:

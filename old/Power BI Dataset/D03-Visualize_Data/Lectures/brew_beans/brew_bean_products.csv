@@ -1,0 +1,29 @@
+ProductID,ProductName,Category,Size,UnitPrice,Cost,ProfitMargin,Supplier,AddedDate
+P001,Latte - Small,Coffee,Small,4.0,1.8,0.55,Bean Brothers,2020-03-15
+P002,Latte - Medium,Coffee,Medium,4.5,2.1,0.53,Bean Brothers,2020-03-15
+P003,Latte - Large,Coffee,Large,5.0,2.4,0.52,Bean Brothers,2020-03-15
+P004,Cappuccino - Small,Coffee,Small,4.25,1.9,0.55,Bean Brothers,2020-03-15
+P005,Cappuccino - Medium,Coffee,Medium,4.75,2.2,0.54,Bean Brothers,2020-03-15
+P006,Cappuccino - Large,Coffee,Large,5.25,2.55,0.51,Bean Brothers,2021-06-20
+P007,Espresso - Single,Coffee,Single,2.75,0.95,0.65,Bean Brothers,2021-06-20
+P008,Espresso - Double,Coffee,Double,3.5,1.5,0.57,Bean Brothers,2021-06-20
+P009,Americano - Small,Coffee,Small,3.25,1.1,0.66,Bean Brothers,2021-06-20
+P010,Americano - Medium,Coffee,Medium,3.75,1.35,0.64,Bean Brothers,2021-06-20
+P011,Americano - Large,Coffee,Large,4.25,1.6,0.62,Bean Brothers,2021-06-20
+P012,Mocha - Small,Coffee,Small,4.75,2.3,0.52,Bean Brothers,2021-08-10
+P013,Mocha - Medium,Coffee,Medium,5.25,2.6,0.5,Bean Brothers,2021-08-10
+P014,Mocha - Large,Coffee,Large,5.75,2.9,0.5,Bean Brothers,2021-08-10
+P015,Flat White,Coffee,Standard,4.75,2.15,0.55,Bean Brothers,2022-11-05
+P016,Cold Brew - Medium,Coffee,Medium,4.0,1.5,0.63,Bean Brothers,2022-11-05
+P017,Cold Brew - Large,Coffee,Large,4.5,2.0,0.56,Bean Brothers,2022-11-05
+P018,Drip Coffee - Medium,Coffee,Medium,2.75,0.65,0.76,Bean Brothers,2023-02-18
+P019,Hot Chocolate,Non-Coffee,Medium,4.25,1.75,0.59,Sweet Treats Co,2023-02-18
+P020,Chai Latte,Non-Coffee,Medium,4.5,1.8,0.6,Tea Imports LLC,2023-04-22
+P021,Matcha Latte,Non-Coffee,Medium,5.0,2.5,0.5,Tea Imports LLC,2023-04-22
+P022,Hot Tea,Non-Coffee,Medium,3.0,0.5,0.83,Tea Imports LLC,2023-06-10
+P023,Iced Tea,Non-Coffee,Large,3.5,0.8,0.77,Tea Imports LLC,2023-06-10
+P024,Croissant,Food,Standard,3.75,1.25,0.67,Local Bakery,2023-08-15
+P025,Blueberry Muffin,Food,Standard,3.5,1.2,0.66,Local Bakery,2023-08-15
+P026,Breakfast Sandwich,Food,Standard,6.5,3.2,0.51,Local Bakery,2023-09-01
+P027,Avocado Toast,Food,Standard,8.5,4.5,0.47,Local Bakery,2023-09-01
+P028,Seasonal Pastry Box,Food,Box,18.0,7.0,0.61,Local Bakery,2023-11-01

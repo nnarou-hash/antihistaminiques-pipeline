@@ -1,0 +1,5 @@
+site_id,site_name,site_location,state,country,latitude,longitude,operational_since
+LC39A,LC-39A,Kennedy Space Center,Florida,USA,28.6083,-80.6041,2017-02-19
+SLC40,SLC-40,Cape Canaveral,Florida,USA,28.5618,-80.5772,2010-06-04
+SLC4E,SLC-4E,Vandenberg Space Force Base,California,USA,34.632,-120.6106,2013-09-29
+BC,Starbase,Boca Chica,Texas,USA,25.9969,-97.1572,2023-04-20

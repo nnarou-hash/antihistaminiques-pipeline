@@ -1,0 +1,151 @@
+CustomerID,FirstName,LastName,Email,Phone,City,State,SignupDate
+2824,James,Wilson,james.wilson@gmail.com,206-555-5506,Seattle,WA,2022-05-17
+4657,Maria,Chen,maria.chen@outlook.com,206-555-2679,Seattle,WA,2024-10-17
+9935,Sarah,Johnson,sarah.johnson@gmail.com,206-555-7912,Seattle,WA,2021-03-07
+1488,Michael,Brown,michael.brown@gmail.com,206-555-4582,Seattle,WA,2022-04-22
+9279,Emma,Davis,emma.davis@hotmail.com,206-555-1434,Seattle,WA,2024-02-24
+4257,David,Garcia,david.garcia@techcorp.com,206-555-9928,Seattle,WA,2023-05-10
+4611,Sophie,Martinez,sophie.martinez@icloud.com,206-555-5557,Seattle,WA,2021-01-14
+3615,Ryan,Lee,ryan.lee@techcorp.com,206-555-7924,Seattle,WA,2022-11-28
+5552,Olivia,Taylor,olivia.taylor@outlook.com,206-555-4527,Seattle,WA,2022-11-21
+2674,Ethan,Anderson,ethan.anderson@gmail.com,206-555-7224,Seattle,WA,2021-07-18
+6881,Ava,Thomas,ava.thomas@company.com,206-555-6635,Seattle,WA,2024-05-21
+5333,Noah,Jackson,noah.jackson@company.com,206-555-1711,Seattle,WA,2023-07-30
+9785,Mia,White,mia.white@gmail.com,206-555-7201,Seattle,WA,2021-06-11
+5803,Liam,Harris,liam.harris@company.com,206-555-6925,Seattle,WA,2024-03-28
+4150,Isabella,Martin,isabella.martin@techcorp.com,206-555-2139,Seattle,WA,2021-04-04
+4733,Mason,Thompson,mason.thompson@company.com,206-555-5741,Seattle,WA,2021-06-13
+4814,Charlotte,Moore,charlotte.moore@company.com,206-555-2654,Seattle,WA,2023-02-18
+5554,Logan,Allen,logan.allen@icloud.com,206-555-6977,Seattle,WA,2021-11-30
+7065,Amelia,Walker,amelia.walker@yahoo.com,206-555-4432,Seattle,WA,2024-10-04
+5374,Lucas,Young,lucas.young@techcorp.com,206-555-2169,Seattle,WA,2024-06-01
+3803,Emily,Hernandez,emily.hernandez@hotmail.com,206-555-5010,Seattle,WA,2021-12-01
+8573,Aiden,King,aiden.king@icloud.com,206-555-5422,Seattle,WA,2024-08-03
+4598,Abigail,Wright,abigail.wright@techcorp.com,206-555-6313,Seattle,WA,2021-04-25
+4752,Jackson,Lopez,jackson.lopez@company.com,206-555-1525,Seattle,WA,2022-10-09
+7572,Madison,Hill,madison.hill@yahoo.com,206-555-2084,Seattle,WA,2022-03-09
+6155,Caleb,Scott,caleb.scott@outlook.com,206-555-9179,Seattle,WA,2023-03-22
+8517,Chloe,Green,chloe.green@outlook.com,206-555-5339,Seattle,WA,2021-10-13
+5040,Jayden,Adams,jayden.adams@techcorp.com,206-555-9830,Seattle,WA,2022-06-23
+8019,Ella,Baker,ella.baker@hotmail.com,206-555-7543,Seattle,WA,2023-01-12
+4593,Grayson,Nelson,grayson.nelson@outlook.com,206-555-9348,Seattle,WA,2023-10-08
+2489,Taylor,Carter,taylor.carter@company.com,206-555-1771,Seattle,WA,2021-08-13
+3504,Jordan,Mitchell,jordan.mitchell@techcorp.com,206-555-3621,Seattle,WA,2024-10-25
+7916,Morgan,Perez,morgan.perez@hotmail.com,206-555-2040,Seattle,WA,2023-02-28
+7252,Casey,Roberts,casey.roberts@hotmail.com,206-555-8668,Seattle,WA,2023-12-20
+5119,Riley,Turner,riley.turner@hotmail.com,206-555-1188,Seattle,WA,2024-10-25
+2876,Avery,Phillips,avery.phillips@techcorp.com,206-555-9797,Seattle,WA,2022-07-01
+6573,Quinn,Campbell,quinn.campbell@gmail.com,206-555-5808,Seattle,WA,2023-06-10
+3591,Blake,Parker,blake.parker@icloud.com,206-555-1053,Seattle,WA,2022-06-24
+9201,Dakota,Evans,dakota.evans@company.com,206-555-3927,Seattle,WA,2023-11-06
+2743,Skyler,Edwards,skyler.edwards@company.com,206-555-5889,Seattle,WA,2024-08-01
+9317,Alex,Collins,alex.collins@hotmail.com,206-555-4258,Seattle,WA,2021-11-10
+7126,Sam,Stewart,sam.stewart@company.com,206-555-3646,Seattle,WA,2024-01-10
+9689,Charlie,Morris,charlie.morris@gmail.com,206-555-6310,Seattle,WA,2023-09-28
+1319,Reese,Rogers,reese.rogers@gmail.com,206-555-6947,Seattle,WA,2022-09-22
+4923,Peyton,Reed,peyton.reed@gmail.com,206-555-4946,Seattle,WA,2024-03-07
+2290,Cameron,Cook,cameron.cook@gmail.com,206-555-8962,Seattle,WA,2021-05-22
+9727,Hayden,Morgan,hayden.morgan@company.com,206-555-3060,Seattle,WA,2021-09-20
+8787,Jamie,Bell,jamie.bell@hotmail.com,206-555-3705,Seattle,WA,2022-06-27
+9645,Drew,Murphy,drew.murphy@company.com,206-555-7932,Seattle,WA,2022-03-10
+9835,Jesse,Bailey,jesse.bailey@company.com,206-555-4295,Seattle,WA,2022-10-01
+7537,James,Wilson,james.wilson@techcorp.com,503-555-7118,Portland,OR,2023-06-17
+9479,Maria,Chen,maria.chen@icloud.com,503-555-2982,Portland,OR,2022-05-23
+4681,Sarah,Johnson,sarah.johnson@gmail.com,503-555-6539,Portland,OR,2021-02-13
+4770,Michael,Brown,michael.brown@hotmail.com,503-555-4608,Portland,OR,2021-01-15
+2163,Emma,Davis,emma.davis@techcorp.com,503-555-1964,Portland,OR,2022-04-14
+2104,David,Garcia,david.garcia@gmail.com,503-555-6413,Portland,OR,2021-05-26
+9423,Sophie,Martinez,sophie.martinez@outlook.com,503-555-5562,Portland,OR,2024-10-02
+8953,Ryan,Lee,ryan.lee@outlook.com,503-555-9834,Portland,OR,2021-09-28
+8744,Olivia,Taylor,olivia.taylor@outlook.com,503-555-8749,Portland,OR,2023-04-14
+4119,Ethan,Anderson,ethan.anderson@gmail.com,503-555-2588,Portland,OR,2024-09-11
+8062,Ava,Thomas,ava.thomas@yahoo.com,503-555-7939,Portland,OR,2023-04-22
+8651,Noah,Jackson,noah.jackson@company.com,503-555-1887,Portland,OR,2024-10-11
+2612,Mia,White,mia.white@gmail.com,503-555-7596,Portland,OR,2022-11-26
+2790,Liam,Harris,liam.harris@outlook.com,503-555-4139,Portland,OR,2022-01-25
+9786,Isabella,Martin,isabella.martin@icloud.com,503-555-3296,Portland,OR,2023-05-15
+4006,Mason,Thompson,mason.thompson@yahoo.com,503-555-8579,Portland,OR,2022-05-27
+2235,Charlotte,Moore,charlotte.moore@icloud.com,503-555-2604,Portland,OR,2021-04-14
+9856,Logan,Allen,logan.allen@company.com,503-555-1241,Portland,OR,2021-07-11
+4872,Amelia,Walker,amelia.walker@outlook.com,503-555-7658,Portland,OR,2023-09-22
+8886,Lucas,Young,lucas.young@outlook.com,503-555-7570,Portland,OR,2021-05-01
+3697,Emily,Hernandez,emily.hernandez@icloud.com,503-555-1035,Portland,OR,2023-03-11
+5345,Aiden,King,aiden.king@company.com,503-555-8454,Portland,OR,2022-08-08
+7930,Abigail,Wright,abigail.wright@techcorp.com,503-555-8973,Portland,OR,2021-11-14
+4111,Jackson,Lopez,jackson.lopez@yahoo.com,503-555-4566,Portland,OR,2021-04-30
+9883,Madison,Hill,madison.hill@gmail.com,503-555-6138,Portland,OR,2021-04-28
+1821,Caleb,Scott,caleb.scott@hotmail.com,503-555-8811,Portland,OR,2023-10-27
+9701,Chloe,Green,chloe.green@outlook.com,503-555-1931,Portland,OR,2023-11-07
+2312,Jayden,Adams,jayden.adams@company.com,503-555-4044,Portland,OR,2021-05-21
+2113,Ella,Baker,ella.baker@techcorp.com,503-555-4853,Portland,OR,2023-04-07
+2964,Grayson,Nelson,grayson.nelson@hotmail.com,503-555-5033,Portland,OR,2024-03-31
+1651,Taylor,Carter,taylor.carter@hotmail.com,503-555-2343,Portland,OR,2023-05-09
+9565,Jordan,Mitchell,jordan.mitchell@yahoo.com,503-555-5272,Portland,OR,2022-02-23
+6147,Morgan,Perez,morgan.perez@outlook.com,503-555-5351,Portland,OR,2023-03-22
+3144,Casey,Roberts,casey.roberts@techcorp.com,503-555-5915,Portland,OR,2023-07-26
+6180,Riley,Turner,riley.turner@company.com,503-555-2188,Portland,OR,2021-01-20
+8508,Avery,Phillips,avery.phillips@hotmail.com,503-555-2638,Portland,OR,2021-05-31
+9808,Quinn,Campbell,quinn.campbell@outlook.com,503-555-9288,Portland,OR,2022-06-28
+3170,Blake,Parker,blake.parker@yahoo.com,503-555-2127,Portland,OR,2022-05-16
+7054,Dakota,Evans,dakota.evans@yahoo.com,503-555-3584,Portland,OR,2023-06-17
+9900,Skyler,Edwards,skyler.edwards@techcorp.com,503-555-5956,Portland,OR,2024-06-06
+9666,Alex,Collins,alex.collins@gmail.com,503-555-5905,Portland,OR,2024-09-20
+2697,Sam,Stewart,sam.stewart@outlook.com,503-555-5333,Portland,OR,2021-08-25
+2753,Charlie,Morris,charlie.morris@techcorp.com,503-555-3546,Portland,OR,2022-07-12
+5616,Reese,Rogers,reese.rogers@hotmail.com,503-555-4450,Portland,OR,2022-12-04
+4335,Peyton,Reed,peyton.reed@techcorp.com,503-555-5325,Portland,OR,2023-11-02
+9004,Cameron,Cook,cameron.cook@yahoo.com,503-555-1832,Portland,OR,2021-07-09
+7939,Hayden,Morgan,hayden.morgan@company.com,503-555-5533,Portland,OR,2021-04-01
+1058,Jamie,Bell,jamie.bell@yahoo.com,503-555-3143,Portland,OR,2024-07-28
+5291,Drew,Murphy,drew.murphy@outlook.com,503-555-8239,Portland,OR,2024-02-04
+8007,Jesse,Bailey,jesse.bailey@hotmail.com,503-555-1158,Portland,OR,2021-08-18
+2232,James,Wilson,james.wilson@techcorp.com,415-555-3442,San Francisco,CA,2024-01-23
+1590,Maria,Chen,maria.chen@company.com,415-555-7049,San Francisco,CA,2024-04-07
+3426,Sarah,Johnson,sarah.johnson@icloud.com,415-555-3088,San Francisco,CA,2021-03-27
+6050,Michael,Brown,michael.brown@yahoo.com,415-555-1653,San Francisco,CA,2023-01-03
+4441,Emma,Davis,emma.davis@techcorp.com,415-555-5088,San Francisco,CA,2024-09-27
+2684,David,Garcia,david.garcia@yahoo.com,415-555-7658,San Francisco,CA,2024-06-25
+3532,Sophie,Martinez,sophie.martinez@outlook.com,415-555-3662,San Francisco,CA,2021-12-29
+7755,Ryan,Lee,ryan.lee@gmail.com,415-555-3938,San Francisco,CA,2022-11-12
+7745,Olivia,Taylor,olivia.taylor@company.com,415-555-5065,San Francisco,CA,2022-07-01
+3608,Ethan,Anderson,ethan.anderson@company.com,415-555-2771,San Francisco,CA,2023-02-23
+1634,Ava,Thomas,ava.thomas@company.com,415-555-8711,San Francisco,CA,2022-04-01
+4269,Noah,Jackson,noah.jackson@company.com,415-555-8541,San Francisco,CA,2022-12-18
+6000,Mia,White,mia.white@company.com,415-555-4728,San Francisco,CA,2022-04-02
+1387,Liam,Harris,liam.harris@techcorp.com,415-555-4164,San Francisco,CA,2023-03-28
+6378,Isabella,Martin,isabella.martin@yahoo.com,415-555-2137,San Francisco,CA,2022-07-26
+6753,Mason,Thompson,mason.thompson@techcorp.com,415-555-9346,San Francisco,CA,2023-03-30
+6425,Charlotte,Moore,charlotte.moore@gmail.com,415-555-2889,San Francisco,CA,2022-06-19
+3925,Logan,Allen,logan.allen@hotmail.com,415-555-5349,San Francisco,CA,2021-03-20
+2776,Amelia,Walker,amelia.walker@hotmail.com,415-555-8119,San Francisco,CA,2022-12-09
+6139,Lucas,Young,lucas.young@icloud.com,415-555-9379,San Francisco,CA,2021-08-25
+7311,Emily,Hernandez,emily.hernandez@hotmail.com,415-555-4114,San Francisco,CA,2022-06-06
+1727,Aiden,King,aiden.king@techcorp.com,415-555-8144,San Francisco,CA,2021-01-04
+9518,Abigail,Wright,abigail.wright@company.com,415-555-9821,San Francisco,CA,2024-10-05
+4228,Jackson,Lopez,jackson.lopez@yahoo.com,415-555-8066,San Francisco,CA,2021-05-24
+6409,Madison,Hill,madison.hill@hotmail.com,415-555-6143,San Francisco,CA,2024-09-20
+3041,Caleb,Scott,caleb.scott@techcorp.com,415-555-5920,San Francisco,CA,2023-11-05
+6067,Chloe,Green,chloe.green@techcorp.com,415-555-7691,San Francisco,CA,2022-10-31
+7592,Jayden,Adams,jayden.adams@techcorp.com,415-555-5844,San Francisco,CA,2024-02-10
+3085,Ella,Baker,ella.baker@outlook.com,415-555-7888,San Francisco,CA,2024-09-23
+7211,Grayson,Nelson,grayson.nelson@techcorp.com,415-555-3851,San Francisco,CA,2024-06-14
+5930,Taylor,Carter,taylor.carter@icloud.com,415-555-9977,San Francisco,CA,2021-01-01
+5978,Jordan,Mitchell,jordan.mitchell@yahoo.com,415-555-4443,San Francisco,CA,2023-05-31
+6279,Morgan,Perez,morgan.perez@icloud.com,415-555-8238,San Francisco,CA,2023-06-25
+4501,Casey,Roberts,casey.roberts@hotmail.com,415-555-8752,San Francisco,CA,2021-12-14
+2389,Riley,Turner,riley.turner@yahoo.com,415-555-9445,San Francisco,CA,2024-09-21
+6491,Avery,Phillips,avery.phillips@gmail.com,415-555-4848,San Francisco,CA,2024-10-09
+6085,Quinn,Campbell,quinn.campbell@outlook.com,415-555-4262,San Francisco,CA,2021-10-29
+1400,Blake,Parker,blake.parker@gmail.com,415-555-5011,San Francisco,CA,2023-09-01
+2193,Dakota,Evans,dakota.evans@icloud.com,415-555-7790,San Francisco,CA,2024-07-13
+4185,Skyler,Edwards,skyler.edwards@techcorp.com,415-555-7291,San Francisco,CA,2023-10-10
+7547,Alex,Collins,alex.collins@outlook.com,415-555-3417,San Francisco,CA,2024-09-05
+1090,Sam,Stewart,sam.stewart@company.com,415-555-2746,San Francisco,CA,2023-05-21
+4585,Charlie,Morris,charlie.morris@outlook.com,415-555-9486,San Francisco,CA,2023-08-10
+1822,Reese,Rogers,reese.rogers@hotmail.com,415-555-5082,San Francisco,CA,2021-09-06
+8478,Peyton,Reed,peyton.reed@outlook.com,415-555-8612,San Francisco,CA,2024-09-29
+9702,Cameron,Cook,cameron.cook@hotmail.com,415-555-6198,San Francisco,CA,2023-06-26
+9270,Hayden,Morgan,hayden.morgan@icloud.com,415-555-9976,San Francisco,CA,2023-07-03
+3607,Jamie,Bell,jamie.bell@techcorp.com,415-555-8777,San Francisco,CA,2023-07-11
+5246,Drew,Murphy,drew.murphy@company.com,415-555-5050,San Francisco,CA,2024-07-29
+5543,Jesse,Bailey,jesse.bailey@company.com,415-555-9540,San Francisco,CA,2023-09-20
