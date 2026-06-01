@@ -6,3 +6,4 @@
 /old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/olist_orders_dataset.csv filter=lfs diff=lfs merge=lfs -text
 /src/J0_silver_atmo_pollen_2025_2026.csv filter=lfs diff=lfs merge=lfs -text
 /src/J0_silver_rnsa_pollen.csv filter=lfs diff=lfs merge=lfs -text
+/data/silver/J0_silver_atmo_pollen_2025_2026.csv filter=lfs diff=lfs merge=lfs -text
