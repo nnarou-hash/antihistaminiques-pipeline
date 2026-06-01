@@ -1,0 +1,81 @@
+ProductKey,ProductName,SKU,Category,SubCategory,Brand,RepairabilityIndex,WeightKg,UnitCost,RetailPrice,LaunchDate,Status,CREATED_BY,CREATED_DATE,MODIFIED_BY,MODIFIED_DATE,INTERNAL_CODE
+1000,Danone Home Blender Essential,KIT-BL-1000,Kitchen Appliances,Blenders,Danone Home,3.9,1.1,77.05,193.13,2019-03-07,Active,admin,2022-01-15,admin,2024-11-20,INT-38657
+1001,PureKitch Coffee Machine Smart,KIT-CO-1001,Kitchen Appliances,Coffee Machines,PureKitch,7.7,6.1,75.08,162.43,2022-04-21,Active,import_bot,2022-01-15,admin,2024-11-20,INT-30926
+1002,NutriBlend Food Processor Smart,KIT-FO-1002,Kitchen Appliances,Food Processors,NutriBlend,8.0,1.1,35.82,91.12,2023-10-02,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-44671
+1003,PureKitch Blender Max,KIT-BL-1003,Kitchen Appliances,Blenders,PureKitch,9.0,0.9,49.14,131.06,2022-06-20,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-35203
+1004,Danone Home Blender Essential,KIT-BL-1004,Kitchen Appliances,Blenders,Danone Home,9.4,7.3,88.54,175.47,2021-07-17,Active,j.dupont,2022-01-15,system,2024-11-20,INT-31319
+1005,NutriBlend Toaster Compact,KIT-TO-1005,Kitchen Appliances,Toasters,NutriBlend,9.1,5.6,30.69,76.08,2020-05-16,Active,admin,2022-01-15,system,2024-11-20,INT-59735
+1006,PureKitch Toaster Pro,KIT-TO-1006,Kitchen Appliances,Toasters,PureKitch,5.1,6.6,71.45,181.39,2019-03-07,Active,import_bot,2022-01-15,system,2024-11-20,INT-45093
+1007,Danone Home Blender Classic,KIT-BL-1007,Kitchen Appliances,Blenders,Danone Home,7.7,2.0,107.0,230.88,2022-08-09,Active,import_bot,2022-01-15,admin,2024-11-20,INT-44718
+1008,Danone Home Coffee Machine Smart,KIT-CO-1008,Kitchen Appliances,Coffee Machines,Danone Home,7.9,3.8,88.76,193.89,2019-10-11,Active,j.dupont,2022-01-15,system,2024-11-20,INT-21915
+1009,Danone Home Blender Smart,KIT-BL-1009,Kitchen Appliances,Blenders,Danone Home,7.4,5.2,24.3,63.62,2021-08-16,Active,j.dupont,2022-01-15,system,2024-11-20,INT-82512
+1010,PureKitch Blender Eco,KIT-BL-1010,Kitchen Appliances,Blenders,PureKitch,6.5,2.5,91.7,188.55,2021-06-09,Active,admin,2022-01-15,system,2024-11-20,INT-10425
+1011,PureKitch Toaster Plus,KIT-TO-1011,Kitchen Appliances,Toasters,PureKitch,3.7,5.4,89.23,197.62,2023-04-11,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-79514
+1012,PureKitch Blender Max,KIT-BL-1012,Kitchen Appliances,Blenders,PureKitch,9.0,7.5,35.85,101.3,2020-05-08,Active,j.dupont,2022-01-15,admin,2024-11-20,INT-21226
+1013,Danone Home Food Processor Compact,KIT-FO-1013,Kitchen Appliances,Food Processors,Danone Home,3.8,5.7,111.92,245.15,2023-11-22,Active,j.dupont,2022-01-15,system,2024-11-20,INT-37760
+1014,PureKitch Kettle Eco,KIT-KE-1014,Kitchen Appliances,Kettles,PureKitch,5.6,5.8,89.53,181.76,2021-11-25,Active,import_bot,2022-01-15,admin,2024-11-20,INT-42493
+1015,Danone Home Coffee Machine Essential,KIT-CO-1015,Kitchen Appliances,Coffee Machines,Danone Home,4.5,2.1,48.81,104.37,2019-05-01,Active,admin,2022-01-15,admin,2024-11-20,INT-14117
+1016,Danone Home Toaster Classic,KIT-TO-1016,Kitchen Appliances,Toasters,Danone Home,6.2,4.7,58.06,143.1,2021-08-26,Active,import_bot,2022-01-15,admin,2024-11-20,INT-22363
+1017,PureKitch Blender Essential,KIT-BL-1017,Kitchen Appliances,Blenders,PureKitch,6.0,6.3,54.26,124.82,2023-01-31,Discontinued,import_bot,2022-01-15,admin,2024-11-20,INT-42591
+1018,Danone Home Coffee Machine Essential,KIT-CO-1018,Kitchen Appliances,Coffee Machines,Danone Home,4.2,4.1,55.94,147.97,2023-10-31,Active,j.dupont,2022-01-15,admin,2024-11-20,INT-16630
+1019,Danone Home Kettle Classic,KIT-KE-1019,Kitchen Appliances,Kettles,Danone Home,8.5,1.7,130.16,243.17,2023-11-06,Active,import_bot,2022-01-15,admin,2024-11-20,INT-31579
+1020,Danone Baby Food Maker Smart,BAB-FO-1020,Baby Care Devices,Food Makers,Danone Baby,6.8,4.0,52.28,148.08,2023-02-05,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-73788
+1021,Danone Baby Sterilizer Eco,BAB-ST-1021,Baby Care Devices,Sterilizers,Danone Baby,5.7,4.7,28.91,58.56,2022-04-11,Discontinued,import_bot,2022-01-15,m.leroy,2024-11-20,INT-79615
+1022,Danone Baby Sterilizer Plus,BAB-ST-1022,Baby Care Devices,Sterilizers,Danone Baby,3.5,5.2,45.79,144.89,2022-03-12,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-87924
+1023,Danone Baby Bottle Warmer Plus,BAB-BO-1023,Baby Care Devices,Bottle Warmers,Danone Baby,5.4,8.0,31.04,74.49,2020-10-05,Active,admin,2022-01-15,system,2024-11-20,INT-61876
+1024,LittleOne Sterilizer Essential,BAB-ST-1024,Baby Care Devices,Sterilizers,LittleOne,7.6,0.4,38.59,79.43,2020-03-12,Discontinued,j.dupont,2022-01-15,system,2024-11-20,INT-27361
+1025,Danone Baby Baby Monitor Max,BAB-BA-1025,Baby Care Devices,Baby Monitors,Danone Baby,3.4,7.1,50.22,134.3,2023-07-11,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-11025
+1026,Danone Baby Baby Monitor Compact,BAB-BA-1026,Baby Care Devices,Baby Monitors,Danone Baby,3.1,1.2,46.43,142.05,2022-05-23,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-54942
+1027,LittleOne Sterilizer Smart,BAB-ST-1027,Baby Care Devices,Sterilizers,LittleOne,7.5,0.7,30.01,85.69,2019-04-01,Active,admin,2022-01-15,system,2024-11-20,INT-27146
+1028,Danone Baby Baby Monitor Essential,BAB-BA-1028,Baby Care Devices,Baby Monitors,Danone Baby,4.9,0.4,47.74,116.35,2022-11-16,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-14722
+1029,Danone Baby Baby Monitor Pro,BAB-BA-1029,Baby Care Devices,Baby Monitors,Danone Baby,4.5,8.0,23.39,75.86,2020-03-06,Active,j.dupont,2022-01-15,admin,2024-11-20,INT-97416
+1030,LittleOne Bottle Warmer Compact,BAB-BO-1030,Baby Care Devices,Bottle Warmers,LittleOne,4.7,5.4,57.89,121.41,2020-04-29,Active,admin,2022-01-15,admin,2024-11-20,INT-64040
+1031,Danone Baby Bottle Warmer Plus,BAB-BO-1031,Baby Care Devices,Bottle Warmers,Danone Baby,7.6,6.9,42.41,115.74,2023-06-01,Active,j.dupont,2022-01-15,admin,2024-11-20,INT-60140
+1032,LittleOne Bottle Warmer Plus,BAB-BO-1032,Baby Care Devices,Bottle Warmers,LittleOne,5.0,2.8,22.66,48.91,2022-09-13,Active,admin,2022-01-15,system,2024-11-20,INT-53025
+1033,Danone Baby Baby Monitor Eco,BAB-BA-1033,Baby Care Devices,Baby Monitors,Danone Baby,6.0,3.6,51.84,145.69,2019-08-25,Active,import_bot,2022-01-15,admin,2024-11-20,INT-86099
+1034,Danone Baby Baby Monitor Essential,BAB-BA-1034,Baby Care Devices,Baby Monitors,Danone Baby,6.5,2.9,13.19,34.08,2022-03-26,Active,admin,2022-01-15,system,2024-11-20,INT-15817
+1035,Danone Baby Food Maker Plus,BAB-FO-1035,Baby Care Devices,Food Makers,Danone Baby,6.3,8.0,40.4,87.58,2019-05-24,Active,j.dupont,2022-01-15,system,2024-11-20,INT-91678
+1036,Danone Baby Baby Monitor Smart,BAB-BA-1036,Baby Care Devices,Baby Monitors,Danone Baby,4.2,3.6,40.89,113.56,2022-02-09,Active,admin,2022-01-15,admin,2024-11-20,INT-65108
+1037,Danone Baby Food Maker Max,BAB-FO-1037,Baby Care Devices,Food Makers,Danone Baby,5.5,0.3,36.02,100.01,2023-05-29,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-95813
+1038,LittleOne Baby Monitor Compact,BAB-BA-1038,Baby Care Devices,Baby Monitors,LittleOne,5.3,6.8,33.69,77.42,2020-08-04,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-92960
+1039,Danone Baby Baby Monitor Plus,BAB-BA-1039,Baby Care Devices,Baby Monitors,Danone Baby,6.2,2.1,56.9,126.39,2019-04-05,Active,admin,2022-01-15,system,2024-11-20,INT-90120
+1040,Volvic Pure Countertop Dispenser Classic,WAT-CO-1040,Water Dispensers,Countertop Dispensers,Volvic Pure,5.0,6.0,80.59,189.19,2019-10-30,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-10726
+1041,Volvic Pure Countertop Dispenser Plus,WAT-CO-1041,Water Dispensers,Countertop Dispensers,Volvic Pure,7.5,4.1,54.73,118.77,2019-09-06,Active,import_bot,2022-01-15,admin,2024-11-20,INT-70901
+1042,Volvic Pure Sparkling Maker Classic,WAT-SP-1042,Water Dispensers,Sparkling Makers,Volvic Pure,6.5,7.1,115.64,260.54,2023-03-04,Active,import_bot,2022-01-15,system,2024-11-20,INT-43972
+1043,Volvic Pure Filter System Essential,WAT-FI-1043,Water Dispensers,Filter Systems,Volvic Pure,7.1,2.6,127.62,315.68,2020-04-25,Active,import_bot,2022-01-15,system,2024-11-20,INT-51904
+1044,Evian Home Countertop Dispenser Smart,WAT-CO-1044,Water Dispensers,Countertop Dispensers,Evian Home,4.8,2.1,35.51,94.29,2022-01-16,Active,import_bot,2022-01-15,system,2024-11-20,INT-18161
+1045,Volvic Pure Filter System Smart,WAT-FI-1045,Water Dispensers,Filter Systems,Volvic Pure,8.7,0.5,81.8,180.2,2020-12-21,Active,import_bot,2022-01-15,system,2024-11-20,INT-64921
+1046,Volvic Pure Filter System Smart,WAT-FI-1046,Water Dispensers,Filter Systems,Volvic Pure,4.1,3.1,46.07,118.98,2023-09-18,Active,import_bot,2022-01-15,admin,2024-11-20,INT-91560
+1047,Volvic Pure Countertop Dispenser Classic,WAT-CO-1047,Water Dispensers,Countertop Dispensers,Volvic Pure,4.4,3.8,109.48,253.07,2020-06-16,Active,import_bot,2022-01-15,system,2024-11-20,INT-37742
+1048,Volvic Pure Portable Filter Smart,WAT-PO-1048,Water Dispensers,Portable Filters,Volvic Pure,5.4,8.1,76.86,161.49,2019-06-17,Active,import_bot,2022-01-15,admin,2024-11-20,INT-80702
+1049,Volvic Pure Countertop Dispenser Pro,WAT-CO-1049,Water Dispensers,Countertop Dispensers,Volvic Pure,8.8,0.6,37.87,120.71,2020-02-13,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-29973
+1050,Evian Home Filter System Max,WAT-FI-1050,Water Dispensers,Filter Systems,Evian Home,8.7,4.1,67.96,210.47,2019-12-10,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-25012
+1051,Volvic Pure Filter System Smart,WAT-FI-1051,Water Dispensers,Filter Systems,Volvic Pure,5.6,5.9,24.08,78.91,2023-01-04,Active,admin,2022-01-15,admin,2024-11-20,INT-87607
+1052,Evian Home Filter System Pro,WAT-FI-1052,Water Dispensers,Filter Systems,Evian Home,7.4,6.9,104.84,290.98,2021-05-27,Active,j.dupont,2022-01-15,system,2024-11-20,INT-19038
+1053,Evian Home Sparkling Maker Classic,WAT-SP-1053,Water Dispensers,Sparkling Makers,Evian Home,4.5,8.2,160.63,345.84,2021-06-10,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-78386
+1054,Volvic Pure Sparkling Maker Plus,WAT-SP-1054,Water Dispensers,Sparkling Makers,Volvic Pure,7.0,2.9,96.44,207.34,2019-06-27,Active,import_bot,2022-01-15,system,2024-11-20,INT-41963
+1055,Volvic Pure Portable Filter Eco,WAT-PO-1055,Water Dispensers,Portable Filters,Volvic Pure,5.6,4.3,64.25,161.09,2020-11-28,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-46211
+1056,Evian Home Countertop Dispenser Classic,WAT-CO-1056,Water Dispensers,Countertop Dispensers,Evian Home,6.4,6.5,31.44,70.81,2021-10-02,Active,import_bot,2022-01-15,admin,2024-11-20,INT-22196
+1057,Evian Home Sparkling Maker Eco,WAT-SP-1057,Water Dispensers,Sparkling Makers,Evian Home,7.3,3.3,64.7,185.57,2023-03-08,Active,j.dupont,2022-01-15,system,2024-11-20,INT-56112
+1058,Volvic Pure Portable Filter Compact,WAT-PO-1058,Water Dispensers,Portable Filters,Volvic Pure,7.6,2.9,52.04,150.37,2023-02-21,Active,import_bot,2022-01-15,system,2024-11-20,INT-87278
+1059,Evian Home Sparkling Maker Compact,WAT-SP-1059,Water Dispensers,Sparkling Makers,Evian Home,5.8,2.8,122.05,339.74,2019-04-22,Active,j.dupont,2022-01-15,system,2024-11-20,INT-26551
+1060,Danone Nutri Portion Scale Compact,NUT-PO-1060,Nutrition Devices,Portion Scales,Danone Nutri,5.1,3.9,79.09,160.26,2020-06-01,Active,import_bot,2022-01-15,admin,2024-11-20,INT-18564
+1061,Activia Home Portion Scale Max,NUT-PO-1061,Nutrition Devices,Portion Scales,Activia Home,2.3,1.5,18.5,36.47,2020-05-23,Active,admin,2022-01-15,m.leroy,2024-11-20,INT-64548
+1062,Activia Home Fermentation Kit Max,NUT-FE-1062,Nutrition Devices,Fermentation Kits,Activia Home,7.6,8.4,43.68,94.82,2019-05-04,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-23006
+1063,Danone Nutri Fermentation Kit Compact,NUT-FE-1063,Nutrition Devices,Fermentation Kits,Danone Nutri,3.6,4.8,24.44,66.01,2021-07-11,Discontinued,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-71592
+1064,Danone Nutri Smoothie System Plus,NUT-SM-1064,Nutrition Devices,Smoothie Systems,Danone Nutri,6.6,4.0,32.06,60.87,2023-06-02,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-96662
+1065,Activia Home Fermentation Kit Compact,NUT-FE-1065,Nutrition Devices,Fermentation Kits,Activia Home,3.0,2.5,17.38,42.78,2019-12-06,Discontinued,import_bot,2022-01-15,m.leroy,2024-11-20,INT-84607
+1066,Activia Home Smoothie System Classic,NUT-SM-1066,Nutrition Devices,Smoothie Systems,Activia Home,6.5,8.0,23.11,44.26,2022-05-09,Active,admin,2022-01-15,system,2024-11-20,INT-52247
+1067,Danone Nutri Smoothie System Pro,NUT-SM-1067,Nutrition Devices,Smoothie Systems,Danone Nutri,7.4,5.0,23.12,39.15,2022-10-08,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-15273
+1068,Activia Home Fermentation Kit Smart,NUT-FE-1068,Nutrition Devices,Fermentation Kits,Activia Home,3.8,8.5,48.56,105.43,2021-10-04,Active,admin,2022-01-15,system,2024-11-20,INT-55607
+1069,Activia Home Portion Scale Classic,NUT-PO-1069,Nutrition Devices,Portion Scales,Activia Home,3.0,3.7,28.12,74.75,2021-03-31,Active,j.dupont,2022-01-15,admin,2024-11-20,INT-69614
+1070,Activia Home Yogurt Maker Pro,NUT-YO-1070,Nutrition Devices,Yogurt Makers,Activia Home,7.0,7.4,24.3,64.11,2022-01-16,Active,import_bot,2022-01-15,system,2024-11-20,INT-17104
+1071,Activia Home Fermentation Kit Max,NUT-FE-1071,Nutrition Devices,Fermentation Kits,Activia Home,4.9,0.7,57.67,121.5,2020-08-12,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-73532
+1072,Danone Nutri Yogurt Maker Pro,NUT-YO-1072,Nutrition Devices,Yogurt Makers,Danone Nutri,3.6,1.6,88.3,175.83,2019-07-10,Active,admin,2022-01-15,admin,2024-11-20,INT-70482
+1073,Danone Nutri Yogurt Maker Classic,NUT-YO-1073,Nutrition Devices,Yogurt Makers,Danone Nutri,5.3,2.5,54.1,102.24,2020-05-14,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-28958
+1074,Danone Nutri Portion Scale Max,NUT-PO-1074,Nutrition Devices,Portion Scales,Danone Nutri,7.7,7.4,80.09,167.88,2023-10-16,Active,import_bot,2022-01-15,system,2024-11-20,INT-76550
+1075,Danone Nutri Smoothie System Classic,NUT-SM-1075,Nutrition Devices,Smoothie Systems,Danone Nutri,5.8,8.5,29.23,68.83,2021-07-03,Active,j.dupont,2022-01-15,system,2024-11-20,INT-55236
+1076,Activia Home Smoothie System Smart,NUT-SM-1076,Nutrition Devices,Smoothie Systems,Activia Home,3.2,6.0,41.14,95.57,2023-05-08,Active,import_bot,2022-01-15,admin,2024-11-20,INT-51704
+1077,Activia Home Portion Scale Classic,NUT-PO-1077,Nutrition Devices,Portion Scales,Activia Home,7.3,8.3,43.77,84.83,2019-09-16,Active,j.dupont,2022-01-15,m.leroy,2024-11-20,INT-53515
+1078,Activia Home Yogurt Maker Compact,NUT-YO-1078,Nutrition Devices,Yogurt Makers,Activia Home,2.1,1.5,23.36,40.45,2023-05-20,Discontinued,import_bot,2022-01-15,system,2024-11-20,INT-91691
+1079,Danone Nutri Portion Scale Eco,NUT-PO-1079,Nutrition Devices,Portion Scales,Danone Nutri,7.6,3.4,88.41,157.01,2023-04-05,Active,import_bot,2022-01-15,m.leroy,2024-11-20,INT-14705

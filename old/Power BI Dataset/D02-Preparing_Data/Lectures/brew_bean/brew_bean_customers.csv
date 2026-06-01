@@ -1,0 +1,21 @@
+CustomerID,FirstName,LastName,Email,Phone,City,State,SignupDate
+1122,James,Wilson,james.wilson@gmail.com,206-555-1234,Seattle,WA,2022-03-15
+1122,James,Wilson,j.wilson@outlook.com,(206)555-1234,seattle,WA,2023-06-20
+2201,Maria,Chen,,503-555-2345,Portland,OR,2022-05-10
+2201,Maria,Chen,maria.chen@techcorp.com,(503) 555-2345,portland,OR,2023-08-15
+3301,Sarah,Johnson,sarah.j@email.com,206.555.3456,SEATTLE,WA,2022-07-22
+4521,Lewis,Hamilton,lewis.h@racing.com,5035558901,Portland OR,OR,2022-09-05
+4521,Lewis,Hamilton,l.hamilton@f1.com,(503)555-8901,Portlnd,OR,2023-11-10
+5501,Emma,Davis,emma.davis@gmail.com,206 555 7890,Seatle,WA,2022-11-18
+6601,Michael,Brown,m.brown@company.com,503-555-4567,San Francisco,CA,2023-01-25
+7701,Jennifer,Garcia,,206-555-5678,Seattle WA,WA,2023-02-14
+8801,David,Martinez,david.m@email.com,(206) 555-6789,san francisco,CA,2023-03-30
+9901,Lisa,Anderson,lisa.a@work.com,503.555.7890,San Fran,CA,2023-04-12
+1102,Robert,Taylor,r.taylor@gmail.com,2065558901,SF,CA,2023-05-20
+1203,Amanda,Thomas,,5035559012,S.F.,CA,2023-06-08
+1304,Christopher,White,chris.w@email.com,(503) 555-0123,Portland,OR,2023-07-15
+1405,Jessica,Harris,j.harris@company.com,206 555 1234,Seattle,WA,2023-08-22
+1506,Daniel,Clark,daniel.c@gmail.com,503-555-2345,portland,OR,2023-09-10
+1607,Michelle,Lewis,,206.555.3456,SEATTLE,WA,2023-10-05
+1708,Kevin,Lee,kevin.lee@email.com,(206)555-4567,seattle,WA,2023-11-18
+1809,Stephanie,Walker,s.walker@work.com,5035555678,San Francisco,CA,2023-12-01

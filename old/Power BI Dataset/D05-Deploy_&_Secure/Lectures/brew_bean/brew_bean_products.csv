@@ -1,0 +1,25 @@
+ProductID,ProductName,Category,Size,UnitPrice,Cost,Supplier,AddedBy,AddedDate
+P001,Latte - Small,Coffee,Small,4.00,1.80,Bean Brothers,Manager_A,2020-03-15
+P002,Latte - Medium,Coffee,Medium,4.50,2.10,Bean Brothers,Manager_A,2020-03-15
+P003,Latte - Large,Coffee,Large,5.00,2.40,Bean Brothers,Manager_A,2020-03-15
+P004,Cappuccino - Small,Coffee,Small,4.25,1.90,Bean Brothers,Manager_A,2020-03-15
+P005,Cappuccino - Medium,Coffee,Medium,4.75,2.20,Bean Brothers,Manager_A,2020-03-15
+P006,Cappuccino - Large,Coffee,Large,5.25,999,BEAN BROTHERS,Manager_B,2021-06-20
+P007,Espresso - Single,Coffee,Single,2.75,0.95,bean brothers,Manager_B,2021-06-20
+P008,Espresso - Double,Coffee,Double,3.50,1.50,bean brothers,Manager_B,2021-06-20
+P009,Americano - Small,Coffee,Small,3.25,1.10,Bean Brothers,Manager_B,2021-06-20
+P010,Americano - Medium,Coffee,Medium,3.75,1.35,Bean Brothers,Manager_B,2021-06-20
+P011,Americano - Large,Coffee,Large,4.25,999,Bean Brothers,Manager_B,2021-06-20
+P012,Mocha - Small,Coffee,Small,4.75,2.30,Bean Bros,Manager_B,2021-08-10
+P013,Mocha - Medium,Coffee,Medium,5.25,2.60,Bean Bros,Manager_B,2021-08-10
+P014,Mocha - Large,Coffee,Large,5.75,2.90,Bean Bros,Manager_B,2021-08-10
+P015,Flat White,Coffee,Standard,4.75,2.15,Bean Brothers,Manager_C,2022-11-05
+P016,Cold Brew - Medium,Coffee,Medium,4.00,999,bean brothers,Manager_C,2022-11-05
+P017,Cold Brew - Large,Coffee,Large,4.50,2.00,Bean Brothers,Manager_C,2022-11-05
+P018,Drip Coffee - Medium,Coffee,Medium,2.75,0.65,BEAN BROTHERS,Manager_C,2023-02-18
+P019,Hot Chocolate - Medium,Non-Coffee,Medium,4.25,1.75,Sweet Treats Co,Manager_C,2023-02-18
+P020,Chai Latte - Medium,Non-Coffee,Medium,4.50,999,Tea Imports LLC,Manager_C,2023-04-22
+P021,Matcha Latte - Medium,Non-Coffee,Medium,5.00,2.50,Tea Imports LLC,Manager_C,2023-04-22
+P022,Hot Tea - Medium,Non-Coffee,Medium,3.00,0.50,tea imports,Manager_C,2023-06-10
+P023,Iced Tea - Large,Non-Coffee,Large,3.50,999,Tea Imports LLC,Manager_C,2023-06-10
+P024,Pastry - Croissant,Food,Standard,3.75,1.25,Local Bakery,Manager_C,2023-08-15

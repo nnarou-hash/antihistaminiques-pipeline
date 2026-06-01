@@ -1,0 +1,9 @@
+FacilityID,FacilityName,FacilityType,City,State,Status,LicensedBeds,TargetOccupancyPct
+1,Mercy General,Full-Service Hospital,San Francisco,California,Active,400,85
+2,Pacific Medical,Full-Service Hospital,Los Angeles,California,Active,350,85
+3,Cascade Urgent Care,Urgent Care Clinic,Portland,Oregon,Active,40,80
+4,Cascade Specialty Center,Specialty Center,Seattle,Washington,Active,120,80
+5,Marina Clinic,Urgent Care Clinic,San Francisco,California,Active,35,80
+6,Sacramento Valley Hospital,Full-Service Hospital,Sacramento,California,Active,280,85
+7,Emerald Urgent Care,Urgent Care Clinic,Eugene,Oregon,Active,30,80
+8,Spokane Specialty Center,Specialty Center,Spokane,Washington,Active,90,80

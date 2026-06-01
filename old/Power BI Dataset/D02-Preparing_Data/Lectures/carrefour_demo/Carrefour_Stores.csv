@@ -1,0 +1,13 @@
+﻿StoreID,StoreName,StoreFormat,Address,City,DepartmentCode,Department,Region,SurfaceArea_m2
+ST001,Carrefour Hypermarché Montreuil,Hypermarché,15 Rue de Paris,Montreuil,93,Seine-Saint-Denis,Île-de-France,8500
+ST002,Carrefour Market Lyon Part-Dieu,Market,42 Rue de la Part-Dieu,Lyon,69,Rhône,Auvergne-Rhône-Alpes,2200
+ST003,Carrefour Express Marseille Vieux-Port,Express,8 Quai du Port,Marseille,13,Bouches-du-Rhône,Provence-Alpes-Côte d'Azur,350
+ST004,Carrefour City Paris 11e,City,23 Boulevard Voltaire,Paris,75,Paris,Île-de-France,450
+ST005,Carrefour Hypermarché Toulouse Purpan,Hypermarché,201 Route de Bayonne,Toulouse,31,Haute-Garonne,Occitanie,9200
+ST006,Carrefour Market Bordeaux Chartrons,Market,55 Cours Portal,Bordeaux,33,Gironde,Nouvelle-Aquitaine,1800
+ST007,Carrefour Express Nantes Graslin,Express,3 Place Graslin,Nantes,44,Loire-Atlantique,Pays de la Loire,280
+ST008,Carrefour Hypermarché Lille Lomme,Hypermarché,Centre Commercial,Lomme,59,Nord,Hauts-de-France,11000
+ST009,Carrefour City Strasbourg Petite France,City,12 Rue du Bain-aux-Plantes,Strasbourg,67,Bas-Rhin,Grand Est,380
+ST010,Carrefour Market Rennes Centre,Market,29 Rue de Fougères,Rennes,35,Ille-et-Vilaine,Bretagne,1600
+ST011,Carrefour Express Nice Garibaldi,Express,17 Place Garibaldi,Nice,06,Alpes-Maritimes,Provence-Alpes-Côte d'Azur,310
+ST012,Carrefour Hypermarché Metz Augny,Hypermarché,ZAC des Deux Fontaines,Augny,57,Moselle,Grand Est,7800

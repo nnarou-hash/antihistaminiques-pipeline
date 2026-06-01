@@ -1,0 +1,8 @@
+/old/Power[[:space:]]BI[[:space:]]Dataset/D04-Modeling_Data/Lectures/FactSales.csv filter=lfs diff=lfs merge=lfs -text
+/old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/archive.zip filter=lfs diff=lfs merge=lfs -text
+/old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/olist_geolocation_dataset.csv filter=lfs diff=lfs merge=lfs -text
+/old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/olist_order_items_dataset.csv filter=lfs diff=lfs merge=lfs -text
+/old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/olist_order_reviews_dataset.csv filter=lfs diff=lfs merge=lfs -text
+/old/Power[[:space:]]BI[[:space:]]Dataset/D06-Prepare_PL_300/Project/olist_orders_dataset.csv filter=lfs diff=lfs merge=lfs -text
+/src/J0_silver_atmo_pollen_2025_2026.csv filter=lfs diff=lfs merge=lfs -text
+/src/J0_silver_rnsa_pollen.csv filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,13 @@
+StoreKey,StoreName,City,Region,OpenDate,SquareFootage,Manager,ManagerEmail
+1,Downtown Flagship,Seattle,West,2019-03-15,2200,Maria Chen,maria.chen@brewbean.com
+2,Pike Place,Seattle,West,2020-06-01,1100,James Wilson,james.wilson@brewbean.com
+3,Capitol Hill,Seattle,West,2021-02-20,1450,Aisha Patel,aisha.patel@brewbean.com
+4,Pearl District,Portland,West,2019-08-10,1800,Tom Rodriguez,tom.rodriguez@brewbean.com
+5,Alberta Arts,Portland,West,2022-01-05,1200,Sarah Kim,sarah.kim@brewbean.com
+6,Hawthorne,Portland,West,2020-11-15,1350,David Park,david.park@brewbean.com
+7,Union Square,San Francisco,West,2018-05-20,2400,Lisa Zhang,lisa.zhang@brewbean.com
+8,Mission District,San Francisco,West,2021-07-01,1600,Carlos Mendez,carlos.mendez@brewbean.com
+9,Hayes Valley,San Francisco,West,2022-09-10,1100,Emma Thompson,emma.thompson@brewbean.com
+10,Marina,San Francisco,West,2020-04-25,1500,Kevin O'Brien,kevin.obrien@brewbean.com
+11,North Beach,San Francisco,West,2023-01-15,1250,Nina Patel,nina.patel@brewbean.com
+12,SoMa,San Francisco,West,2019-10-01,1900,Michael Chang,michael.chang@brewbean.com

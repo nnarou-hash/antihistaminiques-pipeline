@@ -1,0 +1,13 @@
+StoreID,StoreName,City,State,Region,Manager,OpenDate,Latitude,Longitude
+S01,Capitol Hill,Seattle,WA,Pacific Northwest,Alex Torres,2018-03-01,47.6205,-122.3212
+S02,Pike Place,Seattle,WA,Pacific Northwest,Jamie Lee,2017-06-15,47.6094,-122.3422
+S03,Fremont,Seattle,WA,Pacific Northwest,Riley Nguyen,2019-09-01,47.6513,-122.3501
+S04,Ballard,Seattle,WA,Pacific Northwest,Sam Park,2020-02-10,47.6686,-122.3829
+S05,Pearl District,Portland,OR,Pacific Northwest,Morgan Clark,2018-11-01,45.5252,-122.683
+S06,Hawthorne,Portland,OR,Pacific Northwest,Casey Reed,2019-04-20,45.5122,-122.6364
+S07,Alberta Arts,Portland,OR,Pacific Northwest,Drew Patel,2021-01-15,45.5585,-122.6065
+S08,Division Street,Portland,OR,Pacific Northwest,Jordan Kim,2022-05-05,45.5033,-122.6247
+S09,Downtown Flagship,San Francisco,CA,Bay Area,Taylor Brooks,2016-07-04,37.7875,-122.4002
+S10,Marina,San Francisco,CA,Bay Area,Avery Walsh,2018-09-10,37.8004,-122.4369
+S11,Hayes Valley,San Francisco,CA,Bay Area,Quinn Foster,2019-12-01,37.7759,-122.4245
+S12,SoMa,San Francisco,CA,Bay Area,Blake Morales,2021-03-20,37.7785,-122.3948
