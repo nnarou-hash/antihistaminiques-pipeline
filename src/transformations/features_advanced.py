@@ -29,5 +29,6 @@ def build_features_advanced():
     return df
 
 if __name__ == '__main__':
-    os.chdir('C:/Users/kongm/Desktop/PROJETS_FULLSTACK_PHARMA/antihistaminiques-pipeline')
+    ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    os.chdir(ROOT)
     build_features_advanced()
