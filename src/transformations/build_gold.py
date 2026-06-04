@@ -1,15 +1,18 @@
 import pandas as pd
 from sqlalchemy import create_engine
 import os
+from dotenv import load_dotenv
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 os.chdir(ROOT)
 os.makedirs('data/gold', exist_ok=True)
 
-ENGINE = create_engine('postgresql://pipeline:pipeline2026@localhost:5432/antihistaminiques')
+load_dotenv()
+DB_URL = os.getenv('DB_URL', 'postgresql://pipeline:pipeline2026@localhost:5432/antihistaminiques')
+ENGINE = create_engine(DB_URL)
 
-def build_gold():
-    print("Construction table Gold...")
+def build_gold(classe_atc='R06'):
+    print(f"Construction table Gold — classe ATC : {classe_atc}...")
 
     pollen = pd.read_csv('data/gold/pollen_meteo_features.csv')
     rup    = pd.read_csv('data/silver/J0_silver_ruptures.csv')
@@ -18,10 +21,10 @@ def build_gold():
     pollen['date'] = pd.to_datetime(pollen['date'])
     rup['date_evenement'] = pd.to_datetime(rup['date_evenement'], errors='coerce')
 
-    # Ruptures R06 par mois
-    rup_r06 = rup[rup['code_atc'].str.startswith('R06', na=False)].copy()
-    rup_r06['annee_mois_str'] = rup_r06['date_evenement'].dt.to_period('M').astype(str)
-    rup_agg = rup_r06.groupby('annee_mois_str').agg(
+    # Ruptures filtrées par classe ATC
+    rup_filtre = rup[rup['code_atc'].str.startswith(classe_atc, na=False)].copy()
+    rup_filtre['annee_mois_str'] = rup_filtre['date_evenement'].dt.to_period('M').astype(str)
+    rup_agg = rup_filtre.groupby('annee_mois_str').agg(
         nb_ruptures=('classification', lambda x: (x=='rupture').sum()),
         nb_risques= ('classification', lambda x: (x=='risque').sum()),
     ).reset_index()
@@ -54,7 +57,8 @@ def build_gold():
 
     # Open Medic par annee
     om['BOITES'] = pd.to_numeric(om['BOITES'], errors='coerce')
-    om_agg = om.groupby('annee')['BOITES'].sum().reset_index()
+    om_r06 = om[om['ATC4'].astype(str).str.startswith(classe_atc, na=False)]
+    om_agg = om_r06.groupby('annee')['BOITES'].sum().reset_index()
     om_agg.columns = ['annee','boites_total']
 
     # Jointure finale
@@ -65,14 +69,21 @@ def build_gold():
     gold['target_rupture'] = gold['target_rupture'].fillna(0).astype(int)
     gold['nb_ruptures']    = gold['nb_ruptures'].fillna(0).astype(int)
     gold['nb_risques']     = gold['nb_risques'].fillna(0).astype(int)
+    gold['classe_atc']     = classe_atc
 
+    # Sauvegarde fichier specifique + fichier courant
+    gold.to_csv(f'data/gold/gold_ml_{classe_atc}.csv', index=False)
     gold.to_csv('data/gold/gold_ml.csv', index=False)
+    gold.to_sql(f'gold_ml_{classe_atc}', ENGINE, if_exists='replace', index=False)
     gold.to_sql('gold_ml', ENGINE, if_exists='replace', index=False)
 
-    print(f"  gold_ml : {gold.shape}")
-    print(f"  Colonnes : {gold.columns.tolist()}")
-    print(f"  Mois avec rupture/tension R06 : {gold['target_rupture'].sum()}")
+    print(f"  gold_ml_{classe_atc} : {gold.shape}")
+    print(f"  Mois avec rupture/tension {classe_atc} : {gold['target_rupture'].sum()}")
     return gold
 
 if __name__ == '__main__':
-    build_gold()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--classe', default='R06', help='Classe ATC (R06, R03, J01)')
+    args = parser.parse_args()
+    build_gold(classe_atc=args.classe)
