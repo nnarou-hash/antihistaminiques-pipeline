@@ -21,7 +21,6 @@ FEATURES_CLF = [
     'ruptures_lag1', 'gram_lag_mois', 'cumul_thermique'
 ]
 
-
 FEATURES_REG = [
     'gram_moy', 'gram_max', 'gram_roll7', 'nb_jours_pic',
     'temp_moy', 'precip', 'mois', 'saison_allergies'
@@ -42,10 +41,10 @@ def predict():
     fc = [f for f in FEATURES_CLF if f in df.columns]
     fr = [f for f in FEATURES_REG if f in df.columns]
 
-    df['pred_rupture']      = clf.predict(df[fc].fillna(0))
-    df['proba_rupture']     = clf.predict_proba(df[fc].fillna(0))[:, 1]
-    df['pred_gram_next']    = reg.predict(df[fr].fillna(0))
-    df['generated_at']      = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    df['pred_rupture']   = clf.predict(df[fc].fillna(0))
+    df['proba_rupture']  = clf.predict_proba(df[fc].fillna(0))[:, 1]
+    df['pred_gram_next'] = reg.predict(df[fr].fillna(0))
+    df['generated_at']   = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     out = df[['annee_mois_str', 'pred_rupture', 'proba_rupture',
               'pred_gram_next', 'generated_at']]
