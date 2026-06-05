@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="Pollen & Prédictions", page_icon="🌿", layout="wide")
-st.title("🌿 Analyse Pollen & Prédictions ML")
+st.set_page_config(page_title="Pollen ", page_icon="🌿", layout="wide")
+st.title("🌿 Analyse Pollen ")
 
 # =====================
 # CHARGEMENT DONNEES
@@ -138,7 +138,7 @@ st.sidebar.markdown(f"**Taxon : {taxon_select}**")
 st.sidebar.markdown("**Légende :**")
 st.sidebar.markdown("🟢 Graminées | 🔵 Bouleau | 🟠 Ambroisie")
 st.sidebar.markdown("🟣 Aulne | 🔴 Armoise | 🟡 Olivier")
-st.sidebar.markdown("⭐ Rupture")
+st.sidebar.markdown("🟡 Rupture")
 
 st.divider()
 
@@ -148,20 +148,15 @@ st.divider()
 st.subheader(f"📊 KPIs — {classe_select} — {taxon_select}")
 st.write("")
 
-col1, col2, col3, col4 = st.columns(4)
+_, col1, col2, _ = st.columns([1, 2, 2, 1])
 with col1:
-    taux = df_filtered['target_rupture'].mean() * 100
-    st.metric("Taux de rupture", f"{taux:.1f}%")
-with col2:
     if mode_tous:
         max_val = max(df_filtered[c].max() for c in cols_actifs)
         max_tax = labels[max(cols_actifs, key=lambda c: df_filtered[c].max())]
         st.metric("Concentration max", f"{max_val:.1f} g/m³", help=f"Taxon : {max_tax}")
     else:
         st.metric(f"{taxon_select} max", f"{df_filtered[col_selected].max():.1f} g/m³")
-with col3:
-    st.metric("Mois en tension", f"{int(df_filtered['target_rupture'].sum())} / {len(df_filtered)}")
-with col4:
+with col2:
     if len(df_filtered) > 0:
         mois_pic = df_filtered.groupby('mois')[col_selected].mean().idxmax()
         st.metric("Mois pic", mois_noms_court[mois_pic])
@@ -179,6 +174,7 @@ with col_g1:
     titre = "📈 Evolution — Tous les pollens" if mode_tous else f"📈 Evolution — {taxon_select}"
     st.subheader(titre)
     st.caption("Sources : RNSA 2021-2022 (capteurs physiques) — CAMS 2023-2026 (modèle satellite).")
+    st.write("")
     st.write("")
 
     fig1 = go.Figure()
@@ -205,8 +201,17 @@ with col_g1:
     fig1.add_vrect(x0='2023-01', x1='2026-06', fillcolor='lightyellow', opacity=0.1,
                    annotation_text='CAMS', annotation_position='top left')
     fig1.update_layout(
-        xaxis_title='Mois', yaxis_title='Concentration (grains/m³)',
-        xaxis=dict(tickangle=45), legend=dict(x=0, y=1.1, orientation='h'), height=400
+        xaxis_title='Mois',
+        yaxis_title='Concentration (grains/m³)',
+        xaxis=dict(tickangle=45),
+        legend=dict(
+            orientation='h',
+            x=0.5,
+            y=1.45,
+            xanchor='center'
+        ),
+        height=400,
+        margin=dict(t=80)
     )
     st.plotly_chart(fig1, use_container_width=True)
 
@@ -233,38 +238,51 @@ st.divider()
 col_g3, col_g4 = st.columns(2)
 
 with col_g3:
-    st.subheader(f"📊 Corrélations pollens vs Ruptures {code_atc}")
-    st.caption("Corrélation de Pearson entre chaque taxon et les ruptures. Rouge = signal le plus fort.")
+    st.subheader(f"📊 Corrélations variables vs Ruptures {code_atc}")
+    st.caption("Corrélation de Pearson entre chaque variable (pollen + météo) et les ruptures. Rouge = signal le plus fort.")
     st.write("")
 
-    taxon_corr_cols = {
-        'Graminées': 'gram_moy', 'Bouleau': 'bouleau_moy',
-        'Ambroisie': 'ambroisie_moy', 'Aulne': 'aulne_moy',
-        'Armoise': 'armoise_moy', 'Olivier': 'olivier_moy'
+    corr_vars = {
+        'Graminées': 'gram_moy',
+        'Bouleau': 'bouleau_moy',
+        'Ambroisie': 'ambroisie_moy',
+        'Aulne': 'aulne_moy',
+        'Armoise': 'armoise_moy',
+        'Olivier': 'olivier_moy',
+        'Température': 'temp_moy',
+        'Temp max': 'temp_max',
     }
+
     corr_data = []
-    for nom, col in taxon_corr_cols.items():
+    for nom, col in corr_vars.items():
         if col in df.columns:
             corr = df[col].corr(df['target_rupture'])
-            corr_data.append({'Taxon': nom, 'Corrélation': round(corr, 3)})
+            corr_data.append({'Variable': nom, 'Corrélation': round(corr, 3)})
 
     df_corr = pd.DataFrame(corr_data).sort_values('Corrélation', ascending=True)
+    max_corr = df_corr['Corrélation'].max()
     df_corr['couleur'] = df_corr['Corrélation'].apply(
-        lambda x: '#e74c3c' if x == df_corr['Corrélation'].max() else '#3498db'
+        lambda x: '#e74c3c' if x == max_corr else '#3498db'
     )
 
     fig3 = go.Figure(go.Bar(
-        x=df_corr['Corrélation'], y=df_corr['Taxon'], orientation='h',
+        x=df_corr['Corrélation'],
+        y=df_corr['Variable'],
+        orientation='h',
         marker_color=df_corr['couleur'],
         text=df_corr['Corrélation'].apply(lambda x: f'{x:.3f}'),
         textposition='outside'
     ))
     fig3.add_vline(x=0, line_color='black', line_width=1)
     fig3.update_layout(
-        xaxis_title='Corrélation de Pearson', yaxis_title='',
-        xaxis=dict(range=[-0.5, 0.6]), height=400
+        xaxis_title='Corrélation de Pearson',
+        yaxis_title='',
+        xaxis=dict(range=[-0.5, 0.6]),
+        height=400
+        
     )
     st.plotly_chart(fig3, use_container_width=True)
+   
 
 with col_g4:
     titre4 = "💊 Tous les pollens vs Ruptures — timeline" if mode_tous else f"💊 {taxon_select} vs Ruptures — timeline"
@@ -289,21 +307,24 @@ with col_g4:
             fillcolor=fill_colors[col] if not mode_tous else None
         ))
 
-    # Étoiles ruptures sur le taxon principal
+   # Cercles pleins jaunes ruptures
     y_etoiles = df_ruptures[col_selected] if col_selected in df_ruptures.columns else df_ruptures['gram_moy']
     fig4.add_trace(go.Scatter(
         x=df_ruptures['annee_mois_str'],
         y=y_etoiles,
         name=f'Rupture {code_atc}',
         mode='markers',
-        marker=dict(symbol='star', size=16, color='#e74c3c',
-                    line=dict(color='#c0392b', width=1))
+        marker=dict(
+            symbol='circle',
+            size=14,
+            color='#f1c40f',
+            line=dict(color='#f39c12', width=2)
+        )
     ))
-
     fig4.update_layout(
         xaxis=dict(title='Mois', tickangle=45),
         yaxis_title='Concentration (grains/m³)',
-        legend=dict(x=0, y=1.1, orientation='h'),
+        legend=dict(x=0, y=1.45, orientation='h'),
         height=400
     )
     st.plotly_chart(fig4, use_container_width=True)
@@ -446,4 +467,4 @@ else:
     st.info("Sélectionne au moins une année pour afficher les graphiques.")
 
 st.divider()
-st.caption("Projet Antihistaminiques — Jedha 2026 — Collègue 3")
+st.caption("Projet Antihistaminiques — Jedha 2026 — LMN")
