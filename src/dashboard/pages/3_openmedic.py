@@ -11,9 +11,9 @@ import numpy as np
 import os
 from pathlib import Path
 
-st.set_page_config(page_title="OpenMedic — Consommation R06A", page_icon="💊", layout="wide")
-st.title("💊 Consommation Antihistaminiques R06A")
-st.caption("Données OpenMedic — Remboursements antihistaminiques France 2021-2025")
+st.set_page_config(page_title="OpenMedic — Consommation", page_icon="💊", layout="wide")
+st.title("💊 Consommation Antihistaminiques")
+st.caption("Données OpenMedic — Remboursements médicaments France 2021-2025")
 
 # =====================
 # CONSTANTES
@@ -52,6 +52,13 @@ def load_openmedic():
     return df
 
 @st.cache_data
+def load_gold(code):
+    path = f'data/gold/gold_ml_{code}.csv'
+    if os.path.exists(path):
+        return pd.read_csv(path)
+    return pd.read_csv('data/gold/gold_ml.csv')
+
+@st.cache_data
 def load_medicaments():
     base = Path(__file__).resolve().parent.parent.parent.parent / "data" / "silver"
     df = pd.read_csv(base / "J0_silver_medicaments.csv", encoding="latin-1", low_memory=False)
@@ -64,6 +71,16 @@ df_med = load_medicaments()
 # SIDEBAR
 # =====================
 st.sidebar.title("🔧 Filtres")
+
+classe_select = st.sidebar.selectbox(
+    "Classe ATC",
+    ['R06A — Antihistaminiques', 'R03 — Antiasthmatiques', 'J01 — Antibiotiques'],
+    index=0
+)
+code_atc = classe_select.split(' ')[0]
+df_gold = load_gold(code_atc)
+
+st.sidebar.divider()
 
 annees       = sorted(df_om["annee"].dropna().unique().astype(int).tolist())
 annees_dispo = ['Toutes'] + annees
@@ -78,13 +95,14 @@ exclure_corse = st.sidebar.checkbox("Exclure Corse", value=True,
     help="Anomalie : petite population + forte fréquentation touristique")
 
 st.sidebar.divider()
+st.sidebar.markdown(f"**Classe : {code_atc}**")
 st.sidebar.markdown("**Source :** CNAM OpenMedic")
-st.sidebar.markdown("**Classe ATC :** R06A Antihistaminiques")
 
 # =====================
 # FILTRAGE
 # =====================
 df_f = df_om.copy()
+df_f = df_f[df_f["ATC3"].str.startswith(code_atc, na=False)]
 if annee_sel != 'Toutes':
     df_f = df_f[df_f["annee"] == int(annee_sel)]
 if mois_sel != 'Tous':
@@ -97,11 +115,11 @@ if exclure_corse:
 # =====================
 # KPIs
 # =====================
-st.subheader("📊 Chiffres clés")
+st.subheader(f"📊 Chiffres clés — {classe_select}")
 col1, col2, col3 = st.columns(3)
 col1.metric("Boîtes remboursées", f"{df_f['BOITES'].sum()/1e6:.1f}M")
 col2.metric("Régions", df_f["region"].nunique())
-col3.metric("Molécules R06A", df_f["molecule"].nunique())
+col3.metric("Molécules", df_f["molecule"].nunique())
 
 st.divider()
 
@@ -129,11 +147,11 @@ with col_g1:
     st.plotly_chart(fig1, use_container_width=True)
 
 with col_g2:
-    st.subheader("📈 Evolution de la consommation R06")
+    st.subheader(f"📈 Evolution de la consommation {code_atc}")
     st.caption("Boîtes prescrites et remboursées par an (millions).")
     st.write("")
 
-    df_evol_y = df_om.groupby("annee", as_index=False)["BOITES"].sum()
+    df_evol_y = df_om[df_om["ATC3"].str.startswith(code_atc, na=False)].groupby("annee", as_index=False)["BOITES"].sum()
     df_evol_y["BOITES_M"] = (df_evol_y["BOITES"] / 1e6).round(1)
 
     pct = ((df_evol_y["BOITES_M"].iloc[-1] - df_evol_y["BOITES_M"].iloc[0])
@@ -202,7 +220,7 @@ st.divider()
 # =====================
 # LIGNE 3 — Top molécules
 # =====================
-st.subheader("🔬 Top molécules R06A")
+st.subheader(f"🔬 Top molécules — {code_atc}")
 st.write("")
 n = st.slider("Nombre de molécules", 5, 15, 10)
 df_mol = df_f.groupby("molecule", as_index=False)["BOITES"].sum()
@@ -220,7 +238,7 @@ st.divider()
 # LIGNE 4 — Heatmap région x molécule
 # =====================
 st.subheader("🗺️ Heatmap Région × Molécule")
-st.caption("Volume de boîtes R06A par région × molécule (2021-2025) — en millions de boîtes")
+st.caption("Volume de boîtes par région × molécule — en millions de boîtes")
 st.write("")
 
 n_hm     = st.slider("Top N molécules (heatmap)", 5, 10, 8, key="hm")
@@ -266,13 +284,37 @@ st.plotly_chart(fig7, use_container_width=True)
 st.divider()
 
 # =====================
+# LIGNE 6 — Evolution top 5 molécules
+# =====================
+st.subheader(f"📊 Evolution des top 5 molécules {code_atc} (2021-2025)")
+st.caption("Comment les molécules dominantes évoluent d'année en année.")
+st.write("")
+
+top5_mols = df_f.groupby("molecule")["BOITES"].sum().nlargest(5).index.tolist()
+df_top5 = (df_f[df_f["molecule"].isin(top5_mols)]
+           .groupby(["annee", "molecule"], as_index=False)["BOITES"].sum())
+df_top5["BOITES_M"] = (df_top5["BOITES"] / 1e6).round(2)
+
+fig8 = px.line(df_top5, x="annee", y="BOITES_M", color="molecule",
+               markers=True,
+               labels={"BOITES_M": "Millions de boîtes", "annee": "Année", "molecule": "Molécule"})
+fig8.update_layout(
+    height=380,
+    xaxis=dict(tickmode="linear", dtick=1),
+    legend=dict(x=0, y=1.15, orientation="h"),
+)
+st.plotly_chart(fig8, use_container_width=True)
+
+st.divider()
+
+# =====================
 # LIGNE 7 — Coût remboursement par molécule
 # =====================
 st.subheader("💶 Coût de remboursement médian par boîte")
 st.caption("Molécules les plus chères à rembourser pour l'Assurance Maladie (€/boîte).")
 st.write("")
 
-df_om_cout = df_om.copy()
+df_om_cout = df_f.copy()
 df_om_cout["rem_par_boite"] = df_om_cout["REM_clean"] / df_om_cout["BOITES"].replace(0, float("nan"))
 ratio_mol = (df_om_cout.groupby("molecule")["rem_par_boite"]
              .median().sort_values(ascending=True).reset_index())
@@ -291,65 +333,65 @@ st.divider()
 # =====================
 # LIGNE 8 — Concentration marché (Lorenz)
 # =====================
-st.subheader("📉 Concentration du marché R06A")
+st.subheader("📉 Concentration du marché")
 st.caption("Courbe de Lorenz — quelques molécules représentent la majorité des volumes.")
 st.write("")
 
-volumes = df_om.groupby("molecule")["BOITES"].sum().sort_values().values
-cumsum = np.cumsum(volumes)
-cumsum_pct = cumsum / cumsum[-1] * 100
-n = len(cumsum_pct)
-x_pct = np.arange(1, n + 1) / n * 100
-gini = 1 - 2 * float(np.trapezoid(cumsum_pct / 100, x_pct / 100))
+volumes = df_f.groupby("molecule")["BOITES"].sum().sort_values().values
+if len(volumes) > 1:
+    cumsum = np.cumsum(volumes)
+    cumsum_pct = cumsum / cumsum[-1] * 100
+    n = len(cumsum_pct)
+    x_pct = np.arange(1, n + 1) / n * 100
+    gini = 1 - 2 * float(np.trapezoid(cumsum_pct / 100, x_pct / 100))
 
-col_lorenz, col_parts = st.columns(2)
+    col_lorenz, col_parts = st.columns(2)
 
-with col_lorenz:
-    fig10 = go.Figure()
-    fig10.add_trace(go.Scatter(
-        x=x_pct, y=cumsum_pct,
-        name="Lorenz R06A",
-        line=dict(color="#e07b54", width=2.5),
-        fill="tonexty", fillcolor="rgba(224,123,84,0.15)"
-    ))
-    fig10.add_trace(go.Scatter(
-        x=[0, 100], y=[0, 100],
-        name="Égalité parfaite",
-        line=dict(color="black", dash="dash", width=1),
-    ))
-    fig10.add_hline(y=80, line_dash="dot", line_color="#7bafd4", opacity=0.7)
-    fig10.update_layout(
-        height=380,
-        title=f"Courbe de Lorenz — Gini = {gini:.2f}",
-        xaxis_title="% des molécules",
-        yaxis_title="% cumulé du volume",
-        legend=dict(x=0, y=1.1, orientation="h"),
-    )
-    st.plotly_chart(fig10, use_container_width=True)
+    with col_lorenz:
+        fig10 = go.Figure()
+        fig10.add_trace(go.Scatter(
+            x=x_pct, y=cumsum_pct,
+            name="Lorenz",
+            line=dict(color="#e07b54", width=2.5),
+            fill="tonexty", fillcolor="rgba(224,123,84,0.15)"
+        ))
+        fig10.add_trace(go.Scatter(
+            x=[0, 100], y=[0, 100],
+            name="Égalité parfaite",
+            line=dict(color="black", dash="dash", width=1),
+        ))
+        fig10.add_hline(y=80, line_dash="dot", line_color="#7bafd4", opacity=0.7)
+        fig10.update_layout(
+            height=380,
+            title=f"Courbe de Lorenz — Gini = {gini:.2f}",
+            xaxis_title="% des molécules",
+            yaxis_title="% cumulé du volume",
+            legend=dict(x=0, y=1.1, orientation="h"),
+        )
+        st.plotly_chart(fig10, use_container_width=True)
 
-with col_parts:
-    df_mol_parts = df_om.groupby("molecule", as_index=False)["BOITES"].sum()
-    df_mol_parts = df_mol_parts.sort_values("BOITES", ascending=False)
-    top6 = df_mol_parts.head(6).copy()
-    autres = pd.DataFrame({"molecule": ["Autres"], "BOITES": [df_mol_parts.iloc[6:]["BOITES"].sum()]})
-    df_pie = pd.concat([top6, autres])
-    df_pie["BOITES_M"] = (df_pie["BOITES"] / 1e6).round(1)
+    with col_parts:
+        df_mol_parts = df_f.groupby("molecule", as_index=False)["BOITES"].sum()
+        df_mol_parts = df_mol_parts.sort_values("BOITES", ascending=False)
+        top6 = df_mol_parts.head(6).copy()
+        autres = pd.DataFrame({"molecule": ["Autres"], "BOITES": [df_mol_parts.iloc[6:]["BOITES"].sum()]})
+        df_pie = pd.concat([top6, autres])
+        df_pie["BOITES_M"] = (df_pie["BOITES"] / 1e6).round(1)
 
-    fig11 = px.pie(df_pie, values="BOITES_M", names="molecule",
-                   title="Parts de marché — Top 6 + Autres",
-                   hole=0.4,
-                   color_discrete_sequence=px.colors.qualitative.Pastel)
-    fig11.update_layout(height=380, showlegend=True,
-                        legend=dict(x=1, y=0.5))
-    st.plotly_chart(fig11, use_container_width=True)
+        fig11 = px.pie(df_pie, values="BOITES_M", names="molecule",
+                       title="Parts de marché — Top 6 + Autres",
+                       hole=0.4,
+                       color_discrete_sequence=px.colors.qualitative.Pastel)
+        fig11.update_layout(height=380, showlegend=True,
+                            legend=dict(x=1, y=0.5))
+        st.plotly_chart(fig11, use_container_width=True)
 
-# Insight clé
-idx_80 = int(np.searchsorted(cumsum_pct, 80))
-n_mol_80 = n - idx_80
-st.info(f"💡 **Indice de Gini : {gini:.2f}** — Marché très concentré. "
-        f"{n_mol_80} molécule{'s' if n_mol_80 > 1 else ''} sur {n} "
-        f"représente{'nt' if n_mol_80 > 1 else ''} 80% des volumes remboursés. "
-        f"Une rupture sur cette molécule dominante aurait un impact massif sur l'approvisionnement.")
+    idx_80 = int(np.searchsorted(cumsum_pct, 80))
+    n_mol_80 = n - idx_80
+    st.info(f"💡 **Indice de Gini : {gini:.2f}** — Marché très concentré. "
+            f"{n_mol_80} molécule{'s' if n_mol_80 > 1 else ''} sur {n} "
+            f"représente{'nt' if n_mol_80 > 1 else ''} 80% des volumes remboursés. "
+            f"Une rupture sur cette molécule dominante aurait un impact massif sur l'approvisionnement.")
 
 st.divider()
 st.caption("Projet Antihistaminiques — Jedha 2026 — LMN")
