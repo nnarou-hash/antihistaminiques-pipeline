@@ -277,4 +277,40 @@ else:
     st.success("✅ Aucun mois à risque sur la période sélectionnée.")
 
 st.divider()
+
+# =====================
+# SECTION 5 — Feature Importance
+# =====================
+st.subheader("📊 Variables les plus importantes pour prédire les ruptures")
+st.caption("Plus la barre est longue, plus la variable influence la prédiction du modèle.")
+
+import joblib
+
+try:
+    clf = joblib.load('models/rf_classifier.joblib')
+    features_disponibles = [
+        'gram_moy', 'gram_max', 'gram_roll7', 'gram_roll30', 'nb_jours_pic',
+        'bouleau_moy', 'ambroisie_moy', 'nb_jours_pic_bouleau',
+        'temp_moy', 'temp_max', 'temp_roll30',
+        'precip', 'wind', 'mois', 'saison_allergies', 'source_encoded',
+        'ruptures_lag1', 'gram_lag_mois', 'cumul_thermique'
+    ]
+    imp = pd.DataFrame({
+        'feature': features_disponibles,
+        'importance': clf.feature_importances_
+    }).sort_values('importance', ascending=True)
+
+    fig_imp = px.bar(imp, x='importance', y='feature', orientation='h',
+                     labels={'importance': 'Importance', 'feature': 'Variable'},
+                     color='importance',
+                     color_continuous_scale='Blues',
+                     title="Feature Importance — RF Classifier ruptures R06")
+    fig_imp.update_coloraxes(colorbar_title="Importance")
+    st.plotly_chart(fig_imp, use_container_width=True)
+    st.caption("💡 L'ambroisie et le bouleau sont les signaux les plus prédictifs des ruptures de stock")
+
+except Exception as e:
+    st.warning(f"Modèle non disponible : {e}")
+
+st.divider()
 st.caption("Projet Antihistaminiques — Jedha 2026 — LMN")
