@@ -11,12 +11,13 @@ st.set_page_config(page_title="Prédictions ML", page_icon="🤖", layout="wide"
 st.title("🤖 Prédictions ML — Risque de rupture")
 st.divider()
 
-# =====================
-# CHARGEMENT DONNEES
-# =====================
 @st.cache_data
 def load_data(code):
-    pred_path = 'data/gold/gold_predictions.csv'
+    pred_path = f'data/gold/gold_predictions_{code}.csv'
+    if not os.path.exists(pred_path):
+        pred_path = f'data/gold/gold_predictions_{code}.csv'
+    if not os.path.exists(pred_path):
+        pred_path = 'data/gold/gold_predictions.csv'
     gold_path = f'data/gold/gold_ml_{code}.csv'
     if not os.path.exists(gold_path):
         gold_path = 'data/gold/gold_ml.csv'
@@ -28,12 +29,8 @@ def load_data(code):
     gold = pd.read_csv(gold_path)
     return pred, gold
 
-# =====================
-# SIDEBAR
-# =====================
 st.sidebar.title("🔧 Filtres")
 
-# Filtre classe ATC — EN PREMIER
 classe_select = st.sidebar.selectbox(
     "Classe ATC",
     ['R06 — Antihistaminiques', 'R03 — Antiasthmatiques', 'J01 — Antibiotiques'],
@@ -43,7 +40,6 @@ code_atc = classe_select.split(' ')[0]
 
 pred, gold = load_data(code_atc)
 
-# Fusion prédictions + données réelles
 df = pred.merge(gold[['annee_mois_str','mois','annee','nb_ruptures',
                         'target_rupture','gram_moy','temp_moy','ambroisie_moy']],
                 on='annee_mois_str', how='left')
@@ -58,7 +54,6 @@ mois_noms_court = {1:'Jan',2:'Fev',3:'Mar',4:'Avr',5:'Mai',6:'Jun',
 
 st.sidebar.divider()
 
-# Filtre année
 annees_dispo = ['Toutes'] + sorted(df['annee'].unique().tolist())
 annee_select = st.sidebar.selectbox("Année", annees_dispo, index=0)
 
@@ -67,7 +62,6 @@ if annee_select == 'Toutes':
 else:
     df_f = df[df['annee'] == annee_select]
 
-# Filtre mois pour la jauge
 mois_select = st.sidebar.selectbox(
     "Mois (pour la jauge)",
     [mois_noms_court[m] for m in sorted(df_f['mois'].unique().tolist())],
@@ -80,7 +74,8 @@ st.sidebar.divider()
 st.sidebar.markdown(f"**Classe : {code_atc}**")
 st.sidebar.markdown(f"**{(df_f['pred_rupture']==1).sum()} mois à risque** sur {len(df_f)}")
 st.sidebar.markdown("**Modèle :** RF Classifier")
-st.sidebar.markdown("**ROC-AUC :** 0.771")
+roc_map = {'R06': '0.738', 'R03': '0.933', 'J01': '0.981'}
+st.sidebar.markdown(f"**ROC-AUC CV :** {roc_map.get(code_atc, '0.771')}")
 st.sidebar.markdown("**Seuil :** probabilité > 50%")
 st.sidebar.markdown("**Légende :**")
 st.sidebar.markdown("🟢 Vrai négatif | 🔴 Faux positif")
@@ -88,9 +83,6 @@ st.sidebar.markdown("🟢 Vrai positif | 🟠 Faux négatif")
 
 st.divider()
 
-# =====================
-# SECTION 1 — KPIs
-# =====================
 st.subheader(f"📊 KPIs Prédictions — {classe_select}")
 
 col1, col2, col3, col4 = st.columns(4)
@@ -107,14 +99,12 @@ with col3:
     st.metric("Précision modèle", "67%",
               help="Precision du RF Classifier sur le jeu de test")
 with col4:
-    st.metric("ROC-AUC", "0.771",
-              help="Aire sous la courbe ROC — 1.0 = parfait, 0.5 = hasard")
+    roc_map = {'R06': '0.738', 'R03': '0.933', 'J01': '0.981'}
+    st.metric("ROC-AUC CV", roc_map.get(code_atc, '0.771'),
+              help="Aire sous la courbe ROC (cross-validation) — 1.0 = parfait, 0.5 = hasard")
 
 st.divider()
 
-# =====================
-# SECTION 2 — Jauge + Timeline
-# =====================
 col_g1, col_g2 = st.columns(2)
 
 with col_g1:
@@ -184,9 +174,6 @@ with col_g2:
 
 st.divider()
 
-# =====================
-# SECTION 3 — Réel vs Prédit
-# =====================
 col_g3, col_g4 = st.columns(2)
 
 with col_g3:
@@ -252,9 +239,6 @@ with col_g4:
 
 st.divider()
 
-# =====================
-# SECTION 4 — Tableau alertes
-# =====================
 st.subheader(f"🚨 Tableau des alertes — Mois à risque {code_atc}")
 st.caption("Liste des mois où le modèle prédit une rupture, triés par probabilité décroissante.")
 
@@ -278,23 +262,28 @@ else:
 
 st.divider()
 
-# =====================
-# SECTION 5 — Feature Importance
-# =====================
 st.subheader("📊 Variables les plus importantes pour prédire les ruptures")
 st.caption("Plus la barre est longue, plus la variable influence la prédiction du modèle.")
 
 import joblib
 
 try:
-    clf = joblib.load('models/rf_classifier.joblib')
-    features_disponibles = [
+    clf_path = f'models/{code_atc}/rf_classifier.joblib'
+    if not os.path.exists(clf_path):
+        clf_path = 'models/rf_classifier.joblib'
+    clf = joblib.load(clf_path)
+    features_base = [
         'gram_moy', 'gram_max', 'gram_roll7', 'gram_roll30', 'nb_jours_pic',
         'bouleau_moy', 'ambroisie_moy', 'nb_jours_pic_bouleau',
         'temp_moy', 'temp_max', 'temp_roll30',
         'precip', 'wind', 'mois', 'saison_allergies', 'source_encoded',
         'ruptures_lag1', 'gram_lag_mois', 'cumul_thermique'
     ]
+    sentinelles_map = {
+        'R03': ['grippal_inc100_moy', 'grippal_inc100_max', 'ira_inc100_moy', 'ira_inc100_max'],
+        'J01': ['diarrhee_inc100_moy', 'diarrhee_inc100_max'],
+    }
+    features_disponibles = features_base + sentinelles_map.get(code_atc, [])
     imp = pd.DataFrame({
         'feature': features_disponibles,
         'importance': clf.feature_importances_
@@ -314,9 +303,6 @@ except Exception as e:
 
 st.divider()
 
-# =====================
-# SECTION 6 — Prédiction en direct via API
-# =====================
 st.subheader("🔮 Prédiction en direct — Appel API")
 st.caption("Renseignez les conditions du mois à analyser. Le dashboard interroge l'API FastAPI qui charge le modèle et retourne une prédiction en temps réel.")
 
@@ -347,7 +333,6 @@ with col_f3:
     saison_allergies   = st.selectbox("Saison allergies", [0, 1], index=1)
     ruptures_lag1      = st.selectbox("Rupture mois précédent", [0.0, 1.0], index=0)
 
-# Valeurs calculées automatiquement (moyennes raisonnables)
 gram_roll7         = gram_moy * 0.85
 gram_roll30        = gram_moy * 0.70
 gram_lag_mois      = gram_moy * 0.60
@@ -358,41 +343,28 @@ source_encoded     = 0.5
 
 if st.button("🚀 Lancer la prédiction", type="primary"):
     payload = {
-        "gram_moy": gram_moy,
-        "gram_max": gram_max,
-        "gram_roll7": gram_roll7,
-        "gram_roll30": gram_roll30,
-        "nb_jours_pic": nb_jours_pic,
-        "bouleau_moy": bouleau_moy,
-        "ambroisie_moy": ambroisie_moy,
-        "nb_jours_pic_bouleau": nb_jours_pic_bouleau,
-        "temp_moy": temp_moy,
-        "temp_max": temp_max,
-        "temp_roll30": temp_roll30,
-        "precip": precip,
-        "wind": wind,
-        "mois": mois_api,
-        "saison_allergies": saison_allergies,
-        "source_encoded": source_encoded,
-        "ruptures_lag1": ruptures_lag1,
-        "gram_lag_mois": gram_lag_mois,
+        "gram_moy": gram_moy, "gram_max": gram_max,
+        "gram_roll7": gram_roll7, "gram_roll30": gram_roll30,
+        "nb_jours_pic": nb_jours_pic, "bouleau_moy": bouleau_moy,
+        "ambroisie_moy": ambroisie_moy, "nb_jours_pic_bouleau": nb_jours_pic_bouleau,
+        "temp_moy": temp_moy, "temp_max": temp_max, "temp_roll30": temp_roll30,
+        "precip": precip, "wind": wind, "mois": mois_api,
+        "saison_allergies": saison_allergies, "source_encoded": source_encoded,
+        "ruptures_lag1": ruptures_lag1, "gram_lag_mois": gram_lag_mois,
         "cumul_thermique": cumul_thermique
     }
-
     try:
-        # Appel HTTP vers l'API FastAPI — Streamlit ne fait aucun calcul ML
         response = requests.post(f"{API_URL}/predict", json=payload, timeout=5)
         response.raise_for_status()
         result = response.json()
-
         if result["rupture_predite"] == 1:
             st.error(f"🚨 {result['interpretation']} — probabilité : {result['probabilite_rupture']*100:.1f}%")
         else:
             st.success(f"✅ {result['interpretation']} — probabilité : {result['probabilite_rupture']*100:.1f}%")
-
     except requests.exceptions.ConnectionError:
         st.warning("⚠️ L'API FastAPI ne tourne pas. Lancez : uvicorn src.api.main:app --reload")
     except Exception as e:
         st.error(f"Erreur : {e}")
 
 st.caption("Projet Antihistaminiques — Jedha 2026 — LMN")
+
