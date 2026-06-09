@@ -1,5 +1,5 @@
 """
-pages/3_openmedic.py — Dashboard OpenMedic R06A
+pages/3_openmedic.py — Dashboard OpenMedic R06
 Consommation antihistaminiques par région, molécule, démographie
 """
 
@@ -74,7 +74,7 @@ st.sidebar.title("🔧 Filtres")
 
 classe_select = st.sidebar.selectbox(
     "Classe ATC",
-    ['R06A — Antihistaminiques', 'R03 — Antiasthmatiques', 'J01 — Antibiotiques'],
+    ['R06 — Antihistaminiques', 'R03 — Antiasthmatiques', 'J01 — Antibiotiques'],
     index=0
 )
 code_atc = classe_select.split(' ')[0]
@@ -267,7 +267,7 @@ st.divider()
 # LIGNE 5 — Top 10 laboratoires
 # =====================
 st.subheader("🏭 Top 10 laboratoires antihistaminiques")
-st.caption("Nombre de spécialités R06A par laboratoire pharmaceutique.")
+st.caption("Nombre de spécialités R06 par laboratoire pharmaceutique.")
 st.write("")
 
 top_labo = df_med["laboratoire"].value_counts().head(10).reset_index()
@@ -343,7 +343,7 @@ if len(volumes) > 1:
     cumsum_pct = cumsum / cumsum[-1] * 100
     n = len(cumsum_pct)
     x_pct = np.arange(1, n + 1) / n * 100
-    gini = 1 - 2 * float(np.trapezoid(cumsum_pct / 100, x_pct / 100))
+    gini = 1 - 2 * float(np.trapz(cumsum_pct / 100, x_pct / 100)) if hasattr(np, "trapz") else 1 - 2 * float(np.trapezoid(cumsum_pct / 100, x_pct / 100))
 
     col_lorenz, col_parts = st.columns(2)
 
