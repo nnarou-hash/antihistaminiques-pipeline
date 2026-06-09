@@ -132,7 +132,7 @@ if len(rup_annee) > 0 and rup_annee['annee'].max() == 2026:
         yshift=12, font=dict(size=11, color='gray')
     )
 
-st.plotly_chart(fig1, width='stretch')
+st.plotly_chart(fig1, use_container_width=True)
 
 st.markdown("---")
 
@@ -152,7 +152,7 @@ if gold is not None and 'annee_mois_str' in gold.columns:
         title=f"Mois avec rupture ou tension {code_atc} (2021–2026)"
     )
     fig_taux.update_xaxes(tickangle=45)
-    st.plotly_chart(fig_taux, width='stretch')
+    st.plotly_chart(fig_taux, use_container_width=True)
 else:
     st.info(f"Données gold non disponibles pour {code_atc}.")
 
@@ -170,7 +170,7 @@ fig2 = px.pie(
     title="Ruptures saison vs hors saison (2021–2026)",
     color_discrete_sequence=['#FF6B6B', '#4ECDC4']
 )
-col1.plotly_chart(fig2, width='stretch')
+col1.plotly_chart(fig2, use_container_width=True)
 
 rup_mois = anti_rup.groupby(['annee', 'mois']).size().reset_index(name='nb_ruptures')
 
@@ -191,7 +191,7 @@ fig3 = px.imshow(
     aspect='auto'
 )
 fig3.update_coloraxes(colorbar_title="Nombre de ruptures")
-col2.plotly_chart(fig3, width='stretch')
+col2.plotly_chart(fig3, use_container_width=True)
 
 st.markdown("---")
 
@@ -209,7 +209,7 @@ fig4 = px.bar(
 )
 fig4.update_layout(yaxis={'categoryorder': 'total ascending'})
 fig4.update_coloraxes(colorbar_title="Nombre de ruptures")
-col1.plotly_chart(fig4, width='stretch')
+col1.plotly_chart(fig4, use_container_width=True)
 
 causes = anti_rup['cause_categorie'].value_counts().reset_index()
 causes.columns = ['cause', 'count']
@@ -221,7 +221,7 @@ fig5 = px.bar(
 )
 fig5.update_xaxes(tickangle=30)
 fig5.update_coloraxes(colorbar_title="Nombre de ruptures")
-col2.plotly_chart(fig5, width='stretch')
+col2.plotly_chart(fig5, use_container_width=True)
 
 st.markdown("---")
 
@@ -241,7 +241,7 @@ if len(jointure) > 0:
     )
     fig6.update_layout(yaxis={'categoryorder': 'total ascending'})
     fig6.update_coloraxes(colorbar_title="Nombre moyen de patients")
-    st.plotly_chart(fig6, width='stretch')
+    st.plotly_chart(fig6, use_container_width=True)
 
     st.caption("ℹ️ Jointure sur CIS disponible pour 2021-2024 uniquement")
     st.markdown("---")
@@ -274,7 +274,7 @@ if len(jointure) > 0:
     )
     fig_scatter.update_traces(textposition='top center', textfont_size=10)
     fig_scatter.update_coloraxes(colorbar_title="Nb ruptures")
-    st.plotly_chart(fig_scatter, width='stretch')
+    st.plotly_chart(fig_scatter, use_container_width=True)
     st.caption("💡 Les molécules en haut à droite sont les plus critiques — très prescrites ET souvent en rupture")
 
 else:

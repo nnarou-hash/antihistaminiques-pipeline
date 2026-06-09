@@ -1,25 +1,10 @@
-FROM python:3.11-slim
-
-# HF Spaces exige le port 7860
-EXPOSE 7860
+FROM python:3.9-slim
 
 WORKDIR /app
 
-# Dépendances système minimales
-RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
-    && rm -rf /var/lib/apt/lists/*
-
-# Installation des dépendances Python
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copie du projet
 COPY . .
 
-# Streamlit sur le port 7860 sans authentification
-CMD ["streamlit", "run", "src/dashboard/app.py", \
-     "--server.port=7860", \
-     "--server.address=0.0.0.0", \
-     "--server.headless=true"]
+CMD ["python", "run_pipeline.py"]
