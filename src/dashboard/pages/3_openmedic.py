@@ -1,7 +1,7 @@
 """
 pages/3_openmedic.py — Dashboard OpenMedic R06A
 Consommation antihistaminiques par région, molécule, démographie
-Lecture depuis Neon PostgreSQL (au lieu du CSV local)
+Lecture depuis Neon PostgreSQL — requête optimisée (colonnes limitées)
 """
 
 import streamlit as st
@@ -44,11 +44,18 @@ MOIS_NOMS   = {1:'Janvier',2:'Février',3:'Mars',4:'Avril',5:'Mai',6:'Juin',
                7:'Juillet',8:'Août',9:'Septembre',10:'Octobre',11:'Novembre',12:'Décembre'}
 
 # =====================
-# CHARGEMENT DONNEES — depuis Neon
+# CHARGEMENT DONNEES — requête optimisée (colonnes limitées uniquement)
 # =====================
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_openmedic():
-    df = pd.read_sql("SELECT * FROM openmedic", ENGINE)
+    query = """
+        SELECT
+            "ATC3", "L_ATC5", "BEN_REG", "annee", "mois",
+            "age", "sexe", "BOITES", "REM_clean"
+        FROM openmedic
+        WHERE "ATC3" IS NOT NULL
+    """
+    df = pd.read_sql(query, ENGINE)
     df["BOITES"]      = pd.to_numeric(df["BOITES"], errors="coerce")
     df["region"]      = df["BEN_REG"].map(REG_LABELS)
     df["tranche_age"] = df["age"].map(AGE_LABELS)
@@ -56,20 +63,23 @@ def load_openmedic():
     df["molecule"]    = df["L_ATC5"].str.strip().str.title()
     return df
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_gold(code):
     path = f'data/gold/gold_ml_{code}.csv'
     if os.path.exists(path):
         return pd.read_csv(path)
     return pd.read_csv('data/gold/gold_ml.csv')
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_medicaments():
-    df = pd.read_sql("SELECT * FROM medicaments", ENGINE)
-    return df[df["est_antihistaminique"] == True]
+    df = pd.read_sql(
+        'SELECT * FROM medicaments WHERE est_antihistaminique = TRUE', ENGINE
+    )
+    return df
 
-df_om  = load_openmedic()
-df_med = load_medicaments()
+with st.spinner("Chargement des données OpenMedic..."):
+    df_om  = load_openmedic()
+    df_med = load_medicaments()
 
 # =====================
 # SIDEBAR
