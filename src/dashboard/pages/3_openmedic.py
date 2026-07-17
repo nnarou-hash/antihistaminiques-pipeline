@@ -1,6 +1,7 @@
 """
 pages/3_openmedic.py — Dashboard OpenMedic R06A
 Consommation antihistaminiques par région, molécule, démographie
+Lecture depuis Neon PostgreSQL (au lieu du CSV local)
 """
 
 import streamlit as st
@@ -10,6 +11,11 @@ import plotly.graph_objects as go
 import numpy as np
 import os
 from pathlib import Path
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+
+load_dotenv()
+ENGINE = create_engine(os.getenv('DB_URL'))
 
 st.set_page_config(page_title="OpenMedic — Consommation", page_icon="💊", layout="wide")
 st.title("💊 Consommation Antihistaminiques")
@@ -38,12 +44,11 @@ MOIS_NOMS   = {1:'Janvier',2:'Février',3:'Mars',4:'Avril',5:'Mai',6:'Juin',
                7:'Juillet',8:'Août',9:'Septembre',10:'Octobre',11:'Novembre',12:'Décembre'}
 
 # =====================
-# CHARGEMENT DONNEES
+# CHARGEMENT DONNEES — depuis Neon
 # =====================
 @st.cache_data
 def load_openmedic():
-    base = Path(__file__).resolve().parent.parent.parent.parent / "data" / "silver"
-    df = pd.read_csv(base / "J0_silver_openmedic_2021_2025.csv", encoding="latin-1", low_memory=False)
+    df = pd.read_sql("SELECT * FROM openmedic", ENGINE)
     df["BOITES"]      = pd.to_numeric(df["BOITES"], errors="coerce")
     df["region"]      = df["BEN_REG"].map(REG_LABELS)
     df["tranche_age"] = df["age"].map(AGE_LABELS)
@@ -60,8 +65,7 @@ def load_gold(code):
 
 @st.cache_data
 def load_medicaments():
-    base = Path(__file__).resolve().parent.parent.parent.parent / "data" / "silver"
-    df = pd.read_csv(base / "J0_silver_medicaments.csv", encoding="latin-1", low_memory=False)
+    df = pd.read_sql("SELECT * FROM medicaments", ENGINE)
     return df[df["est_antihistaminique"] == True]
 
 df_om  = load_openmedic()
@@ -96,7 +100,7 @@ exclure_corse = st.sidebar.checkbox("Exclure Corse", value=True,
 
 st.sidebar.divider()
 st.sidebar.markdown(f"**Classe : {code_atc}**")
-st.sidebar.markdown("**Source :** CNAM OpenMedic")
+st.sidebar.markdown("**Source :** CNAM OpenMedic (Neon)")
 
 # =====================
 # FILTRAGE
