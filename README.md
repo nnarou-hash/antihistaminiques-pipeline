@@ -141,8 +141,22 @@ DB_URL=postgresql://...   # URL de connexion Neon
 
 ### 2. Installer les dépendances
 
+### Note sur les fichiers requirements
+
+Le projet contient deux fichiers de dépendances :
+
+- **`requirements.txt`** — dépendances allégées pour le déploiement du dashboard Streamlit (production)
+- **`requirements-dev.txt`** — environnement complet local (notebooks, feature engineering, ML, ingestion) — utile pour retrouver l'environnement de développement complet
+
+Pour le développement local complet :
+```bash
+pip install -r requirements-dev.txt
+```
+
+Pour lancer uniquement le dashboard :
 ```bash
 pip install -r requirements.txt
+streamlit run src/dashboard/app.py
 ```
 
 ### 3. Placer les fichiers bruts dans `data/raw/`
