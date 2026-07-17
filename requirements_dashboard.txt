@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+python-dotenv
+sqlalchemy
+psycopg2-binary
+numpy
+scikit-learn
+joblib
+requests
