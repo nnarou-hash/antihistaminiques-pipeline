@@ -130,11 +130,13 @@ requirements.txt
 
 ## 🚀 Lancement
 
-### 1. Configurer les variables d'environnement
+### 1. Prérequis
 
-Créer un fichier `.env` à la racine :
+- Python 3.10+
+- Fichier `.env` à la racine avec :
+
 ```
-DB_URL=postgresql://...  # URL de connexion Neon
+DB_URL=postgresql://...   # URL de connexion Neon
 ```
 
 ### 2. Installer les dépendances
@@ -143,36 +145,92 @@ DB_URL=postgresql://...  # URL de connexion Neon
 pip install -r requirements.txt
 ```
 
-### 3. Exécuter le pipeline complet (recommandé)
+### 3. Placer les fichiers bruts dans `data/raw/`
 
-```powershell
+Les fichiers OpenMedic ne sont pas récupérables via script — ils doivent être copiés manuellement dans `data/raw/` :
+
+```
+data/raw/
+├── OPEN_MEDIC_2021.CSV
+├── OPEN_MEDIC_2022.CSV
+├── OPEN_MEDIC_2023.CSV
+├── OPEN_MEDIC_2024.CSV
+└── OPEN_MEDIC_2025.CSV
+```
+
+> Ces fichiers sont disponibles sur [data.ameli.fr](https://data.ameli.fr) ou auprès de l'équipe projet.
+
+### 4. Lancer les scripts d'ingestion (dans l'ordre)
+
+#### 🌿 Pollen
+
+```bash
+python src/ingestion/ingest_cams_2021_2022.py        # RNSA/CAMS 2021-2022
+python src/ingestion/ingest_copernicus_pollen.py     # Copernicus 2023-2026
+python src/ingestion/consolide_pollen_complet.py     # Fusion des deux sources → J0_silver_pollen_2021_2026.csv
+```
+
+#### 🌡️ Météo
+
+```bash
+python src/ingestion/ingest_meteo_2021_2022.py       # Météo 2021-2022
+python src/ingestion/ingest_meteo.py                 # Météo 2023-2026
+```
+
+#### 💊 Médicaments & Ruptures
+
+```bash
+python src/ingestion/ingest_openmedic.py             # OpenMedic R06+R03+J01 (1.24M lignes)
+python src/ingestion/ingest_bdpm.py                  # Base de données médicaments ANSM
+python src/ingestion/ingest_ruptures.py              # Ruptures ANSM 2021-2024
+python src/ingestion/ingest_ruptures_ansm_2026.py    # Ruptures ANSM 2025-2026
+```
+
+#### 🏥 Épidémiologie
+
+```bash
+python src/ingestion/ingest_sentinelles.py           # Sentinelles INSERM 2021-2026
+```
+
+### 5. Exécuter le pipeline complet (recommandé)
+
+Une fois les fichiers raw en place :
+
+```bash
 python run_pipeline.py
 ```
 
-### Ou étape par étape
+Ou étape par étape :
 
-```powershell
-python src/transformations/build_gold.py
-python src/transformations/features_advanced.py
+```bash
+# Nettoyage Silver
+python src/cleaning/clean_medicaments_ruptures.py
+python src/cleaning/clean_openmedic.py
+python src/cleaning/clean_pollen_meteo.py
+
+# Construction Gold (par classe ATC)
+python src/transformations/build_gold.py --classe R06
+python src/transformations/build_gold.py --classe R03
+python src/transformations/build_gold.py --classe J01
+
+# ML
 python src/ml/train_model.py
 python src/ml/predict.py
 ```
 
-### 4. Lancer le dashboard
+### 6. Lancer le dashboard
 
-```powershell
+```bash
 streamlit run src/dashboard/app.py
 ```
 
-### 5. Lancer l'API
+### 7. Lancer l'API
 
-```powershell
+```bash
 python -m uvicorn src.api.main:app --reload
 ```
 
 Docs disponibles sur : http://localhost:8000/docs
-
----
 
 ## 🤖 Modèles ML
 
