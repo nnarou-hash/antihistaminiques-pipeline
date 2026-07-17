@@ -15,7 +15,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 
 load_dotenv()
-ENGINE = create_engine(os.getenv('DB_URL'))
+ENGINE = create_engine(st.secrets.get('DB_URL') or os.getenv('DB_URL'))
 
 st.set_page_config(page_title="OpenMedic — Consommation", page_icon="💊", layout="wide")
 st.title("💊 Consommation Antihistaminiques")

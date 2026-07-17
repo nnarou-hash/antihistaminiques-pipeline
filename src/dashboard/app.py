@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide"
 )
 
-DB_URL = os.getenv('DB_URL', 'postgresql://pipeline:pipeline2026@localhost:5432/antihistaminiques')
+DB_URL = st.secrets.get('DB_URL') or os.getenv('DB_URL')
 engine = create_engine(DB_URL)
 
 # =====================
