@@ -50,7 +50,7 @@ MOIS_NOMS   = {1:'Janvier',2:'Février',3:'Mars',4:'Avril',5:'Mai',6:'Juin',
 def load_openmedic():
     query = """
         SELECT
-            "ATC3", "L_ATC5", "BEN_REG", "annee", "mois",
+            "ATC3", "L_ATC5", "BEN_REG", "annee",
             "age", "sexe", "BOITES", "REM_clean"
         FROM openmedic
         WHERE "ATC3" IS NOT NULL
@@ -100,9 +100,6 @@ annees       = sorted(df_om["annee"].dropna().unique().astype(int).tolist())
 annees_dispo = ['Toutes'] + annees
 annee_sel    = st.sidebar.selectbox("Année", annees_dispo, index=0)
 
-mois_dispo = ['Tous'] + list(MOIS_NOMS.values())
-mois_sel   = st.sidebar.selectbox("Mois", mois_dispo, index=0)
-
 st.sidebar.divider()
 
 exclure_corse = st.sidebar.checkbox("Exclure Corse", value=True,
@@ -119,9 +116,6 @@ df_f = df_om.copy()
 df_f = df_f[df_f["ATC3"].str.startswith(code_atc, na=False)]
 if annee_sel != 'Toutes':
     df_f = df_f[df_f["annee"] == int(annee_sel)]
-if mois_sel != 'Tous':
-    mois_num = {v: k for k, v in MOIS_NOMS.items()}[mois_sel]
-    df_f = df_f[df_f["mois"] == mois_num]
 df_f = df_f[df_f["region"].notna()]
 if exclure_corse:
     df_f = df_f[df_f["region"] != "Corse"]
