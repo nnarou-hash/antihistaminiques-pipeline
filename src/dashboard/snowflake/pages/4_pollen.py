@@ -86,6 +86,12 @@ st.sidebar.title("🔧 Filtres")
 st.sidebar.info("Classe disponible : R06 (R03/J01 à venir)")
 df = load_gold_atc()
 
+# Conversion forcee en numerique pour toutes les colonnes de taxons/meteo (Snowflake peut renvoyer du texte)
+_cols_numeriques = list(taxon_cols.values()) + ["temp_moy", "temp_max", "target_rupture", "annee", "mois"]
+for _c in _cols_numeriques:
+    if _c in df.columns:
+        df[_c] = pd.to_numeric(df[_c], errors="coerce")
+
 annees_dispo = ['Toutes'] + sorted(df['annee'].unique().tolist())
 annee_select = st.sidebar.selectbox("Année", annees_dispo, index=0)
 
