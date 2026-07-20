@@ -8,3 +8,5 @@ snowflake-connector-python
 scikit-learn
 joblib
 requests
+langchain-core
+langchain-mistralai
