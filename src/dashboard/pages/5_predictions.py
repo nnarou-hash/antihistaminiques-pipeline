@@ -471,7 +471,7 @@ st.caption("Renseignez les conditions du mois à analyser. Le dashboard interrog
 
 import requests
 
-API_URL = "https://leobremond-antihistaminiques-api.hf.space"
+API_URL = "https://antihistaminiques-pipeline.onrender.com"
 col_f1, col_f2, col_f3 = st.columns(3)
 
 with col_f1:
