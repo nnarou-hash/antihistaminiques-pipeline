@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+python-dotenv
+sqlalchemy
+snowflake-sqlalchemy
+snowflake-connector-python
+scikit-learn
+joblib
+requests
