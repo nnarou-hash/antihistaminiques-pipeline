@@ -1,20 +1,28 @@
 # src/dashboard/snowflake/db_connector.py
 import os
+import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
 from snowflake.sqlalchemy import URL
 from sqlalchemy import create_engine
 
-# Charge le .env qui se trouve dans le meme dossier que ce fichier
+# Charge le .env local si present (developpement local uniquement)
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
+
+def _get_secret(key):
+    """Lit d'abord dans st.secrets (Streamlit Cloud), sinon dans .env (local)."""
+    try:
+        return st.secrets[key]
+    except Exception:
+        return os.getenv(key)
 
 def get_engine():
     engine = create_engine(URL(
-        account   = os.getenv("SNOWFLAKE_ACCOUNT"),
-        user      = os.getenv("SNOWFLAKE_USER"),
-        password  = os.getenv("SNOWFLAKE_PASSWORD"),
-        warehouse = os.getenv("SNOWFLAKE_WAREHOUSE"),
-        role      = os.getenv("SNOWFLAKE_ROLE"),
+        account   = _get_secret("SNOWFLAKE_ACCOUNT"),
+        user      = _get_secret("SNOWFLAKE_USER"),
+        password  = _get_secret("SNOWFLAKE_PASSWORD"),
+        warehouse = _get_secret("SNOWFLAKE_WAREHOUSE"),
+        role      = _get_secret("SNOWFLAKE_ROLE"),
     ))
     return engine
 
