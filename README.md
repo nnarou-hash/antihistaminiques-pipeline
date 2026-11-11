@@ -238,6 +238,11 @@ python src/ml/predict.py
 streamlit run src/dashboard/app.py
 ```
 
+Une version HTML statique de synthèse est également publiée depuis le portfolio :
+https://nnarou-hash.github.io/antihistaminiques/
+
+Elle est reconstruite à partir des tables Silver (médicaments, ruptures ANSM, OpenMedic, pollen, météo et Sentinelles). Les agrégats publics sont générés sans publier de lignes individuelles. Streamlit reste la version interactive de référence, notamment pour l’exploration des modèles et des prédictions.
+
 ### 7. Lancer l'API
 
 ```bash
